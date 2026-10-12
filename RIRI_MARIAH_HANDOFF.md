@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: none. Waiting for RiRi's first planning issue.
+- Active task: TennisEdge Top 6 match-time verification, issue #18. Application change is on draft PR #2. Not merged and not deployed.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-12
@@ -61,8 +61,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
+- **Summary:** Top 6 selection now requires two agreeing provider starts before a Winner or Value seat is locked. A stored clock that stays on that same Central Time date is a court delay and does not remove the seat or promote the next rank. A different Central Time date, a missing time, a cancelled match, or a walkover still stays out. Winner probabilities and historical freezes were not changed. No deploy.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
+- **Application PR:** https://github.com/King72315/tennisedge/pull/2
+- **Commit:** `1d7be7e` on `cursor/riri-workflow-definition-aee0`
 
 ## Status log
 
@@ -70,3 +72,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
