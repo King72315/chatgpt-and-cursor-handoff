@@ -20,9 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: none. Waiting for RiRi's first planning issue.
+- Active task: [Issue #18](https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18) TennisEdge Top 6 match-time verification. Implementation is in private `King72315/tennisedge`. No deploy and no production database edit.
+- Application repository: `King72315/tennisedge`, base `shadow-props-v1`.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
-- Branch: `master`
+- Branch: `cursor/riri-workflow-definition-aee0`
 - Last update: 2026-10-12
 
 ## Important decisions
@@ -61,8 +62,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
+- **Summary:** Issue #18 is implemented in `King72315/tennisedge`. Match-time verification now runs before CT eligibility and before either lane chooses its six. Winner seats follow stored `winnerRank`. Value seats follow the existing underdog edge order. A locked six does not promote a later rank when a seat finishes or when an unstarted match changes CT date. That match leaves the current slate and is not inserted into the next day. Started matches keep their original slate and rank. Historical stored cards were not rewritten. October 12 was read from the public winners archive only: winner full-slate ranks are gapped, the archive `top6` slice is ranks 2 and 5, and the stored Value board is value ranks 3, 6, 7, 8, 9, and 10. Those stored rows were left as they are.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
 
 ## Status log
 
@@ -70,3 +71,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Issue #18: TennisEdge Top 6 now verifies a real start time before eligibility and selection, and a locked six is not refilled. Application changes are in `King72315/tennisedge`. No deploy and no production database edit. |
