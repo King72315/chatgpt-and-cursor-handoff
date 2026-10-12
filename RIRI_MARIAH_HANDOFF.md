@@ -65,6 +65,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Summary:** Issue #14 is implemented in `King72315/tennisedge` as a source-level repair. Verified final set scores now outrank placeholders and in-progress lines, and a later blank or missing provider poll does not erase a stored verified final. Value Winner grades come from the frozen Value player plus verified match evidence (a verified set score, a verified void/cancellation, or an aligned retirement). Winner-lane WIN/LOSS is not a Value grade. Results and History stay open while any pick is pending; only WIN, LOSS, and VOID rows are completed History. Frozen Top 6 membership, ranks, probabilities, and Value membership stay unchanged. October 11 production records were not rewritten, and nothing was deployed. A production write of the existing October 11 card still needs a separate approval.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/14
 - **Audit evidence:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/13
+- **Application pull request:** https://github.com/King72315/tennisedge/pull/1
+- **Handoff report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/15
+- **Comment limitation:** The issue #14 completion comment was rejected (`Resource not accessible by integration`). Pull request #15 is the report.
 
 ## Status log
 
