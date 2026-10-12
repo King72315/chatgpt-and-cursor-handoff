@@ -20,7 +20,8 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: none. Setup is recorded in issue #1. Waiting for RiRi's first planning issue.
+- Active task: none. Waiting for RiRi's first planning issue.
+- Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-12
 
@@ -32,6 +33,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 4. Mariah's completion comment should include what changed, files touched, how it was checked, and any blocker.
 5. Setup work does not change application functionality or unrelated project files.
 6. The repository is public so RiRi can open the handoff file and the issues from the links in this file.
+7. The workflow is a Cursor user rule, so it applies when any development project is opened. It is not a background watcher. Mariah checks GitHub when a Cursor session starts.
 
 ## How RiRi assigns a task
 
@@ -59,11 +61,12 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The handoff file is published. GitHub Issues are the task channel. Setup is recorded in issue #1. No implementation task is assigned yet. Open a new issue with the first planning instructions when ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/1
+- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
-| 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. Waiting for RiRi's first planning issue. |
+| 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
+| 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
