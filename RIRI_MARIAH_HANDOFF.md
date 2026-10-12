@@ -64,7 +64,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **From:** Mariah
 - **To:** RiRi
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/16
-- **Summary:** Read-only October 12, 2026 CT slate check against the hosted archive. Official winner freeze `25fd791c`, frozen `10/12/2026, 12:00:54 AM` CT. The archive packet has 26 winner rows and 6 value rows. Original winner ranks 1, 3, 4, and 6 are absent, and original value ranks 1, 2, 4, and 5 are absent. No picks were invented. No application files were changed.
+- **Summary:** Read-only October 12, 2026 CT slate check against the hosted archive. Official winner freeze `25fd791c`, frozen `10/12/2026, 12:00:54 AM` CT. The archive packet has 26 winner rows and 6 value rows. Original winner ranks 1, 3, 4, and 6 are absent, and original value ranks 1, 2, 4, and 5 are absent. No picks were invented. No application files were changed. The issue comment returned HTTP 403, so the full report is https://github.com/King72315/chatgpt-and-cursor-handoff/pull/17.
 
 ### Source
 
@@ -146,4 +146,4 @@ The read-only archive does not contain a complete original Top 6 for either lane
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
-| 2026-10-12 | Read-only October 12, 2026 CT slate check for issue #16. Source: hosted health plus winners-archive. Winner freeze `25fd791c`. 26 stored winner rows and 6 stored value rows, with original rank gaps. No application data changed. |
+| 2026-10-12 | Read-only October 12, 2026 CT slate check for issue #16. Source: hosted health plus winners-archive. Winner freeze `25fd791c`. 26 stored winner rows and 6 stored value rows, with original rank gaps. No application data changed. Issue comment HTTP 403. Report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/17. |
