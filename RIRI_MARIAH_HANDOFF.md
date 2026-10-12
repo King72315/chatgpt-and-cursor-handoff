@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: none. Waiting for RiRi's first planning issue.
+- Active task: Issue #18 TennisEdge Top 6 match-time repair, second follow-up. Application repository is private `King72315/tennisedge`. Code is on branch `cursor/riri-workflow-definition-aee0` in pull request #2. No merge and no deploy.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-12
@@ -61,8 +61,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
+- **Summary:** Issue #18 Top 6 repair now requires two agreeing event-level provider starts before a Winner or Value row can be ranked or frozen. A stored clock, a display fill, a repeated 9:00 PM or 11:00 PM CT session stamp, or a conflicting quote is rejected. Locked seat numbers are stored separately from full-slate rank. Fewer than six eligible rows freeze fewer than six. Application pull request: https://github.com/King72315/tennisedge/pull/2
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
 
 ## Status log
 
@@ -70,3 +70,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Issue #18 follow-up: Top 6 selection now requires two agreeing provider start observations before eligibility. Report is on the handoff pull request because issue comments return HTTP 403. Application pull request #2. |
