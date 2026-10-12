@@ -20,9 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: none. Waiting for RiRi's first planning issue.
+- Active task: [Issue #18](https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18) TennisEdge Top 6 match-time verification. Follow-up 1 of 2 is a verification report. Application code was not changed in this follow-up.
+- Application repository: private `King72315/tennisedge`. The repair pull request is open and unmerged: https://github.com/King72315/tennisedge/pull/2
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
-- Branch: `master`
+- Branch: `cursor/riri-workflow-definition-c75f`
 - Last update: 2026-10-12
 
 ## Important decisions
@@ -61,8 +62,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
+- **Summary:** Issue #18 follow-up 1 checked the Top 6 repair without changing application code, historical rows, or production data. The open application pull request is https://github.com/King72315/tennisedge/pull/2 on branch `cursor/riri-workflow-definition-aee0`, commit `5192ecef1729acc68a0fb05db02f18404d443891`, state OPEN, base `shadow-props-v1`. On that commit, Winner eligibility converts the stored start to an America/Chicago date before `verifyWinnerScheduleV1` reads the same stored `commenceTime`, `startsAt`, or `rescheduledDate`. A single non-midnight timestamp is accepted with source name `commenceTime`. API Tennis display clocks are painted after the board exists and do not gate eligibility. This environment has no Odds API, SportsGameOdds, API Tennis, or API-Sports credentials, so October 12 provider clocks were not re-fetched. The stored archive is the historical freeze, not a new provider verification. Its 26 winner rows omit original ranks 1, 3, 4, and 6, and the value package omits value ranks 1, 2, 4, and 5, so a higher-ranked eligible candidate cannot be ruled out from this read. `scripts/rolling-top6-v1-test.mjs` line 392 expects `SCHEDULED` and receives `VOID`. That assertion and the missing `openProviderStatusReplacesStoredVoidV1` helper already exist on `shadow-props-v1` and were left unchanged. Expo lint was not run because `node_modules` is not installed.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
 
 ## Status log
 
@@ -70,3 +71,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Issue #18 follow-up 1: confirmed application PR https://github.com/King72315/tennisedge/pull/2 is open at `5192ece`. Stored-field verification runs after CT conversion and does not re-fetch provider clocks. No application code change, no deploy, and no production database edit. |
