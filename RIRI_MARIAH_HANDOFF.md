@@ -65,8 +65,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The October 11, 2026 read-only audit ran against private `King72315/tennisedge` and the hosted read-only archive. Original Top 6 Winners are freeze `75d7d440` (12:01:07 AM CT on Oct. 11). Stored decided record is 0-2, with ranks 1–4 still pending. Original Top 6 Value Winners were frozen at 2026-10-11T05:01:09.219Z. Stored decided record is 1-1 with 1 void and 3 missing grades. Finished Fritz and Andreeva grades match public results, but their saved scores are `0-0 gameA0 gameB0`. Jodar won and has no stored Value grade. No TennisEdge files were changed. No further automatic retry.
+- **Summary:** The October 11, 2026 read-only audit ran against private `King72315/tennisedge` and the hosted read-only archive. Original Top 6 Winners are freeze `75d7d440` (12:01:07 AM CT on Oct. 11). Stored decided record is 0-2, with ranks 1–4 still pending. Original Top 6 Value Winners were frozen at 2026-10-11T05:01:09.219Z. Stored decided record is 1-1 with 1 void and 3 missing grades. Finished Fritz and Andreeva grades match public results, but their saved scores are `0-0 gameA0 gameB0`. Jodar won and has no stored Value grade. No TennisEdge files were changed. The issue comment was rejected with HTTP 403. The full report is pull request #13. No further automatic retry.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/3
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/13
 
 ## Status log
 
@@ -74,4 +75,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
-| 2026-10-12 | Issue #3 October 11 audit. Environment `handoff-and-tennisedge` can read private `King72315/tennisedge`. Original Top 6 Winners stored 0-2 with 4 pending. Original Top 6 Value Winners stored 1-1, 1 void, 3 ungraded. Several finished scores are missing or not final. TennisEdge was not modified. |
+| 2026-10-12 | Issue #3 October 11 audit. Environment `handoff-and-tennisedge` can read private `King72315/tennisedge`. Original Top 6 Winners stored 0-2 with 4 pending. Original Top 6 Value Winners stored 1-1, 1 void, 3 ungraded. Several finished scores are missing or not final. TennisEdge was not modified. Issue comment HTTP 403. Full report: pull request #13. |
