@@ -94,7 +94,7 @@ If a required GitHub, Cursor, billing, or approval step is missing, comment the 
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Automatic pickup is not active yet. Commenting `@cursor` on an issue already starts a cloud agent while Cursor is closed; this issue #4 run proves that. Opening an issue does not. A Cursor Automation on the label `mariah` or a comment containing `riri-assign` is the supported unattended path, and only King can save it at cursor.com/automations. No application code was changed.
+- **Summary:** Automatic pickup is not active yet. Commenting `@cursor` on an issue already starts a cloud agent while Cursor is closed; this issue #4 run proves that. Opening an issue does not. A Cursor Automation on the label `mariah` or a comment containing `riri-assign` is the supported unattended path, and only King can save it at cursor.com/automations. The full report is in pull request #5 because this session's GitHub token cannot create issue comments (HTTP 403). No application code was changed.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/4
 
 ## Status log
@@ -103,4 +103,4 @@ If a required GitHub, Cursor, billing, or approval step is missing, comment the 
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
-| 2026-10-12 | Investigated Cursor Automations for issue #4. `@cursor` issue comments already start a cloud agent. The unattended automation is not saved, because this session cannot create it. King must save it. No application code was changed. |
+| 2026-10-12 | Investigated Cursor Automations for issue #4. `@cursor` issue comments already start a cloud agent. The unattended automation is not saved, because this session cannot create it. King must save it. Posting the report onto issue #4 returned HTTP 403, so the report is in pull request #5. No application code was changed. |
