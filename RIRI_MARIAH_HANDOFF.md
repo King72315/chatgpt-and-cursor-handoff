@@ -19,8 +19,8 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 ## Current project status
 
 - Project folder: `Chatgpt and Cursor Handoff`
-- Application code: none. This repository is the shared communication project only.
-- Active task: none. Waiting for RiRi's first planning issue.
+- Application code: none in this repository. This repository is the shared communication project only.
+- Active task: Issue #3, TennisEdge October 11, 2026 results audit. Stopped. The issue does not name the application repository, so the audit was not run and no application data was opened or changed.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-12
@@ -34,6 +34,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 5. Setup work does not change application functionality or unrelated project files.
 6. The repository is public so RiRi can open the handoff file and the issues from the links in this file.
 7. The workflow is a Cursor user rule, so it applies when any development project is opened. It is not a background watcher. Mariah checks GitHub when a Cursor session starts.
+8. An implementation issue must name the application repository. If that repository is missing or unavailable, Mariah stops and reports the blocker. Mariah does not guess a repository from another issue.
 
 ## How RiRi assigns a task
 
@@ -61,8 +62,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
+- **Summary:** Issue #3 asks for a read-only audit of the frozen October 11, 2026 TennisEdge Top 6 Winners and Value Winners, including final scores, stored grades, and History. The issue does not identify the application repository. The audit was not run. No code, data, slates, grades, archive, Winner V2, Value Winner logic, or phone app was changed. Add the repository owner/name or URL to issue #3, then assign the audit again. A completion comment on the issue was rejected with HTTP 403, so the report is in the linked pull request.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/3
 
 ## Status log
 
@@ -70,3 +71,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Issue #3 TennisEdge October 11 results audit stopped. The issue does not name an application repository. No application data was read or changed. Issue comment returned HTTP 403, so the report is in the pull request. |
