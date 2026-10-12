@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Top 6 match-time verification, issue #18. Application change is on draft PR #2. Not merged and not deployed.
+- Active task: TennisEdge Top 6 match-time verification, issue #18. Application change is on draft PR #2. Not merged and not deployed. The October 12 missing-rank investigation is recorded on issue #18. The 18 absent winner ranks were not recovered from the current providers, so the placeholder correction stays undeployed.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-12
@@ -61,10 +61,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Top 6 selection now requires two agreeing provider starts before a Winner or Value seat is locked. A stored clock that stays on that same Central Time date is a court delay and does not remove the seat or promote the next rank. A different Central Time date, a missing time, a cancelled match, or a walkover still stays out. Winner probabilities and historical freezes were not changed. No deploy.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
+- **Summary:** The 18 missing October 12 winner ranks were not stored and cannot be named from the current Odds API or SportsGameOdds boards. The six lowest stored ranks include finished remints and an October 13 start, while later stored matches have agreeing October 12 times. API Tennis refused the fixture call for payment. No deploy.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18#issuecomment-6134249873
 - **Application PR:** https://github.com/King72315/tennisedge/pull/2
-- **Commit:** `1d7be7e` on `cursor/riri-workflow-definition-aee0`
+- **Commit:** `1d7be7e` on `cursor/riri-workflow-definition-aee0`. No new application commit.
 
 ## Status log
 
@@ -73,3 +73,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
+| 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
