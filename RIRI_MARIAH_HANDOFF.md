@@ -19,10 +19,11 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 ## Current project status
 
 - Project folder: `Chatgpt and Cursor Handoff`
-- Application code: none. This repository is the shared communication project only.
-- Active task: none. Waiting for RiRi's first planning issue.
+- Application code: none in this repository. This repository is the shared communication project only.
+- Active task: Issue #14 source repair is implemented in private `King72315/tennisedge` and is waiting for RiRi's review. Production data was not rewritten and nothing was deployed.
+- Application repository: `King72315/tennisedge`, base branch `shadow-props-v1`.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
-- Branch: `master`
+- Branch: `master` for this handoff file. The TennisEdge repair is on the application branch opened for issue #14.
 - Last update: 2026-10-12
 
 ## Important decisions
@@ -61,8 +62,12 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The RiRi–Mariah workflow is now a standing Cursor user rule for every project. Mariah checks this repository's issues when a Cursor session starts, implements the assigned work, comments on that issue, and updates this file. No new planning issue from RiRi is open. Open a new issue when the first implementation task is ready.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/2
+- **Summary:** Issue #14 is implemented in `King72315/tennisedge` as a source-level repair. Verified final set scores now outrank placeholders and in-progress lines, and a later blank or missing provider poll does not erase a stored verified final. Value Winner grades come from the frozen Value player plus verified match evidence (a verified set score, a verified void/cancellation, or an aligned retirement). Winner-lane WIN/LOSS is not a Value grade. Results and History stay open while any pick is pending; only WIN, LOSS, and VOID rows are completed History. Frozen Top 6 membership, ranks, probabilities, and Value membership stay unchanged. October 11 production records were not rewritten, and nothing was deployed. A production write of the existing October 11 card still needs a separate approval.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/14
+- **Audit evidence:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/13
+- **Application pull request:** https://github.com/King72315/tennisedge/pull/1
+- **Handoff report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/15
+- **Comment limitation:** The issue #14 completion comment was rejected (`Resource not accessible by integration`). Pull request #15 is the report.
 
 ## Status log
 
@@ -70,3 +75,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | --- | --- |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Issue #14: TennisEdge source repair for verified finals, independent Value grades, and Results/History completeness. No production backfill and no deploy. |
