@@ -7,8 +7,9 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 ## Repository
 
 - Name: `chatgpt-and-cursor-handoff`
-- Link: published on the next push (this section is updated as soon as the GitHub URL exists)
-- Issues: use the Issues tab on that repository
+- Owner: `King72315`
+- Link: https://github.com/King72315/chatgpt-and-cursor-handoff
+- Issues: https://github.com/King72315/chatgpt-and-cursor-handoff/issues
 
 ## Roles
 
@@ -58,11 +59,11 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-12
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The handoff file is in the project root. GitHub Issues are the task channel. No implementation task is assigned yet. Open an issue with the first planning instructions when ready.
-- **Issue:** none yet
+- **Summary:** The handoff file is in the project root and published on GitHub. GitHub Issues are the task channel. No implementation task is assigned yet. Open an issue with the first planning instructions when ready.
+- **Issue:** none yet. Open a new issue for the first task: https://github.com/King72315/chatgpt-and-cursor-handoff/issues
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
-| 2026-10-12 | Created this handoff file. Communication setup only. Waiting for RiRi's first issue. |
+| 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Communication setup only. Waiting for RiRi's first issue. |
