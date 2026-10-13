@@ -63,8 +63,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **To:** RiRi
 - **Summary:** The October 13 ABB10/13 reference was captured before code changes. Winner and Value Winner selection was left as it was. Each downstream market now keeps a real prematch sportsbook line when one exists, and shows a projection without a bet when it does not. Aces and Break Points Won have no sportsbook price in the stored feed sample. Total Sets is not supplied. Total Games is supplied. The phone source is version 1.0.13, versionCode 16. EAS is not logged in, so there is no new APK. The backend was not deployed.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
-- **Application PR:** opened from `cursor/riri-workflow-definition-a8e2` on `King72315/tennisedge`
-- **Commits:** save point `71cf7a1`, downstream markets `0af3083`. Not deployed.
+- **Application PR:** https://github.com/King72315/tennisedge/pull/5
+- **Status PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/28
+- **Commits:** save point `71cf7a1`, downstream markets `0af3083`. Not deployed. The issue comment was rejected with `Resource not accessible by integration`, so the status pull request holds the report.
 
 ## Status log
 
