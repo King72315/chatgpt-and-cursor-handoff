@@ -65,7 +65,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Summary:** Issue #26 was not finished from this cloud session. The consolidated application commit remains `0f66c46`. Railway, Postgres, Expo, and provider keys are absent here, so there is no restorable database backup, no deploy, and no new APK. King needs to continue in the local Cursor session on that existing commit. Winner and Value Winner selection were not changed. Issue #24 was not included.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
 - **Application PR:** https://github.com/King72315/tennisedge/pull/7
-- **Commit:** `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed.
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/31
+- **Commit:** `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed. The issue comment was rejected with HTTP 403, so the outcome is on the report pull request.
 
 ## Status log
 
