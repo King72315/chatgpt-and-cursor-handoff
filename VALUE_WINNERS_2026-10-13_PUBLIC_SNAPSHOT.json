@@ -1,0 +1,247 @@
+{
+  "slateDate": "2026-10-13",
+  "writtenAt": "2026-10-13T08:05:39.911Z",
+  "summary": {
+    "roi": null,
+    "wins": 0,
+    "label": "0 W \u00b7 0 L \u00b7 0 V",
+    "voids": 0,
+    "losses": 0,
+    "profit": 0,
+    "staked": 0,
+    "avgEdge": null,
+    "hitRate": null,
+    "avgMarket": null,
+    "avgPayout": null,
+    "avgPWinner": null,
+    "selections": 3,
+    "totalReturn": 0
+  },
+  "selections": [
+    {
+      "book": "pinnacle",
+      "grade": null,
+      "stake": null,
+      "player": "Alejandro Davidovich Fokina",
+      "profit": null,
+      "eventId": "v7TmSudWeajnKF9Xlg4s",
+      "matchId": "2026-10-13|alejandro|davidovich|fokina|hubert|hurkacz",
+      "pWinner": 0.7506805742353984,
+      "playerA": "Hubert Hurkacz",
+      "playerB": "Alejandro Davidovich Fokina",
+      "frozenAt": "2026-10-13T08:01:54.045Z",
+      "gradedAt": null,
+      "opponent": "Hubert Hurkacz",
+      "setScore": null,
+      "startsAt": "2026-10-13T11:10:00.000Z",
+      "priceKind": "prestart",
+      "scoreText": null,
+      "slateDate": "2026-10-13",
+      "valueEdge": 0.25300356252753736,
+      "valueRank": 1,
+      "liveStatus": "SCHEDULED",
+      "lockedSeat": 1,
+      "winnerRank": 1,
+      "rawOpponent": 0.5145631067961165,
+      "rawSelected": 0.5098039215686274,
+      "currentStart": "2026-10-13T11:10:00.000Z",
+      "returnAmount": null,
+      "oddsTimestamp": "2026-10-13T07:58:27.719Z",
+      "systemVersion": "tennisedge-top4-value-winners-v1",
+      "valueFreezeId": "vw1:2026-10-13:2026-10-13|alejandro|davidovich|fokina|hubert|hurkacz",
+      "opponentPayout": 1.9433962264150944,
+      "selectedPayout": 1.9615384615384617,
+      "marketProbability": 0.497677011707861,
+      "originalSlateDate": "2026-10-13",
+      "scheduleObservations": [
+        {
+          "iso": "2026-10-13T11:10:00.000Z",
+          "source": "sportsgameodds",
+          "provider": "sportsgameodds",
+          "observedAt": "2026-10-13T08:01:30.338Z",
+          "providerEventId": "v7TmSudWeajnKF9Xlg4s"
+        },
+        {
+          "iso": "2026-10-13T11:10:00.000Z",
+          "source": "the-odds-api",
+          "provider": "the-odds-api",
+          "observedAt": "2026-10-13T08:01:32.661Z",
+          "providerEventId": "9115ec9d559da806d8a0829db60d9a51"
+        },
+        {
+          "iso": "2026-10-13T11:10:00Z",
+          "source": "commenceTime",
+          "storedOnly": true
+        },
+        {
+          "iso": "Tue, Oct 13, 6:10 AM",
+          "source": "startTimeCT",
+          "displayFill": true
+        }
+      ],
+      "scheduleVerification": {
+        "ctDate": "2026-10-13",
+        "marker": "tennisedge-match-time-verification-v1",
+        "reason": "VERIFIED",
+        "source": "sportsgameodds+the-odds-api",
+        "verified": true,
+        "rawStatus": "SCHEDULED",
+        "observedAt": "2026-10-13T08:01:30.338Z+2026-10-13T08:01:32.661Z",
+        "verifiedAt": "2026-10-13T08:01:54.045Z",
+        "verifiedIso": "2026-10-13T11:10:00.000Z",
+        "providerEventId": "9115ec9d559da806d8a0829db60d9a51+v7TmSudWeajnKF9Xlg4s"
+      },
+      "countsAsHistoricalBet": true
+    },
+    {
+      "book": "pinnacle",
+      "grade": null,
+      "stake": null,
+      "player": "Shuai Zhang",
+      "profit": null,
+      "eventId": "ApNIkNgHVtC63RxYUT5b",
+      "matchId": "2026-10-13|ashlyn|krueger|shuai|zhang",
+      "pWinner": 0.7370446491345737,
+      "playerA": "Ashlyn Krueger",
+      "playerB": "Shuai Zhang",
+      "frozenAt": "2026-10-13T08:05:39.809Z",
+      "gradedAt": null,
+      "opponent": "Ashlyn Krueger",
+      "setScore": null,
+      "startsAt": "2026-10-13T11:00:00.000Z",
+      "priceKind": "prestart",
+      "scoreText": null,
+      "slateDate": "2026-10-13",
+      "valueEdge": 0.31595253736615736,
+      "valueRank": 1,
+      "liveStatus": null,
+      "lockedSeat": 1,
+      "winnerRank": 4,
+      "rawOpponent": 0.5951417004048584,
+      "rawSelected": 0.4329004329004329,
+      "currentStart": "2026-10-13T11:00:00.000Z",
+      "returnAmount": null,
+      "oddsTimestamp": "2026-10-13T04:55:38.618Z",
+      "systemVersion": "tennisedge-top4-value-winners-v1",
+      "valueFreezeId": "vw1:2026-10-13:2026-10-13|ashlyn|krueger|shuai|zhang",
+      "opponentPayout": 1.6802721088435373,
+      "selectedPayout": 2.31,
+      "marketProbability": 0.4210921117684163,
+      "originalSlateDate": "2026-10-13",
+      "scheduleObservations": [
+        {
+          "iso": "2026-10-13T11:00:00.000Z",
+          "source": "sportsgameodds",
+          "provider": "sportsgameodds",
+          "observedAt": "2026-10-13T05:00:03.704Z",
+          "providerEventId": "ApNIkNgHVtC63RxYUT5b"
+        },
+        {
+          "iso": "2026-10-13T11:00:00.000Z",
+          "source": "the-odds-api",
+          "provider": "the-odds-api",
+          "observedAt": "2026-10-13T08:05:22.869Z",
+          "providerEventId": "07cc0e9af0210195f176fbeae6ec7b9b"
+        },
+        {
+          "iso": "2026-10-13T11:00:00.000Z",
+          "source": "commenceTime",
+          "storedOnly": true
+        },
+        {
+          "iso": "Tue, Oct 13, 6:00 AM",
+          "source": "startTimeCT",
+          "displayFill": true
+        }
+      ],
+      "scheduleVerification": {
+        "ctDate": "2026-10-13",
+        "marker": "tennisedge-match-time-verification-v1",
+        "reason": "VERIFIED",
+        "source": "sportsgameodds+the-odds-api",
+        "verified": true,
+        "rawStatus": "SCHEDULED",
+        "observedAt": "2026-10-13T05:00:03.704Z+2026-10-13T08:05:22.869Z",
+        "verifiedAt": "2026-10-13T08:05:39.809Z",
+        "verifiedIso": "2026-10-13T11:00:00.000Z",
+        "providerEventId": "07cc0e9af0210195f176fbeae6ec7b9b+ApNIkNgHVtC63RxYUT5b"
+      },
+      "countsAsHistoricalBet": true
+    },
+    {
+      "book": "pinnacle",
+      "grade": null,
+      "stake": null,
+      "player": "Alexander Bublik",
+      "profit": null,
+      "eventId": "OJ8JfqX4O5Oh4uHxA85L",
+      "matchId": "2026-10-13|alexander|bublik|alexander|zverev",
+      "pWinner": 0.37440488796091287,
+      "playerA": "Alexander Zverev",
+      "playerB": "Alexander Bublik",
+      "frozenAt": "2026-10-13T08:01:54.045Z",
+      "gradedAt": null,
+      "opponent": "Alexander Zverev",
+      "setScore": null,
+      "startsAt": "2026-10-13T10:00:00.000Z",
+      "priceKind": "prestart",
+      "scoreText": null,
+      "slateDate": "2026-10-13",
+      "valueEdge": 0.08592835591662784,
+      "valueRank": 2,
+      "liveStatus": "SCHEDULED",
+      "lockedSeat": 2,
+      "winnerRank": null,
+      "rawOpponent": 0.7297297297297298,
+      "rawSelected": 0.2958579881656805,
+      "currentStart": "2026-10-13T10:00:00.000Z",
+      "returnAmount": null,
+      "oddsTimestamp": "2026-10-13T07:58:27.719Z",
+      "systemVersion": "tennisedge-top4-value-winners-v1",
+      "valueFreezeId": "vw1:2026-10-13:2026-10-13|alexander|bublik|alexander|zverev",
+      "opponentPayout": 1.3703703703703702,
+      "selectedPayout": 3.38,
+      "marketProbability": 0.28847653204428503,
+      "originalSlateDate": "2026-10-13",
+      "scheduleObservations": [
+        {
+          "iso": "2026-10-13T10:00:00.000Z",
+          "source": "sportsgameodds",
+          "provider": "sportsgameodds",
+          "observedAt": "2026-10-13T08:01:30.337Z",
+          "providerEventId": "OJ8JfqX4O5Oh4uHxA85L"
+        },
+        {
+          "iso": "2026-10-13T10:00:00.000Z",
+          "source": "the-odds-api",
+          "provider": "the-odds-api",
+          "observedAt": "2026-10-13T08:01:32.660Z",
+          "providerEventId": "ac951eec8a949a45f8e37eb5cd117ac1"
+        },
+        {
+          "iso": "2026-10-13T10:00:00Z",
+          "source": "commenceTime",
+          "storedOnly": true
+        },
+        {
+          "iso": "Tue, Oct 13, 5:00 AM",
+          "source": "startTimeCT",
+          "displayFill": true
+        }
+      ],
+      "scheduleVerification": {
+        "ctDate": "2026-10-13",
+        "marker": "tennisedge-match-time-verification-v1",
+        "reason": "VERIFIED",
+        "source": "sportsgameodds+the-odds-api",
+        "verified": true,
+        "rawStatus": "SCHEDULED",
+        "observedAt": "2026-10-13T08:01:30.337Z+2026-10-13T08:01:32.660Z",
+        "verifiedAt": "2026-10-13T08:01:54.045Z",
+        "verifiedIso": "2026-10-13T10:00:00.000Z",
+        "providerEventId": "OJ8JfqX4O5Oh4uHxA85L+ac951eec8a949a45f8e37eb5cd117ac1"
+      },
+      "countsAsHistoricalBet": true
+    }
+  ]
+}
