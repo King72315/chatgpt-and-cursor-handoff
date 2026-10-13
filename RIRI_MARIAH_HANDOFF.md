@@ -20,10 +20,12 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Top 6 match-time verification, issue #18. The discovery-to-freeze repair is on PR #2 at commit `965acbd`. Not merged and not deployed. The October 12 board was not regenerated. The 18 absent winner ranks remain unnamed.
+- Active task: TennisEdge Issue #26 downstream props. The consolidated application change is commit `0f66c46` on https://github.com/King72315/tennisedge/pull/7. It is not merged and not deployed.
+- This cloud session has no SportsGameOdds key, no Odds API key, no API-Tennis key, no Railway token, no `DATABASE_URL`, and no Expo token. Live market authentication, a Postgres dump, a Railway deploy, and a new APK are blocked until a local session that already has those logins runs the release.
+- Production health on 2026-10-13 remains phase OFFICIAL, freeze `3e68f5fe`, store postgres. No new direct APK URL.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-12
+- Last update: 2026-10-13
 
 ## Important decisions
 
@@ -58,13 +60,13 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-12
+- **Date:** 2026-10-13
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Discovery now records a canonical identity and Central Time slate date for every candidate, ranks only the matches that stay eligible, and keeps excluded candidates on a separate trace. A 9:00 PM or 11:00 PM placeholder cannot move an October 11 match onto October 12. A match both providers place on October 12 stays eligible when the stored display clock is wrong. Top 6 is taken from that re-ranked verified pool. Started and finished matches keep the prediction and result already stored. The October 12 board was not regenerated.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
-- **Application PR:** https://github.com/King72315/tennisedge/pull/2
-- **Commit:** `965acbd` on `cursor/riri-workflow-definition-aee0`. Not deployed.
+- **Summary:** Issue #26 was not deployed. This cloud session cannot see the local provider, Railway, Postgres, or Expo credentials, so it did not authenticate live markets, take a database dump, deploy, or build an APK. The finished code remains `0f66c46` on TennisEdge PR #7, already based on `shadow-props-v1` commit `d2a644b`. A stored SportsGameOdds sample shows sportsbook Total Games and match-winner prices, and PrizePicks-only Aces and Break Points Won. Match Total Sets over/under is absent from that sample. PrizePicks lines stay excluded. Production is still freeze `3e68f5fe`. Since the ABB10/13 file snapshot, the public archive only added VOID badges on October 11, 12, and 13; wins, losses, probabilities, and Value Winner packages match the snapshot. That file snapshot is not a restorable Postgres backup.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
+- **Application PR:** https://github.com/King72315/tennisedge/pull/7
+- **Commit:** `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed.
 
 ## Status log
 
@@ -75,3 +77,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
+| 2026-10-13 | Issue #26: credential check in the cloud session. SportsGameOdds, The Odds API, API-Tennis, Railway, Postgres, and Expo are missing here. No deploy and no new APK. Code remains PR #7 commit `0f66c46`. |
