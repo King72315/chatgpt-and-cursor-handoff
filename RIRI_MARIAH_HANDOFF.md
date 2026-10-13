@@ -20,10 +20,11 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Top 6 match-time verification, issue #18. The discovery-to-freeze repair is on PR #2 at commit `965acbd`. Not merged and not deployed. The October 12 board was not regenerated. The 18 absent winner ranks remain unnamed.
+- Active task: TennisEdge Issue #26. The consolidated downstream build is commit `0f66c46` on `cursor/riri-workflow-definition-519c` (https://github.com/King72315/tennisedge/pull/7). It is not deployed. This cloud session has no Railway token, no `DATABASE_URL`, and no Expo token, so the restorable Postgres backup, Railway deploy, and new APK were not created. No new TennisEdge branch was opened.
+- Live API at the 2026-10-13 17:14 UTC read: `https://tennisedge-api-production.up.railway.app/api/tennisedge/mobile/v1/health` is OFFICIAL, slate `2026-10-13`, freeze `3e68f5fe`, store postgres. That is the running production image, not commit `0f66c46`.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-12
+- Last update: 2026-10-13
 
 ## Important decisions
 
@@ -58,13 +59,14 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-12
+- **Date:** 2026-10-13
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Discovery now records a canonical identity and Central Time slate date for every candidate, ranks only the matches that stay eligible, and keeps excluded candidates on a separate trace. A 9:00 PM or 11:00 PM placeholder cannot move an October 11 match onto October 12. A match both providers place on October 12 stays eligible when the stored display clock is wrong. Top 6 is taken from that re-ranked verified pool. Started and finished matches keep the prediction and result already stored. The October 12 board was not regenerated.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
-- **Application PR:** https://github.com/King72315/tennisedge/pull/2
-- **Commit:** `965acbd` on `cursor/riri-workflow-definition-aee0`. Not deployed.
+- **Summary:** Issue #26 was not finished from this cloud session. The consolidated application commit remains `0f66c46`. Railway, Postgres, Expo, and provider keys are absent here, so there is no restorable database backup, no deploy, and no new APK. King needs to continue in the local Cursor session on that existing commit. Winner and Value Winner selection were not changed. Issue #24 was not included.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
+- **Application PR:** https://github.com/King72315/tennisedge/pull/7
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/31
+- **Commit:** `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed. The issue comment was rejected with HTTP 403, so the outcome is on the report pull request.
 
 ## Status log
 
@@ -75,3 +77,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
+| 2026-10-13 | Issue #26 cloud release is blocked. Consolidated commit `0f66c46` (application PR #7) was not deployed. This session has no Railway token, `DATABASE_URL`, or Expo token. No new TennisEdge branch. Live health remains freeze `3e68f5fe`. Continue on King's local Cursor session. |
