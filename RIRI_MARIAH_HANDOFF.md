@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Top 6 match-time verification, issue #18. The discovery-to-freeze repair is on PR #2 at commit `965acbd`. Not merged and not deployed. The October 12 board was not regenerated. The 18 absent winner ranks remain unnamed.
+- Active task: Issue #24, restore Value Winners predicted-winner selection. The selector is implemented and tested. It is not deployed. The October 13 production Value Winners board was not regenerated.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-12
+- Last update: 2026-10-13
 
 ## Important decisions
 
@@ -58,13 +58,13 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-12
+- **Date:** 2026-10-13
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Discovery now records a canonical identity and Central Time slate date for every candidate, ranks only the matches that stay eligible, and keeps excluded candidates on a separate trace. A 9:00 PM or 11:00 PM placeholder cannot move an October 11 match onto October 12. A match both providers place on October 12 stays eligible when the stored display clock is wrong. Top 6 is taken from that re-ranked verified pool. Started and finished matches keep the prediction and result already stored. The October 12 board was not regenerated.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
-- **Application PR:** https://github.com/King72315/tennisedge/pull/2
-- **Commit:** `965acbd` on `cursor/riri-workflow-definition-aee0`. Not deployed.
+- **Summary:** The Value Winners selector again prices Winner V2's predicted player and keeps a pick only when that player's edge is positive. Capacity stays six. October 13 production was left unchanged because this environment cannot snapshot the database or verify event-level start times. The public archive copy of the three published October 13 Value Winners is saved beside this file.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/24
+- **Snapshot:** `VALUE_WINNERS_2026-10-13_PUBLIC_SNAPSHOT.json`
+- **Deployed:** no
 
 ## Status log
 
@@ -75,3 +75,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
+| 2026-10-13 | Issue #24: predicted-winner Value Winners selector restored in code and tests. October 13 production board not regenerated. Not deployed. Public snapshot saved. |
