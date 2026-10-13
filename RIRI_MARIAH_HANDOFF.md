@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge October 13 downstream props, issue #26. ABB10/13 was captured before the code change. The prop work is committed on `cursor/riri-workflow-definition-f0d7` at `b56e35c`. Not merged and not deployed. No new Android APK was built.
+- Active task: TennisEdge October 13 downstream props, issue #26. ABB10/13 was captured before the code change. The prop work is on https://github.com/King72315/tennisedge/pull/6 at `b56e35c`. The report is https://github.com/King72315/chatgpt-and-cursor-handoff/pull/29. Not merged and not deployed. No new Android APK was built.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-13
