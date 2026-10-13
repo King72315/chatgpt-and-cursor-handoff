@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Top 6 match-time verification, issue #18. The discovery-to-freeze repair is on PR #2 at commit `965acbd`. Not merged and not deployed. The October 12 board was not regenerated. The 18 absent winner ranks remain unnamed.
+- Active task: TennisEdge issue #26. One downstream build is on branch `cursor/riri-workflow-definition-519c`. It is not deployed. There is no new APK. Production still has no restorable Postgres dump from this session.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-12
+- Last update: 2026-10-13
 
 ## Important decisions
 
@@ -58,13 +58,14 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-12
+- **Date:** 2026-10-13
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Discovery now records a canonical identity and Central Time slate date for every candidate, ranks only the matches that stay eligible, and keeps excluded candidates on a separate trace. A 9:00 PM or 11:00 PM placeholder cannot move an October 11 match onto October 12. A match both providers place on October 12 stays eligible when the stored display clock is wrong. Top 6 is taken from that re-ranked verified pool. Started and finished matches keep the prediction and result already stored. The October 12 board was not regenerated.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/18
-- **Application PR:** https://github.com/King72315/tennisedge/pull/2
-- **Commit:** `965acbd` on `cursor/riri-workflow-definition-aee0`. Not deployed.
+- **Summary:** Issue #26 is one change set on the current TennisEdge base. Aces, Break Points Won, Total Games, and Total Sets calculate and keep a projection when the sportsbook line is missing. A bet grade requires a real prematch line. History shows six separate records. Winner and Value Winner selection were not changed. The October 13 board was not rewritten. Production was not deployed and no APK was built because this session has no Railway, database, or Expo token and no Postgres dump.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
+- **Application PR:** https://github.com/King72315/tennisedge/pull/7
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/30
+- **Commit:** `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed.
 
 ## Status log
 
@@ -75,3 +76,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
+| 2026-10-13 | Issue #26: downstream props and six History records at `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed. No APK. No Postgres dump. |
