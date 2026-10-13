@@ -64,6 +64,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Summary:** ABB10/13 is stored at `forensics/abb10-13` in TennisEdge before any prop change. Live health was OFFICIAL freeze `3e68f5fe` with 7 winners and 3 value picks, all still ungraded. Aces, break points won, total games, and total sets now attach after a Winner or Value Winner is already chosen. One match-total packet is stored per match. The phone shows those four props in a collapsed section. Winner and Value Winner selection were not changed. The hosted API was not deployed, and no new APK link is available from this environment.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
 - **Application commit:** `b56e35c` on `cursor/riri-workflow-definition-f0d7`
+- **Application PR:** https://github.com/King72315/tennisedge/pull/6
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/29
 - **Save point:** `forensics/abb10-13` in King72315/tennisedge. Restore from the fallback copies or git `d2a644b`. Do not write that copy back into the live database.
 - **Other drafts:** Separate issue #26 drafts already exist on other branches. Review this branch on its own. Do not merge those drafts together.
 
@@ -76,4 +78,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
-| 2026-10-13 | Issue #26: ABB10/13 save point, then downstream Aces, Break Points, Total Games, and Total Sets. Commit `b56e35c` on `cursor/riri-workflow-definition-f0d7`. Not deployed. No new APK. Other issue #26 drafts stay separate. |
+| 2026-10-13 | Issue #26: ABB10/13 save point, then downstream Aces, Break Points, Total Games, and Total Sets. Commit `b56e35c`. Application PR https://github.com/King72315/tennisedge/pull/6. Report https://github.com/King72315/chatgpt-and-cursor-handoff/pull/29. Not deployed. No new APK. Other issue #26 drafts stay separate. |
