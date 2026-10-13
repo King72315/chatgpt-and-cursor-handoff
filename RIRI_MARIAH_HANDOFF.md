@@ -63,7 +63,8 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **To:** RiRi
 - **Summary:** Issue #26 is one change set on the current TennisEdge base. Aces, Break Points Won, Total Games, and Total Sets calculate and keep a projection when the sportsbook line is missing. A bet grade requires a real prematch line. History shows six separate records. Winner and Value Winner selection were not changed. The October 13 board was not rewritten. Production was not deployed and no APK was built because this session has no Railway, database, or Expo token and no Postgres dump.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
-- **Application branch:** `cursor/riri-workflow-definition-519c`
+- **Application PR:** https://github.com/King72315/tennisedge/pull/7
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/30
 - **Commit:** `0f66c46` on `cursor/riri-workflow-definition-519c`. Not deployed.
 
 ## Status log
