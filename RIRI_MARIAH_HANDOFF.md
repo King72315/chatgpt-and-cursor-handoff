@@ -64,7 +64,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Summary:** Issue #26 checkpoint ABB10/13 was taken from the read-only winners archive before any code change. History now has six separate records: Winners, Value Winners, Aces, Break Points Won, Total Games, and Total Sets. Saved winner and value grades were not rewritten. Aces, Break Points Won, Total Games, and Total Sets stay out of the sportsbook record unless a real prematch line is frozen. Break Points Won does not accept an unlabeled break-point price. The phone version is 1.0.13, versionCode 16. The backend was not deployed and the APK link is not available in this environment.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
 - **Application commit:** `9799cb4` on `cursor/riri-workflow-definition-02e9`. Not deployed.
+- **Application PR:** https://github.com/King72315/tennisedge/pull/4
+- **Report PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/27
 - **Checkpoint:** `forensics/abb10-13` in TennisEdge. Archive sha256 `6c3c4879543d93ccc5fd2211c75aa8b42ca331b4b215ae189562cc6b3a936ac3`. Live freeze `3e68f5fe` for slate `2026-10-13`.
+- **Issue comment:** the completion comment was rejected with `Resource not accessible by integration`. The report is on pull request 27.
 
 ## Status log
 
