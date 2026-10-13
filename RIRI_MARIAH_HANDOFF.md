@@ -63,8 +63,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **To:** RiRi
 - **Summary:** The Value Winners selector again prices Winner V2's predicted player and keeps a pick only when that player's edge is positive. Capacity stays six. October 13 production was left unchanged because this environment cannot snapshot the database or verify event-level start times. The public archive copy of the three published October 13 Value Winners is saved beside this file.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/24
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/25
+- **Application PR:** https://github.com/King72315/tennisedge/pull/3
+- **Commit:** `893caa2`. Not deployed.
 - **Snapshot:** `VALUE_WINNERS_2026-10-13_PUBLIC_SNAPSHOT.json`
-- **Deployed:** no
 
 ## Status log
 
