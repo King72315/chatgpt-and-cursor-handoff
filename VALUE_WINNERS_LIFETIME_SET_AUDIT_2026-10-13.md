@@ -138,3 +138,13 @@ Sets are completed sets won by the selected player, then by the opponent. Price 
 | 2026-10-13 | 1 | underdog | underdog | Alejandro Davidovich Fokina | Hubert Hurkacz | 1.96 / 1.94 | 0.253 | UNGRADED | PENDING | — | PENDING | `vw1:2026-10-13:2026-10-13|alejandro|davidovich|fokina|hubert|hurkacz` | Rolex Shanghai schedule: Hurkacz vs Davidovich Fokina not before 18:00 local on 13 Oct. Not on the completed results page. |
 | 2026-10-13 | 1 | underdog | underdog | Shuai Zhang | Ashlyn Krueger | 2.31 / 1.68 | 0.316 | UNGRADED | PENDING | — | PENDING | `vw1:2026-10-13:2026-10-13|ashlyn|krueger|shuai|zhang` | ESPN Wuhan scoreboard: Zhang vs Krueger listed at 7:00 PM, not final. |
 | 2026-10-13 | 2 | underdog | underdog | Alexander Bublik | Alexander Zverev | 3.38 / 1.37 | 0.086 | UNGRADED | PENDING | — | PENDING | `vw1:2026-10-13:2026-10-13|alexander|bublik|alexander|zverev` | Rolex Shanghai schedule: Zverev vs Bublik not before 18:00 local on 13 Oct. Not on the completed results page. |
+
+## Blockers
+
+Bublik vs Zverev and Davidovich Fokina vs Hurkacz were still on the Shanghai order of play after the completed round-of-16 results. Zhang vs Krueger was still listed at 7:00 PM in Wuhan. Their set scores are not in the lifetime figures.
+
+The de Minaur retirement score rests on the stored 6-4, 3-2 line plus one public retirement page, not on an ATP "Game, Set and Match" sentence. It is excluded from the outright counts either way.
+
+Issue comments are blocked for this integration (`Resource not accessible by integration`). This pull request is the completion report.
+
+No further repair, backfill, or deployment was started.
