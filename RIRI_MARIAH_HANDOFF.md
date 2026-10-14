@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: PRE_THE_LAB_V1 is saved and the restore was verified. The Lab implementation has not started. Production remains deployment `3d3aa4f4`. No new APK.
+- Active task: The Lab is live as a fourth phone tab. It stores its own copies and does not change picks, grades, or the archive. Production API deployment `b40a4c87`. Phone APK versionCode 47. Save point `PRE_THE_LAB_V1` remains in place.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -61,11 +61,11 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King approved The Lab and required a restorable save point before any implementation. PRE_THE_LAB_V1 is on this machine at TennisEdge `forensics/pre-the-lab-v1`. It holds the production source from `var/d0de-app` and all 4,763 live `tennisedge_kv` rows. The code archive extracted with matching file hashes, and the records loaded into a temporary database with matching counts. Existing save points were left in place. The Lab has not been coded. Production is still deployment `3d3aa4f4`, based on the October 5 image `d0de8bb1` plus the later grading and archive repairs. The main git HEAD `965acbd` is not the running image.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/14
-- **API deployment:** `3d3aa4f4` on service `tennisedge-api`
+- **Summary:** The Lab is a fourth tab after History. Copy 1 is the frozen prematch snapshot and is written only after an official start. Copy 2 is the verified outcome, linked by the same prediction id. A later correction is stored on Copy 2 and does not change Copy 1. Six categories are stored separately: Winners, Value Winners, Aces, Break Points Won, Total Games, and Total Sets. A count without a real prematch line stays a projection and is not graded as a sportsbook bet. Signals that were not saved on the original pick are marked unavailable and are not reconstructed. October 14 picks are unchanged. There is no Lab GitHub issue, so this handoff is the report.
+- **Issue:** none for The Lab
+- **API deployment:** `b40a4c87` on service `tennisedge-api`
 - **Save point:** `PRE_THE_LAB_V1` at `forensics/pre-the-lab-v1`
-- **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
+- **Phone:** https://expo.dev/artifacts/eas/jKSS_QkwaZb26Qq61ek0BLJhX9ByLzmYIGb2rblSwfY.apk
 
 ## Status log
 
@@ -83,3 +83,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | Home through History grading. Saved set scores replace actual 0. Deployment `3ddd2eaa`. Picks and Family D unchanged. No APK. |
 | 2026-10-14 | Archive stays visible when History is hidden, and a later verified score updates the saved archive. Count markets are a separate record. Deployment `3d3aa4f4`. Picks unchanged. No APK. |
 | 2026-10-14 | PRE_THE_LAB_V1 saved and restore-verified before The Lab. Implementation has not started. No APK. |
+| 2026-10-14 | The Lab is live. API `b40a4c87`. Copies are separate from picks and the archive. APK versionCode 47. October 14 probabilities unchanged. |
