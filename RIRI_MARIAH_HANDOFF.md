@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Saved-slate signal audit finished and the trial weights were rolled back. Saved winners from 2026-09-08 through 2026-10-12 are 199-116. A ranking and form adjustment gained wins on Oct 7–8 and did not gain a win on the locked Oct 9–12 window, which stayed 29-18. Winner weights, Family D, and deployment `a05c2e25` are unchanged. October 14 Top 6 is still Pegula, Sabalenka, Medvedev, and Paul.
+- Active task: Issue #47 read-only archive audit is finished. No application code was changed and Reset History was not pressed. Live health at 2026-10-14T10:37:06Z says slate 2026-10-14 is not official (`RETRYING_DATA_SOURCE`, no freeze hash, Postgres). The hosted archive has 35 winner packets from 2026-09-08 through 2026-10-13 and no 2026-10-14 packet. Readable packet totals are 199-116-102. Phone packages through 2026-10-12 are 213-126-77, and 14 dates disagree. Reset History on the recorded 1.0.13 versionCode 46 APK is UNVERIFIED against the live hybrid. The committed cloud handler rejects that APK's empty token and, on scratch storage, an authorized hide does not change the official card.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -61,10 +61,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King asked for a saved-slate signal audit, a small calibration, and a rerun, with rollback if the rerun was not better. Saved winners are 199-116. Serve and return agreement lines up with losses on the Oct 1–5 fitting window, but changing its weight did not add a check-window win. Weaker ranking and stronger form improved Oct 7–8 from 15-12 to 17-10 and left Oct 9–12 at 29-18. Those weight changes were rolled back. Family D and the live October 14 card were not changed. No new APK.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
-- **API deployment:** `a05c2e25` on service `tennisedge-api`
-- **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
+- **Summary:** Read-only Issue #47 audit. Reset History was not pressed. Live verdict for the running hybrid is UNVERIFIED. The recorded phone APK is 1.0.13 versionCode 46 with an empty reset token, and the committed cloud handler rejects that call before writing. Scratch storage showed an authorized hide leaves the official card bytes unchanged. Hosted archive sha256 `d7e62ebac9988b0b769cdc01001a7014234e3e064c2d72e6fe00313df0e31841` (5,659,309 bytes): packets 2026-09-08 through 2026-10-13, missing 2026-09-30 and 2026-10-14. Winners FAIL integrity (text 199-116-102 vs packages 213-126-77). Value Winners 24-15-7 with Oct 10 and Oct 12 over the cap of 6. Aces, Break Points Won, and Total Sets do not have priced graded bets in the archive. Total Games is split across published rows, shadow rows, and winner-side lines. Windows archive and the 4,247-row backup were not on this machine. No deploy and no TennisEdge commit.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/47
+- **API health:** `https://tennisedge-api-production.up.railway.app` Postgres, 2026-10-14 not official. `d0de8bb1` and `3ddd2eaa` are not commits in the app repo. Deployment id was not readable from health.
+- **Phone artifact:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk sha256 `09c075c7f024831b88e6d9b8c06f432597a211c51295ced68dbfc12c2743c1e0`
 
 ## Status log
 
@@ -80,3 +80,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | Restored warehouse ranks and current rank-date eligibility. Rebuilt 2026-10-14 Winners on the Oct 5 engines. Deployment `a05c2e25`. Top 6 is four new seats with downstream counts. October 13 Fernandez is not a Top 6 seat. Value Winners for 2026-10-14 are empty. No APK. |
 | 2026-10-14 | Saved-slate signal audit. Trial ranking and form scales did not improve the locked Oct 9–12 window (29-18). Weights rolled back. No deploy. |
 | 2026-10-14 | Issue #47 assignment received. Read-only Reset History, permanent archive, and six-prop flow audit started on the installed 1.0.13 build and the running Oct-5-hybrid service. No live writes. |
+| 2026-10-14 | Issue #47 audit finished. Reset History UNVERIFIED on the live service. Archive packets 2026-09-08 through 2026-10-13. Winners text 199-116-102 disagree with phone packages 213-126-77 on 14 dates. Aces, Break Points Won, and Total Sets are not priced graded bets. No application commit and no deploy. |
