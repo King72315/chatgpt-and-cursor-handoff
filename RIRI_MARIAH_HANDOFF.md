@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: The Archive tab no longer depends on the History display. A later verified score updates the permanent archive without changing the published pick. Aces, Break Points Won, Total Games, and Total Sets have their own archive record, separate from Winner picks and Value Winner picks. October 14 probabilities are unchanged. Deployment `3d3aa4f4`. No new APK.
+- Active task: PRE_THE_LAB_V1 is saved and the restore was verified. The Lab implementation has not started. Production remains deployment `3d3aa4f4`. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -61,9 +61,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King asked for two archive corrections. Clearing History no longer removes the Archive tab, because the archive is built from the saved slates even when the History display is hidden. A later verified score now updates the archived copy. Carlos Alcaraz’s October 11 archive file now has final score 7-5 7-6(7), 25 total games, and 2 total sets. His published pWinner 0.8837789205941624 and LOSS grade stayed. Aces stay unsaved when no verified ace count exists. The four count markets are stored in Count markets.txt, separate from Winner picks and from Value Winner selections. October 14 top seats remain Pegula, Sabalenka, Medvedev, Paul, and Shnaider. No new APK.
+- **Summary:** King approved The Lab and required a restorable save point before any implementation. PRE_THE_LAB_V1 is on this machine at TennisEdge `forensics/pre-the-lab-v1`. It holds the production source from `var/d0de-app` and all 4,763 live `tennisedge_kv` rows. The code archive extracted with matching file hashes, and the records loaded into a temporary database with matching counts. Existing save points were left in place. The Lab has not been coded. Production is still deployment `3d3aa4f4`, based on the October 5 image `d0de8bb1` plus the later grading and archive repairs. The main git HEAD `965acbd` is not the running image.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/14
 - **API deployment:** `3d3aa4f4` on service `tennisedge-api`
+- **Save point:** `PRE_THE_LAB_V1` at `forensics/pre-the-lab-v1`
 - **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
 
 ## Status log
@@ -81,3 +82,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | Saved-slate signal audit. Trial ranking and form scales did not improve the locked Oct 9–12 window (29-18). Weights rolled back. No deploy. |
 | 2026-10-14 | Home through History grading. Saved set scores replace actual 0. Deployment `3ddd2eaa`. Picks and Family D unchanged. No APK. |
 | 2026-10-14 | Archive stays visible when History is hidden, and a later verified score updates the saved archive. Count markets are a separate record. Deployment `3d3aa4f4`. Picks unchanged. No APK. |
+| 2026-10-14 | PRE_THE_LAB_V1 saved and restore-verified before The Lab. Implementation has not started. No APK. |
