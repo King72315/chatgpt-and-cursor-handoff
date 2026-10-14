@@ -62,8 +62,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #36 is a read-only ChurchEdge audit. It stopped because the named application repository is unavailable. `GET /repos/King72315/churchedge` returned HTTP 404. This environment can see only `King72315/chatgpt-and-cursor-handoff` and `King72315/tennisedge`. `C:\Users\nicho\Projects\ChurchEdge` is not mounted. Lint, build, routes, and Supabase were not checked. No deploy and no application commit.
+- **Summary:** Issue #36 is a read-only ChurchEdge audit. It stopped because the named application repository is unavailable. `GET /repos/King72315/churchedge` returned HTTP 404. This environment can see only `King72315/chatgpt-and-cursor-handoff` and `King72315/tennisedge`. `C:\Users\nicho\Projects\ChurchEdge` is not mounted. Lint, build, routes, and Supabase were not checked. No deploy and no application commit. The issue comment was rejected with HTTP 403, so the report is the pull request below.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/36
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/37
 
 ## Status log
 
@@ -75,4 +76,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
-| 2026-10-14 | Issue #36 ChurchEdge audit stopped. `King72315/churchedge` is unavailable (HTTP 404). This environment does not include that repository. No application files were changed. |
+| 2026-10-14 | Issue #36 ChurchEdge audit stopped. `King72315/churchedge` is unavailable (HTTP 404). This environment does not include that repository. No application files were changed. Report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/37 |
