@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Issue #26 is released. The corrected API deployment is `a0d6cbfe` on the existing `tennisedge-api` service. Live health is official for 2026-10-13, freeze `3e68f5fe`, Winner model v2. The matching internal APK is version 1.0.13, version code 46.
+- Active task: King directed a rollback to Oct 5 deployment `d0de8bb1`, then the current aces, break-point, and total-games logic on that base. Hybrid API deployment `0f737ca5` is live on `tennisedge-api`. The 2026-10-14 card was rebuilt and is UNAVAILABLE. One Winner seat remains: Leylah Fernandez, with downstream Aces 2.2, Breaks 4.0, Games 22.0, Sets 2.4. Value Winners for today are empty. The other seven matches are blocked on rank, surface, and H2H. Installed phone APK is still version 1.0.13, version code 46.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-13
+- Last update: 2026-10-14
 
 ## Important decisions
 
@@ -58,12 +58,12 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-13
+- **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #26 repairs were verified, the production `tennisedge_kv` backup was restored into a local scratch database and locked to the Windows user, and the corrected API is live beside the version-code 46 APK. Saved freeze `3e68f5fe` is unchanged. Winner and Value Winner selection was not retuned.
+- **Summary:** King directed a rollback to `d0de8bb1` and a reattach of the current aces, break-point, and total-games logic. Hybrid deployment `0f737ca5` is live. The 2026-10-14 slate was force-rebuilt. It is UNAVAILABLE. One Winner seat is Leylah Fernandez with downstream markets attached. Value Winners for today are empty because the other matches are blocked on rank, surface, and H2H. API-Tennis returned no fixtures. Family D and Winner selection weights were not retuned. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
-- **API deployment:** `a0d6cbfe` on service `tennisedge-api`
+- **API deployment:** `0f737ca5` on service `tennisedge-api`
 - **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
 
 ## Status log
@@ -76,3 +76,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
+| 2026-10-14 | King directed rollback to `d0de8bb1`, then current aces, breaks, and total games. Hybrid deployment `0f737ca5`. 2026-10-14 rebuilt: UNAVAILABLE, one Winner seat (Fernandez) with downstream markets, Value Winners empty. API-Tennis fixtures failed. No APK. |
