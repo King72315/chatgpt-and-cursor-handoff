@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge Issue #26 is released. The corrected API deployment is `a0d6cbfe` on the existing `tennisedge-api` service. Live health is official for 2026-10-13, freeze `3e68f5fe`, Winner model v2. The matching internal APK is version 1.0.13, version code 46.
+- Active task: Issue #44 ChurchEdge current app audit. Assignment received. Audit is in progress. No application files have been changed.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-13
+- Last update: 2026-10-14
 
 ## Important decisions
 
@@ -76,3 +76,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
+| 2026-10-14 | Issue #44 assignment received. ChurchEdge audit started. No application files changed. |
