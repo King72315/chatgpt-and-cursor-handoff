@@ -21,7 +21,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
 - Active task: Issue #42 is a communication fallback protocol test. Pickup was acknowledged. No implementation was performed. ChurchEdge, TennisEdge, Supabase, and other product repositories were not touched.
-- Issue comments on this repository return HTTP 403 (`Resource not accessible by integration`). The acknowledgment is a linked pull request on this repository.
+- Issue comments on this repository return HTTP 403 (`Resource not accessible by integration`). The acknowledgment is https://github.com/King72315/chatgpt-and-cursor-handoff/pull/43.
 - Prior product status, unchanged by this test: TennisEdge Issue #26 is released. The corrected API deployment is `a0d6cbfe` on the existing `tennisedge-api` service. Live health is official for 2026-10-13, freeze `3e68f5fe`, Winner model v2. The matching internal APK is version 1.0.13, version code 46.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
@@ -63,8 +63,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #42 is a communication test only. Automatic handoff pickup was confirmed. No implementation was performed. The issue comment was rejected with HTTP 403, so the acknowledgment is a linked pull request on this repository.
+- **Summary:** Issue #42 is a communication test only. Automatic handoff pickup was confirmed. No implementation was performed. The issue comment was rejected with HTTP 403, so the acknowledgment is pull request #43.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/42
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/43
 
 ## Status log
 
@@ -76,4 +77,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
-| 2026-10-14 | Issue #42 communication test. Pickup confirmed. No implementation. Issue comment HTTP 403. Acknowledgment is a linked pull request on this repository. |
+| 2026-10-14 | Issue #42 communication test. Pickup confirmed. No implementation. Issue comment HTTP 403. Report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/43. |
