@@ -63,7 +63,10 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **To:** RiRi
 - **Summary:** Issue #33 repair is in TennisEdge commit `db3ae8b`. New Value freezes select the predicted winner when that side has positive no-vig edge, including a favorite, and cap at 6. Committed slates are not reselected. A corrected Value grade keeps the original grade, player, price, rank, and pWinner. A scoreless VOID does not replace an ungraded row. A verified final can replace a scoreless VOID. Locked Top 6 does not pull in a later rank. Real prematch total-games and ace lines stay separate from projections. Break Points Won and Total Sets lines are not invented. Production rows were not rewritten. Backup is not ready: `DATABASE_URL`, `RAILWAY_TOKEN`, and `EXPO_TOKEN` are unset. No deploy and no APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/33
+- **Application PR:** https://github.com/King72315/tennisedge/pull/8
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/35
 - **Application commit:** `db3ae8b` on `cursor/riri-workflow-definition-8854`. Not deployed.
+- **Reporting limit:** The issue comment was rejected with HTTP 403, `Resource not accessible by integration`. The completion report is pull request #35.
 
 ## Status log
 
@@ -74,4 +77,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
-| 2026-10-14 | Issue #33 integrity repair. TennisEdge commit `db3ae8b` on `cursor/riri-workflow-definition-8854`. Saved slates were not rewritten. No database backup and no deploy. |
+| 2026-10-14 | Issue #33 integrity repair. TennisEdge commit `db3ae8b`, PR https://github.com/King72315/tennisedge/pull/8. Report https://github.com/King72315/chatgpt-and-cursor-handoff/pull/35. Issue comment returned HTTP 403. Saved slates were not rewritten. No database backup and no deploy. |
