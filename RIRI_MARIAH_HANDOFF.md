@@ -84,4 +84,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | Archive stays visible when History is hidden, and a later verified score updates the saved archive. Count markets are a separate record. Deployment `3d3aa4f4`. Picks unchanged. No APK. |
 | 2026-10-14 | PRE_THE_LAB_V1 saved and restore-verified before The Lab. Implementation has not started. No APK. |
 | 2026-10-14 | The Lab is live. API `b40a4c87`. Copies are separate from picks and the archive. APK versionCode 47. October 14 probabilities unchanged. |
-| 2026-10-14 | Issue #50 blocked in cloud. Phone artifact versionCode 47 confirmed. Oct 5 hybrid source and deployment access are absent. No TennisEdge commit. Report is the Issue #50 completion pull request. |
+| 2026-10-14 | Issue #50 blocked in cloud. Phone artifact versionCode 47 confirmed. Oct 5 hybrid source and deployment access are absent. No TennisEdge commit. Report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/52. Acknowledgment: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/51. |
