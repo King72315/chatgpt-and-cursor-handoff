@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Home, Results, and History now grade saved set scores for Winners and Value Winners. Aces, break points, total games, and total sets stay downstream of the pick. October 14 probabilities are unchanged. Family D record is unchanged at 13-13. Deployment `3ddd2eaa`. No new APK.
+- Active task: The Archive tab no longer depends on the History display. A later verified score updates the permanent archive without changing the published pick. Aces, Break Points Won, Total Games, and Total Sets have their own archive record, separate from Winner picks and Value Winner picks. October 14 probabilities are unchanged. Deployment `3d3aa4f4`. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -61,9 +61,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King asked for Home through History to flow, grade, and save Winners, Value Winners, aces, break points, and totals. Finished matches now grade total games and total sets from the saved set score. A placeholder actual of 0 is no longer kept. Aces and break points stay blank unless a verified count exists. Yuliia Starodubtseva is Over 21.5 WIN from 31 games. Mananchaya Sawangkaew is Under 21.5 LOSS from 22 games. The four October 14 probabilities are unchanged. October 13 Fernandez is not a Top 6 seat. The live card also has a fifth seat, Diana Shnaider, from the existing slate retry. Value Winners for October 14 are still empty. Family D is still 13-13. No new APK. The installed phone shows aces and break-point projections. Total games and total sets text on the card is in the phone source and is not in the installed APK.
+- **Summary:** King asked for two archive corrections. Clearing History no longer removes the Archive tab, because the archive is built from the saved slates even when the History display is hidden. A later verified score now updates the archived copy. Carlos Alcaraz’s October 11 archive file now has final score 7-5 7-6(7), 25 total games, and 2 total sets. His published pWinner 0.8837789205941624 and LOSS grade stayed. Aces stay unsaved when no verified ace count exists. The four count markets are stored in Count markets.txt, separate from Winner picks and from Value Winner selections. October 14 top seats remain Pegula, Sabalenka, Medvedev, Paul, and Shnaider. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/14
-- **API deployment:** `3ddd2eaa` on service `tennisedge-api`
+- **API deployment:** `3d3aa4f4` on service `tennisedge-api`
 - **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
 
 ## Status log
@@ -80,3 +80,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | Restored warehouse ranks and current rank-date eligibility. Rebuilt 2026-10-14 Winners on the Oct 5 engines. Deployment `a05c2e25`. Top 6 is four new seats with downstream counts. October 13 Fernandez is not a Top 6 seat. Value Winners for 2026-10-14 are empty. No APK. |
 | 2026-10-14 | Saved-slate signal audit. Trial ranking and form scales did not improve the locked Oct 9–12 window (29-18). Weights rolled back. No deploy. |
 | 2026-10-14 | Home through History grading. Saved set scores replace actual 0. Deployment `3ddd2eaa`. Picks and Family D unchanged. No APK. |
+| 2026-10-14 | Archive stays visible when History is hidden, and a later verified score updates the saved archive. Count markets are a separate record. Deployment `3d3aa4f4`. Picks unchanged. No APK. |
