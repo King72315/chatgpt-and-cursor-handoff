@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: October 14 Winners were regenerated on the Oct 5 engines after warehouse ranks were restored. Live API deployment `a05c2e25` on `tennisedge-api`. Top 6 is four new 2026-10-14 seats (Pegula, Sabalenka, Medvedev, Paul). The October 13 Fernandez selection is not a Top 6 seat. Aces, breaks, games, and sets are attached on those four seats. The card is still UNAVAILABLE. Value Winners for 2026-10-14 are empty. Four other matches stay blocked on unresolved H2H. Installed phone APK is still version 1.0.13, version code 46.
+- Active task: Saved-slate signal audit finished and the trial weights were rolled back. Saved winners from 2026-09-08 through 2026-10-12 are 199-116. A ranking and form adjustment gained wins on Oct 7–8 and did not gain a win on the locked Oct 9–12 window, which stayed 29-18. Winner weights, Family D, and deployment `a05c2e25` are unchanged. October 14 Top 6 is still Pegula, Sabalenka, Medvedev, and Paul.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King asked to restore current rank and fixture inputs, keep the October 13 Fernandez selection out of a new October 14 Top 6, regenerate eligible Winners and Value Winners on the Oct 5 engines, and keep aces, breaks, games, and sets downstream. Deployment `a05c2e25` is live. Top 6 is Pegula, Sabalenka, Medvedev, and Paul. Their probabilities are unchanged from the rebuild. Downstream counts are on those four rows. Fernandez still appears on the day list as the carried October 13 pick and is not a Top 6 seat. Value Winners for 2026-10-14 are empty. API-Tennis still returns no fixtures. No new APK. TennisEdge was not committed.
+- **Summary:** King asked for a saved-slate signal audit, a small calibration, and a rerun, with rollback if the rerun was not better. Saved winners are 199-116. Serve and return agreement lines up with losses on the Oct 1–5 fitting window, but changing its weight did not add a check-window win. Weaker ranking and stronger form improved Oct 7–8 from 15-12 to 17-10 and left Oct 9–12 at 29-18. Those weight changes were rolled back. Family D and the live October 14 card were not changed. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
 - **API deployment:** `a05c2e25` on service `tennisedge-api`
 - **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
@@ -78,3 +78,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
 | 2026-10-14 | King directed rollback to `d0de8bb1`, then current aces, breaks, and total games. Hybrid deployment `0f737ca5`. 2026-10-14 rebuilt: UNAVAILABLE, one Winner seat (Fernandez) with downstream markets, Value Winners empty. API-Tennis fixtures failed. No APK. |
 | 2026-10-14 | Restored warehouse ranks and current rank-date eligibility. Rebuilt 2026-10-14 Winners on the Oct 5 engines. Deployment `a05c2e25`. Top 6 is four new seats with downstream counts. October 13 Fernandez is not a Top 6 seat. Value Winners for 2026-10-14 are empty. No APK. |
+| 2026-10-14 | Saved-slate signal audit. Trial ranking and form scales did not improve the locked Oct 9–12 window (29-18). Weights rolled back. No deploy. |
