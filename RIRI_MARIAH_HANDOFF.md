@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #44 ChurchEdge current app audit. Assignment received. Audit is in progress. No application files have been changed.
+- Active task: Issue #44 ChurchEdge audit stopped. `King72315/churchedge` is not available. No application files were changed. TennisEdge was not modified.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -58,13 +58,13 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-13
+- **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #26 repairs were verified, the production `tennisedge_kv` backup was restored into a local scratch database and locked to the Windows user, and the corrected API is live beside the version-code 46 APK. Saved freeze `3e68f5fe` is unchanged. Winner and Value Winner selection was not retuned.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/26
-- **API deployment:** `a0d6cbfe` on service `tennisedge-api`
-- **Phone:** https://expo.dev/artifacts/eas/0RxC3WBTsNOlMB51EPt1e1eRuPV_m_-JaP4LjbC2MWM.apk
+- **Summary:** Issue #44 was a read-only ChurchEdge audit. It stopped because `King72315/churchedge` is not in this environment and GitHub returns HTTP 404 for that repository. `C:\Users\nicho\Projects\ChurchEdge` is not mounted. Lint, build, routes, `.env.local`, migrations, and Supabase were not checked. The previously reported Supabase host was not rechecked. No application commit and no deploy.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/44
+- **Pickup record:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/45
+- **Blocker:** Add `King72315/churchedge` to this environment, or run the same read-only audit where that checkout exists. Do not start a repair from this result.
 
 ## Status log
 
@@ -77,3 +77,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
 | 2026-10-14 | Issue #44 assignment received. ChurchEdge audit started. No application files changed. |
+| 2026-10-14 | Issue #44 ChurchEdge audit stopped. `King72315/churchedge` returned HTTP 404 and is not mounted. No lint, build, route, env, or Supabase check. No application files changed. |
