@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: The Lab is live as a fourth phone tab. It stores its own copies and does not change picks, grades, or the archive. Production API deployment `b40a4c87`. Phone APK versionCode 47. Save point `PRE_THE_LAB_V1` remains in place.
+- Active task: The Lab now keeps the original Winner and Value Winner signals from the frozen prediction. Production API deployment `9ce24887`. Phone remains versionCode 47. Save point `PRE_THE_LAB_V1` remains in place. Picks and grades were not changed.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-14
@@ -61,9 +61,9 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-14
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The Lab is a fourth tab after History. Copy 1 is the frozen prematch snapshot and is written only after an official start. Copy 2 is the verified outcome, linked by the same prediction id. A later correction is stored on Copy 2 and does not change Copy 1. Six categories are stored separately: Winners, Value Winners, Aces, Break Points Won, Total Games, and Total Sets. A count without a real prematch line stays a projection and is not graded as a sportsbook bet. Signals that were not saved on the original pick are marked unavailable and are not reconstructed. October 14 picks are unchanged. There is no Lab GitHub issue, so this handoff is the report.
-- **Issue:** none for The Lab
-- **API deployment:** `b40a4c87` on service `tennisedge-api`
+- **Summary:** The Lab copies the six Winner model signals from the frozen feature vector: ranking, surface, recent form, serve and return, head-to-head, and rest. It also copies the Value Winner price, book, and odds time. Calculated outputs such as win probability and value edge are kept separate and are not marked correct because the pick won. Signals that were not on the original freeze stay unavailable. October 14 picks are unchanged. No new phone build.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/50
+- **API deployment:** `9ce24887` on service `tennisedge-api`
 - **Save point:** `PRE_THE_LAB_V1` at `forensics/pre-the-lab-v1`
 - **Phone:** https://expo.dev/artifacts/eas/jKSS_QkwaZb26Qq61ek0BLJhX9ByLzmYIGb2rblSwfY.apk
 
@@ -84,3 +84,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | Archive stays visible when History is hidden, and a later verified score updates the saved archive. Count markets are a separate record. Deployment `3d3aa4f4`. Picks unchanged. No APK. |
 | 2026-10-14 | PRE_THE_LAB_V1 saved and restore-verified before The Lab. Implementation has not started. No APK. |
 | 2026-10-14 | The Lab is live. API `b40a4c87`. Copies are separate from picks and the archive. APK versionCode 47. October 14 probabilities unchanged. |
+| 2026-10-14 | Issue #50: The Lab captures the frozen Winner and Value Winner signals. API `9ce24887`. No new APK. Picks, grades, and the archive are unchanged. |
