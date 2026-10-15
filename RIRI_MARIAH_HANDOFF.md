@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 stays open. The follow-up keeps the scientific program on the local TennisEdge workspace. This cloud run confirmed the running hybrid is still absent, left `d2a644b` unused, and made no checkpoint, source repair, or accuracy experiment. No metrics were produced, so there is no improvement claim. The local session still needs a new restorable checkpoint separate from `PRE_THE_LAB_V1`, a secrets-checked source-only sync if that push is safe, six-category baselines from frozen predictions and verified results, and scratch experiments. Report A waits on that checkpoint and those measurements. Pull request #59 remains the earlier cloud source check. October 15 card facts are unchanged: freeze `6b37e771`, API `996a7cdc`, no new APK.
+- **Summary:** Issue #57 stays open. The follow-up keeps the scientific program on the local TennisEdge workspace. This cloud run confirmed the running hybrid is still absent, left `d2a644b` unused, and made no checkpoint, source repair, or accuracy experiment. No metrics were produced, so there is no improvement claim. The local session still needs a new restorable checkpoint separate from `PRE_THE_LAB_V1`, a secrets-checked source-only sync if that push is safe, six-category baselines from frozen predictions and verified results, and scratch experiments. Report A waits on that checkpoint and those measurements. Pull request #59 remains the earlier cloud source check. This follow-up is recorded in pull request #61. October 15 card facts are unchanged: freeze `6b37e771`, API `996a7cdc`, no new APK.
 - **Issue:** #57
 - **API:** deployment `996a7cdc` (not reconfirmed on this run)
 
@@ -69,7 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
-| 2026-10-15 | Issue #57 follow-up: cloud hybrid still absent. Checkout, checkpoint, and experiments left for the local session. Research remains open. No accuracy claim. |
+| 2026-10-15 | Issue #57 follow-up: cloud hybrid still absent. Checkout, checkpoint, and experiments left for the local session. Research remains open. No accuracy claim. Report: pull request #61. |
 | 2026-10-15 | Issue #57 follow-up acknowledged. This cloud run will not repeat the unavailable hybrid checkout. The local TennisEdge session still owns the checkpoint, source sync, and experiments. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
 | 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
