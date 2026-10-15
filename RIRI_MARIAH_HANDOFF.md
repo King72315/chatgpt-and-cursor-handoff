@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: King directed the October 15 TennisEdge repair. The original Winner Top 6 now locks only after ranks are unique and match win probability, and ineligible matches are left out. Frozen seats are not replaced. The Lab measured the fixed total-sets baseline and did not change it. Value Winners now have prematch moneylines. API deployment `996a7cdc`. No new APK. Issue #56 remains complete.
+- Active task: Issue #57 TennisEdge scientific prediction research program. This cloud environment does not have the running Oct 5 hybrid at `var/d0de-app`, `forensics/pre-the-lab-v1`, Railway, database, or EAS credentials. The cloud TennisEdge checkout is `d2a644b` on `shadow-props-v1`. No new checkpoint, no experiments, and no TennisEdge commit. Public health at read time: slate `2026-10-15`, phase OFFICIAL, freeze `6b37e771`, store postgres. Health does not publish a deployment id, so `996a7cdc` was not reconfirmed. Continue on King's local Cursor. Issue #56 remains complete.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,14 +61,15 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King asked to protect the original Top 6, have The Lab measure the fixed total-sets baseline, supply Value Winner prices, then unfreeze and refresh 2026-10-15. There was no new GitHub issue. The premature Winner lock was cleared and the new gate locked Swiatek, Sakkari, Jodar, Paolini, Jović, and de Minaur. Paul is not in that six. Sakkari has finished, so she stays in the original six and is not replaced. The Lab counted 361 best-of-three matches: 37.7% reached a third set, against the published 35.6% baseline. The baseline was not changed. SportsGameOdds returned HTTP 403, so prematch moneylines were taken from The Odds API. Today's Value board has four priced picks. Official card hash `6b37e771` was not reminted. API `996a7cdc`. No new APK. The installed phone will show the new six and the value picks. The new Lab sentence and the empty-board price wording are in the app source for the next build.
-- **Issue:** none — direct request from King
-- **API:** deployment `996a7cdc`
+- **Summary:** Issue #57 Report A stopped in the cloud. The running app source is the local uncommitted Oct 5 hybrid at `var/d0de-app`. This environment's TennisEdge tree is commit `d2a644b` (`shadow-props-v1`) and has no `var/d0de-app`, no `forensics/pre-the-lab-v1`, and no Lab copy files from the Issue #50 local report. `RAILWAY_TOKEN`, `DATABASE_URL`, and `EXPO_TOKEN` are unset. No restorable pre-work checkpoint was created, and no six-category experiment was run, because that work has to happen on the real hybrid. A read-only health check shows slate `2026-10-15`, phase OFFICIAL, freeze `6b37e771`, store postgres, Winner model `tennisedge-winner-model-v2`. The health payload has no deployment id. `/today`, `/results`, `/history`, and `/value-winners` were not called. No TennisEdge commit and no deploy. Acknowledgment is pull request #58. The completion report is the linked pull request because issue comments are blocked.
+- **Issue:** #57
+- **API:** health freeze `6b37e771`; deployment id not reconfirmed
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report A: cloud source check failed. No `var/d0de-app`, no `PRE_THE_LAB_V1`, no credentials. Checkout `d2a644b`. Health freeze `6b37e771` OFFICIAL. No checkpoint, experiment, TennisEdge commit, or deploy. Continue on King's local Cursor. |
 | 2026-10-15 | Issue #57: assignment received. Issue comments are blocked for this integration, so the acknowledgment is in a pull request. Source-access verification is next. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
 | 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
