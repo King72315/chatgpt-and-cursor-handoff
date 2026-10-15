@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 Report B is posted. Held-out challengers for Winners, Total Games, and Total Sets failed. Value, Aces, and Break Points Won are inconclusive. A local VOID latch fix is not deployed. No frozen row was rewritten.
+- Active task: Issue #57 Report C is posted. The 60–65% band is described. A surface-disagreement revision is not an improvement. The joint sets/games model failed. Ace and break history is too thin to replace the current projection. Value stays inconclusive. The local VOID helper passed walkover, retirement, replacement, and delayed-final checks and is not proposed for release.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report B. Train before 2026-10-01, test from that date. Winner calibration failed on 237 test picks (Brier 0.221 to 0.224). Total Games bias correction and a set-mix constant both failed. A favorite-strength sets model failed against the fixed 2.4 baseline on 196 matches. Value has no pre-October training rows. Unique shadow joins score aces at MAE 3.00 and break points converted at MAE 1.36 on 69 matches, with no training window. A local results-merge fix lets a later verified win or loss replace a stuck VOID. It is not deployed, and stored grades were not rewritten. No challenger is ready for a forward shadow.
+- **Summary:** Issue #57 Report C. The 31 picks in the 60–65% band went 9–22. Surface ability disagreed on 14 of them and those went 0–14. A revision fit before October 8 lowered later full-board Brier and worsened top-6 Brier, so it is not an improvement. A joint deciding-set model failed (sets MAE 0.474 to 0.546, games MAE 5.06 to 6.17). Of 419 unmatched count projections, 94 match neither name, 220 match one name, 102 match both names on different fixtures, and 3 are unfinished only. On 18 thin history rows the stored ace and break projections beat a player-history mean. Value Brier difference is +0.003 with SE 0.030 on 32 picks. Local VOID checks passed. No production release is proposed.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report C. Band description posted. Joint model failed. Ace/break history baseline is thinner than the stored projection. VOID cases passed locally. No release proposed. |
 | 2026-10-15 | Issue #57 Report B. Held-out challengers failed or were inconclusive. Local VOID latch fix is not deployed. No frozen rewrite. |
 | 2026-10-15 | Issue #57 Report A. Checkpoint `PRE_ISSUE57_RESEARCH_V1` restore-checked. Six-category baseline measured. Sets format challenger failed. No deploy. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
