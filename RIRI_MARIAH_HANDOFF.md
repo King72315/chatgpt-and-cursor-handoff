@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue 53 pickup received. ChurchEdge native mobile migration assessment is read-only and has not finished. No application files have been changed.
+- Active task: Issue 53 stopped. `King72315/churchedge` is not readable in this session (HTTP 404). The native mobile migration assessment was not performed. No application files were read or changed. TennisEdge was not used as a substitute.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -34,6 +34,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 5. Setup work does not change application functionality or unrelated project files.
 6. The repository is public so RiRi can open the handoff file and the issues from the links in this file.
 7. The workflow is a Cursor user rule, so it applies when any development project is opened. It is not a background watcher. Mariah checks GitHub when a Cursor session starts.
+8. ChurchEdge work runs only when `King72315/churchedge` is readable, or when the local folder `C:\Users\nicho\Projects\ChurchEdge` is the open workspace. Do not substitute TennisEdge or another repository.
 
 ## How RiRi assigns a task
 
@@ -58,14 +59,14 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-14
+- **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The Lab copies the six Winner model signals from the frozen feature vector: ranking, surface, recent form, serve and return, head-to-head, and rest. It also copies the Value Winner price, book, and odds time. Calculated outputs such as win probability and value edge are kept separate and are not marked correct because the pick won. Signals that were not on the original freeze stay unavailable. October 14 picks are unchanged. No new phone build.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/50
-- **API deployment:** `9ce24887` on service `tennisedge-api`
-- **Save point:** `PRE_THE_LAB_V1` at `forensics/pre-the-lab-v1`
-- **Phone:** https://expo.dev/artifacts/eas/jKSS_QkwaZb26Qq61ek0BLJhX9ByLzmYIGb2rblSwfY.apk
+- **Summary:** Issue 53 stopped before any ChurchEdge inspection. This session cannot read `King72315/churchedge` (HTTP 404). The GitHub installation and the cloud environment both contain only the handoff repository and `tennisedge`. `C:\Users\nicho\Projects\ChurchEdge` is not mounted. No app files, database, or Supabase project were opened. The next step is the same read-only assessment from that local folder, after King approves it. Do not start a native build from this result.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/53
+- **Pickup acknowledgment:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/54
+- **Application repo:** `King72315/churchedge` (not readable)
+- **Local folder:** `C:\Users\nicho\Projects\ChurchEdge` (not mounted here)
 
 ## Status log
 
@@ -86,3 +87,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | The Lab is live. API `b40a4c87`. Copies are separate from picks and the archive. APK versionCode 47. October 14 probabilities unchanged. |
 | 2026-10-14 | Issue #50: The Lab captures the frozen Winner and Value Winner signals. API `9ce24887`. No new APK. Picks, grades, and the archive are unchanged. |
 | 2026-10-15 | Issue #53 pickup received. ChurchEdge native mobile migration assessment has not finished. No application files changed. |
+| 2026-10-15 | Issue #53 stopped. `King72315/churchedge` returned HTTP 404. No application files read or changed. Local read-only audit is the recommended next task. |
