@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: The Lab now keeps the original Winner and Value Winner signals from the frozen prediction. Production API deployment `9ce24887`. Phone remains versionCode 47. Save point `PRE_THE_LAB_V1` remains in place. Picks and grades were not changed.
+- Active task: Issue 53 pickup received. ChurchEdge native mobile migration assessment is read-only and has not finished. No application files have been changed.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-14
+- Last update: 2026-10-15
 
 ## Important decisions
 
@@ -85,3 +85,4 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 | 2026-10-14 | PRE_THE_LAB_V1 saved and restore-verified before The Lab. Implementation has not started. No APK. |
 | 2026-10-14 | The Lab is live. API `b40a4c87`. Copies are separate from picks and the archive. APK versionCode 47. October 14 probabilities unchanged. |
 | 2026-10-14 | Issue #50: The Lab captures the frozen Winner and Value Winner signals. API `9ce24887`. No new APK. Picks, grades, and the archive are unchanged. |
+| 2026-10-15 | Issue #53 pickup received. ChurchEdge native mobile migration assessment has not finished. No application files changed. |
