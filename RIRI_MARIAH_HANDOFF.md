@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: The Lab now keeps the original Winner and Value Winner signals from the frozen prediction. Production API deployment `9ce24887`. Phone remains versionCode 47. Save point `PRE_THE_LAB_V1` remains in place. Picks and grades were not changed.
+- Active task: Issue #56 complete — ChurchEdge native Expo Android **debug** APK built locally. JDK 17 + short `GRADLE_USER_HOME` configured on King's machine. Capacitor remains legacy. Live Supabase auth E2E still blocked. TennisEdge Lab status unchanged (`9ce24887`, phone versionCode 47).
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-14
+- Last update: 2026-10-15
 
 ## Important decisions
 
@@ -58,19 +58,19 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-14
+- **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The Lab copies the six Winner model signals from the frozen feature vector: ranking, surface, recent form, serve and return, head-to-head, and rest. It also copies the Value Winner price, book, and odds time. Calculated outputs such as win probability and value edge are kept separate and are not marked correct because the pick won. Signals that were not on the original freeze stay unavailable. October 14 picks are unchanged. No new phone build.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/50
-- **API deployment:** `9ce24887` on service `tennisedge-api`
-- **Save point:** `PRE_THE_LAB_V1` at `forensics/pre-the-lab-v1`
-- **Phone:** https://expo.dev/artifacts/eas/jKSS_QkwaZb26Qq61ek0BLJhX9ByLzmYIGb2rblSwfY.apk
+- **Summary:** Issue #56 — ChurchEdge first native Expo Android debug APK built. JDK/User env repaired (Microsoft JDK 17, `GRADLE_USER_HOME=C:\gradle`). APK at `C:\Users\nicho\Projects\ChurchEdge\dist-android\ChurchEdge-debug.apk` (62.43 MB, `com.churchedge.app`, arm64-v8a). Install via USB/`adb` only; no public host. Supabase E2E still blocked. TennisEdge unchanged.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/56
+- **ChurchEdge APK:** `C:\Users\nicho\Projects\ChurchEdge\dist-android\ChurchEdge-debug.apk`
+- **ChurchEdge report:** `docs/EXPO_DEBUG_APK_REPORT.txt` in King72315/churchedge workspace
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
 | 2026-10-12 | Saved the workflow as Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
