@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: King directed the October 15 TennisEdge repair. The original Winner Top 6 now locks only after ranks are unique and match win probability, and ineligible matches are left out. Frozen seats are not replaced. The Lab measured the fixed total-sets baseline and did not change it. Value Winners now have prematch moneylines. API deployment `996a7cdc`. No new APK. Issue #56 remains complete.
+- Active task: Issue #57 remains the TennisEdge research program. Report A is the local baseline. This cloud workspace still does not have the October 15 hybrid or checkpoint `PRE_ISSUE57_RESEARCH_V1`, so Report B was not run here and no accuracy claim was added. The October 15 repair stays as recorded: Winner Top 6 locks only after ranks are unique and match win probability, ineligible matches stay out, and frozen seats are not replaced. The Lab measured the fixed total-sets baseline and did not change it. Value Winners have prematch moneylines. API deployment `996a7cdc`. No new APK. Issue #56 remains complete.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,14 +61,16 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** King asked to protect the original Top 6, have The Lab measure the fixed total-sets baseline, supply Value Winner prices, then unfreeze and refresh 2026-10-15. There was no new GitHub issue. The premature Winner lock was cleared and the new gate locked Swiatek, Sakkari, Jodar, Paolini, Jović, and de Minaur. Paul is not in that six. Sakkari has finished, so she stays in the original six and is not replaced. The Lab counted 361 best-of-three matches: 37.7% reached a third set, against the published 35.6% baseline. The baseline was not changed. SportsGameOdds returned HTTP 403, so prematch moneylines were taken from The Odds API. Today's Value board has four priced picks. Official card hash `6b37e771` was not reminted. API `996a7cdc`. No new APK. The installed phone will show the new six and the value picks. The new Lab sentence and the empty-board price wording are in the app source for the next build.
-- **Issue:** none — direct request from King
-- **API:** deployment `996a7cdc`
+- **Summary:** Issue #57 Report A was reviewed. The local October 15 hybrid and checkpoint `PRE_ISSUE57_RESEARCH_V1` are not in this cloud workspace. TennisEdge here is still `d2a644b`. No second research job was started. No production engine, frozen prediction, or archive was changed. Report B stays with the local session that already holds that checkpoint. No accuracy improvement is claimed.
+- **Issue:** #57
+- **Blocker:** cloud checkout has no `var/d0de-app` and no `PRE_ISSUE57_RESEARCH_V1`
+- **Acknowledgment:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/62
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report A review: cloud workspace still has no October 15 hybrid or `PRE_ISSUE57_RESEARCH_V1`. No Report B experiment was run. TennisEdge stayed `d2a644b`. Acknowledgment PR #62. |
 | 2026-10-15 | Issue #57 Report A review acknowledged. This cloud run will not start a second research job. The local session still owns Report B on the October 15 hybrid and checkpoint PRE_ISSUE57_RESEARCH_V1. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
 | 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
