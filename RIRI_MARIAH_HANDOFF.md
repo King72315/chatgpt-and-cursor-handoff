@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 Report D is posted. The 60–65% surface flag is the overall hold/break term, because October cards have no court. A same-weights court rebuild could not be scored. Ace name repair did not lower error. Sets and games challengers had no pre-October training rows. No formula change and no deploy.
+- Active task: Issue #57 Report E is posted. Profile snapshots store a court, and that court is not verified against an independent result. Stat matching did not improve ace error. A local missing-data alert was added and its checks passed. No accuracy gain and no deploy.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report D. The surface-ability term is a frozen logit input. When the odds row has no court, October matches use an overall hold/break blend, which is the signal behind the 0–14 band. The court was not saved on those cards, the history warehouse ends 2026-09-06, and a same-weights rebuild was not scored. Future vectors record the court actually used. The games snapshot no longer discards a court when one is present. A broader ace name match raised unique fixtures from 55 to 65 and did not lower ace error. Sets MAE stays 0.474 on 192 matches. No formula change.
+- **Summary:** Issue #57 Report E. No verified court source for the Winner engine. Profile snapshots store Hard or Clay on 522 of 532 rows, but those dates do not overlap the history warehouse, so the court is unverified. The research stat match did not lower ace error. A local missing-data alert now flags a missing court, a missing or duplicate stat match, and a missing actual, and its checks passed. It does not change a prediction. No category beat its baseline.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,7 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
-| 2026-10-15 | Issue #57 Report D. Surface term traced to a missing court. Local court stamp added for future mints. No formula change. |
+| 2026-10-15 | Issue #57 Report E. Profile court is unverified. Stat match did not improve. Local missing-data alert tested. No accuracy gain. |
 | 2026-10-15 | Issue #57 Report B. Held-out challengers failed or were inconclusive. Local VOID latch fix is not deployed. No frozen rewrite. |
 | 2026-10-15 | Issue #57 Report A. Checkpoint `PRE_ISSUE57_RESEARCH_V1` restore-checked. Six-category baseline measured. Sets format challenger failed. No deploy. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
