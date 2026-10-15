@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57. Report A is posted. The local hybrid matches Railway deployment `996a7cdc`. A new checkpoint, `PRE_ISSUE57_RESEARCH_V1`, restored in scratch. Six-category baselines are measured. No production write and no engine change. `PRE_THE_LAB_V1` was left as it was.
+- Active task: Issue #57 Report B is posted. Held-out challengers for Winners, Total Games, and Total Sets failed. Value, Aces, and Break Points Won are inconclusive. A local VOID latch fix is not deployed. No frozen row was rewritten.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report A. The local `var/d0de-app` hybrid matches live deployment `996a7cdc` on the runtime files that were hashed. Checkpoint `forensics/pre-issue57-research-v1` has the source archive and an 8,253-row database export. Scratch restore matched. Frozen cards were not rewritten. Winner baseline is 269-156 (63.3%, Brier 0.221) on 425 decisions. The 0.60–0.65 band hit 46.7% against a 62.6% average probability. October 6 did not break the hit rate; Brier went from 0.216 to 0.233. Value Winners are 18-14 on 32 decisions, Brier 0.280 versus 0.277 for the saved market probability. Aces and Break Points Won have projections and no stored actuals, so they are inconclusive. Total Games projection MAE is 5.43 games on 375 matches. Total Sets is the constant 2.4 / 64.4% / 35.6% on 479 packets. A format-only walk-forward challenger failed (test 341). Paolini–Kartal is rank 4 at probability 0.637 on both boards, with start timestamps three hours apart.
+- **Summary:** Issue #57 Report B. Train before 2026-10-01, test from that date. Winner calibration failed on 237 test picks (Brier 0.221 to 0.224). Total Games bias correction and a set-mix constant both failed. A favorite-strength sets model failed against the fixed 2.4 baseline on 196 matches. Value has no pre-October training rows. Unique shadow joins score aces at MAE 3.00 and break points converted at MAE 1.36 on 69 matches, with no training window. A local results-merge fix lets a later verified win or loss replace a stuck VOID. It is not deployed, and stored grades were not rewritten. No challenger is ready for a forward shadow.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report B. Held-out challengers failed or were inconclusive. Local VOID latch fix is not deployed. No frozen rewrite. |
 | 2026-10-15 | Issue #57 Report A. Checkpoint `PRE_ISSUE57_RESEARCH_V1` restore-checked. Six-category baseline measured. Sets format challenger failed. No deploy. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
 | 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
