@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report A stopped in the cloud. The running app source is the local uncommitted Oct 5 hybrid at `var/d0de-app`. This environment's TennisEdge tree is commit `d2a644b` (`shadow-props-v1`) and has no `var/d0de-app`, no `forensics/pre-the-lab-v1`, and no Lab copy files from the Issue #50 local report. `RAILWAY_TOKEN`, `DATABASE_URL`, and `EXPO_TOKEN` are unset. No restorable pre-work checkpoint was created, and no six-category experiment was run, because that work has to happen on the real hybrid. A read-only health check shows slate `2026-10-15`, phase OFFICIAL, freeze `6b37e771`, store postgres, Winner model `tennisedge-winner-model-v2`. The health payload has no deployment id. `/today`, `/results`, `/history`, and `/value-winners` were not called. No TennisEdge commit and no deploy. Acknowledgment is pull request #58. The completion report is the linked pull request because issue comments are blocked.
+- **Summary:** Issue #57 Report A stopped in the cloud. The running app source is the local uncommitted Oct 5 hybrid at `var/d0de-app`. This environment's TennisEdge tree is commit `d2a644b` (`shadow-props-v1`) and has no `var/d0de-app`, no `forensics/pre-the-lab-v1`, and no Lab copy files from the Issue #50 local report. `RAILWAY_TOKEN`, `DATABASE_URL`, and `EXPO_TOKEN` are unset. No restorable pre-work checkpoint was created, and no six-category experiment was run, because that work has to happen on the real hybrid. A read-only health check shows slate `2026-10-15`, phase OFFICIAL, freeze `6b37e771`, store postgres, Winner model `tennisedge-winner-model-v2`. The health payload has no deployment id. `/today`, `/results`, `/history`, and `/value-winners` were not called. No TennisEdge commit and no deploy. Acknowledgment is pull request #58. Completion report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/59. Issue comments are blocked.
 - **Issue:** #57
 - **API:** health freeze `6b37e771`; deployment id not reconfirmed
 
@@ -69,7 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
-| 2026-10-15 | Issue #57 Report A: cloud source check failed. No `var/d0de-app`, no `PRE_THE_LAB_V1`, no credentials. Checkout `d2a644b`. Health freeze `6b37e771` OFFICIAL. No checkpoint, experiment, TennisEdge commit, or deploy. Continue on King's local Cursor. |
+| 2026-10-15 | Issue #57 Report A: cloud source check failed. No `var/d0de-app`, no `PRE_THE_LAB_V1`, no credentials. Checkout `d2a644b`. Health freeze `6b37e771` OFFICIAL. No checkpoint, experiment, TennisEdge commit, or deploy. Report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/59. Continue on King's local Cursor. |
 | 2026-10-15 | Issue #57: assignment received. Issue comments are blocked for this integration, so the acknowledgment is in a pull request. Source-access verification is next. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
 | 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
