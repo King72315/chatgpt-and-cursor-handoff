@@ -65,6 +65,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Summary:** Issue #64 is BLOCKED. The authentic local hybrid `var/d0de-app` is not mounted here. No grading, History Reset, or Lab work was done. Remote git HEAD `d2a644b` was not substituted. No deploy.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/64
 - **Acknowledgment:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/65
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/66
 - **Access needed:** King's local Cursor workspace that already contains `var/d0de-app`.
 
 ## Status log
