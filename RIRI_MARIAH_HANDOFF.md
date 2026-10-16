@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 Report G is posted. A six-seat rank-agreement comparison lists the published seats it would replace. The only later equal-six swap is October 11, net +1 win on three seats, with a void still on the board. No slate after 2026-10-15 is in the checkpoint. The fixed Top 6 is still 117–36. No deploy.
+- Active task: Issue #57 Report H is posted. September 25 rank 1 at 58.2% versus rank 9 at 80.3% is the saved reliability key, from one freeze, with Rublev eligible. October 11 de Minaur and Hurkacz are different matches. Seat probabilities fall from rank 1 to rank 6. The model was not changed. Top 6 remains 117–36. No deploy.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report G. The six-seat rank-agreement fill would replace three September 25 seats (all losses, before the evaluation window) and three October 11 seats (net +1 win). October 15 would replace de Minaur's loss with a void, so that slate is not scored. Fourteen of seventeen unique sixes stay the same. No match after 2026-10-15 is available, so the unseen test is not scored. Top 6 remains 117–36. No deploy.
+- **Summary:** Issue #57 Report H. Tabilo at 58.2% outranks Rublev at 80.3% because the September 25 card used the reliability ranking key at one freeze time. Rublev was eligible. De Minaur and Hurkacz on October 11 are different matches, and that card's seat numbers do not follow its saved probabilities. Ranks 1 through 6 are 26–8, 23–7, 22–2, 18–6, 17–6, and 11–7. The model was not changed.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report H. September 25 inversion is the reliability key. October 11 seats are different matches and are not in probability order. Model unchanged. |
 | 2026-10-15 | Issue #57 Report G. Six-seat rank-agreement swaps listed. Later equal-six result is October 11, net +1. Unseen slate count is zero. Top 6 still 117–36. No deploy. |
 | 2026-10-15 | Issue #57 Report F. Data-health alerts wired locally into mint, results, Home, and Results. Top 6 still 117–36. Elo blocked. No accuracy gain. No deploy. |
 | 2026-10-15 | Issue #57 Report E. Profile court is unverified. Stat match did not improve. Local missing-data alert tested. No accuracy gain. |
