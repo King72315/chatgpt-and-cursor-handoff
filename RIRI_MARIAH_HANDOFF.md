@@ -20,7 +20,8 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 is deployed. October 16 was reminted on that API. New freeze `eaf4c25f`. October 15 freeze `6b37e771` is unchanged. Deployment remains `281d5f80`. No new APK.
+- Active task: Issue #64 is BLOCKED. The local hybrid `var/d0de-app` is not in this cloud workspace. Remote TennisEdge `d2a644b` was not used. No grading, History Reset, or Lab change. No deploy.
+- Last finished product work: Issue #57 is deployed. October 16 was reminted on that API. Freeze `eaf4c25f`. October 15 freeze `6b37e771` is unchanged. Deployment remains `281d5f80`. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-16
@@ -61,14 +62,18 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-16
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** October 16 was unfrozen and rebuilt on the live API. Freeze `8913c9ef` is now `eaf4c25f`. October 15 stays `6b37e771`. Top Props seats are the same three. Svitolina left the winner and value boards because that match had started. No new APK.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
-- **API:** deployment `281d5f80-25dc-46b6-aa6e-59bfe08ee317`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
+- **Summary:** Issue #64 is BLOCKED. The authentic local hybrid `var/d0de-app` is not mounted here. No grading, History Reset, or Lab work was done. Remote git HEAD `d2a644b` was not substituted. No deploy.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/64
+- **Acknowledgment:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/65
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/66
+- **Access needed:** King's local Cursor workspace that already contains `var/d0de-app`.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-16 | Issue #64 BLOCKED. `var/d0de-app` is not mounted. TennisEdge `d2a644b` was not substituted. No grading, History, or Lab changes. No deploy. |
+| 2026-10-16 | Issue #64 assignment received. Grading, History Reset, and Lab audit. Local hybrid `var/d0de-app` required. No application changes yet. |
 | 2026-10-16 | October 16 reminted on API `281d5f80`. Freeze `eaf4c25f`. October 15 freeze `6b37e771` unchanged. No new APK. |
 | 2026-10-16 | Issue #57 deployed. API `281d5f80`. October 15 freeze `6b37e771` still public. Save point ISSUE57_PRE_DEPLOY_2026-10-15_CT. No new APK. |
 | 2026-10-15 | Issue #57 surface audit. `get_draw` `tournament_surface` is Hard for all 10 frozen October 15 matches. Not saved on the freeze. No deploy. |
