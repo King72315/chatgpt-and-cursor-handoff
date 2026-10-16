@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 release is BLOCKED. Save point ISSUE57_PRE_RELEASE_2026-10-15_CT verified 8,272 database rows and freeze 6b37e771. Production was not deployed. The local tree still mixes the VOID latch with data health, and the alert ledger is a local file.
+- Active task: Issue #57 release stays BLOCKED. A read-only surface audit found `get_draw` `tournament_surface` (Wuhan and Shanghai both Hard for all 10 frozen 2026-10-15 matches). That field was not saved at the freeze and is not deployed. Production is still deployment `996a7cdc`. Freeze `6b37e771`.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 release blocked after the save point. ISSUE57_PRE_RELEASE_2026-10-15_CT restored 8,272 rows and the October 15 six. Freeze 6b37e771 matches public health. Deploy did not run because the VOID latch is mixed into the local server and the data-health ledger would not survive a Railway restart.
+- **Summary:** Issue #57 surface audit. API-Tennis `get_draw` returns `tournament_surface`. All 10 frozen October 15 matches resolve to Hard (Wuhan 2236 or Shanghai 1667). `get_fixtures` has no surface. The Svitolina comparison fixture is Hanyu Guo, not a returned Hanwen Guo. Nothing was written back to the frozen card. Release stays blocked.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 surface audit. `get_draw` `tournament_surface` is Hard for all 10 frozen October 15 matches. Not saved on the freeze. No deploy. |
 | 2026-10-15 | Issue #57 release blocked. Save point ISSUE57_PRE_RELEASE_2026-10-15_CT verified. Production not deployed. |
 | 2026-10-15 | Issue #57 Report H. September 25 inversion is the reliability key. October 11 seats are different matches and are not in probability order. Model unchanged. |
 | 2026-10-15 | Issue #57 Report G. Six-seat rank-agreement swaps listed. Later equal-six result is October 11, net +1. Unseen slate count is zero. Top 6 still 117–36. No deploy. |
