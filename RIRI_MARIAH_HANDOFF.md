@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 release stays BLOCKED. A read-only surface audit found `get_draw` `tournament_surface` (Wuhan and Shanghai both Hard for all 10 frozen 2026-10-15 matches). That field was not saved at the freeze and is not deployed. Production is still deployment `996a7cdc`. Freeze `6b37e771`.
+- Active task: Issue #57 is deployed. Save point ISSUE57_PRE_DEPLOY_2026-10-15_CT verified 8,319 rows and October 15 freeze `6b37e771`. Production API deployment `281d5f80-25dc-46b6-aa6e-59bfe08ee317` is SUCCESS. Rollback image remains `996a7cdc`. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-15
+- Last update: 2026-10-16
 
 ## Important decisions
 
@@ -58,17 +58,18 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-15
+- **Date:** 2026-10-16
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 surface audit. API-Tennis `get_draw` returns `tournament_surface`. All 10 frozen October 15 matches resolve to Hard (Wuhan 2236 or Shanghai 1667). `get_fixtures` has no surface. The Svitolina comparison fixture is Hanyu Guo, not a returned Hanwen Guo. Nothing was written back to the frozen card. Release stays blocked.
+- **Summary:** Issue #57 saved and deployed. Checkpoint ISSUE57_PRE_DEPLOY_2026-10-15_CT restored 8,319 rows. API deployment `281d5f80` is SUCCESS. October 15 public freeze remains `6b37e771`. Data health is on the live API. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
-- **API:** deployment `996a7cdc` unchanged
+- **API:** deployment `281d5f80-25dc-46b6-aa6e-59bfe08ee317`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-16 | Issue #57 deployed. API `281d5f80`. October 15 freeze `6b37e771` still public. Save point ISSUE57_PRE_DEPLOY_2026-10-15_CT. No new APK. |
 | 2026-10-15 | Issue #57 surface audit. `get_draw` `tournament_surface` is Hard for all 10 frozen October 15 matches. Not saved on the freeze. No deploy. |
 | 2026-10-15 | Issue #57 release blocked. Save point ISSUE57_PRE_RELEASE_2026-10-15_CT verified. Production not deployed. |
 | 2026-10-15 | Issue #57 Report H. September 25 inversion is the reliability key. October 11 seats are different matches and are not in probability order. Model unchanged. |
