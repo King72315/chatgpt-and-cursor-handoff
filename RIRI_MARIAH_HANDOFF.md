@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 Report F is posted. Data-health alerts now run on the local mint, results save, and the Home and Results screens. They do not change a pick. The fixed Top 6 is still 117–36 (76.5%). As-of-freeze Elo is blocked because the history warehouse ends 2026-09-06. No accuracy gain and no deploy.
+- Active task: Issue #57 Report G is posted. A six-seat rank-agreement comparison lists the published seats it would replace. The only later equal-six swap is October 11, net +1 win on three seats, with a void still on the board. No slate after 2026-10-15 is in the checkpoint. The fixed Top 6 is still 117–36. No deploy.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report F. The local data-health ledger now records a missing court, start, provider id, quote pair, stat match, and empty slate, then resolves when a later snapshot supplies the field. Home and Results can show the alert. A restart keeps the first-seen Chicago time and the original Top 6 seats. The 36 Top 6 losses were tabled with the 117 wins as the control. Eighteen losses were saved at 70% or higher. Elo and a market ranker are blocked by stale history and missing winner prices. Shared ace and break-point rows did not improve. No deploy.
+- **Summary:** Issue #57 Report G. The six-seat rank-agreement fill would replace three September 25 seats (all losses, before the evaluation window) and three October 11 seats (net +1 win). October 15 would replace de Minaur's loss with a void, so that slate is not scored. Fourteen of seventeen unique sixes stay the same. No match after 2026-10-15 is available, so the unseen test is not scored. Top 6 remains 117–36. No deploy.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report G. Six-seat rank-agreement swaps listed. Later equal-six result is October 11, net +1. Unseen slate count is zero. Top 6 still 117–36. No deploy. |
 | 2026-10-15 | Issue #57 Report F. Data-health alerts wired locally into mint, results, Home, and Results. Top 6 still 117–36. Elo blocked. No accuracy gain. No deploy. |
 | 2026-10-15 | Issue #57 Report E. Profile court is unverified. Stat match did not improve. Local missing-data alert tested. No accuracy gain. |
 | 2026-10-15 | Issue #57 Report B. Held-out challengers failed or were inconclusive. Local VOID latch fix is not deployed. No frozen rewrite. |
