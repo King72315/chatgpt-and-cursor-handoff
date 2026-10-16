@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 Report E is posted. Profile snapshots store a court, and that court is not verified against an independent result. Stat matching did not improve ace error. A local missing-data alert was added and its checks passed. No accuracy gain and no deploy.
+- Active task: Issue #57 Report F is posted. Data-health alerts now run on the local mint, results save, and the Home and Results screens. They do not change a pick. The fixed Top 6 is still 117–36 (76.5%). As-of-freeze Elo is blocked because the history warehouse ends 2026-09-06. No accuracy gain and no deploy.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-15
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-15
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #57 Report E. No verified court source for the Winner engine. Profile snapshots store Hard or Clay on 522 of 532 rows, but those dates do not overlap the history warehouse, so the court is unverified. The research stat match did not lower ace error. A local missing-data alert now flags a missing court, a missing or duplicate stat match, and a missing actual, and its checks passed. It does not change a prediction. No category beat its baseline.
+- **Summary:** Issue #57 Report F. The local data-health ledger now records a missing court, start, provider id, quote pair, stat match, and empty slate, then resolves when a later snapshot supplies the field. Home and Results can show the alert. A restart keeps the first-seen Chicago time and the original Top 6 seats. The 36 Top 6 losses were tabled with the 117 wins as the control. Eighteen losses were saved at 70% or higher. Elo and a market ranker are blocked by stale history and missing winner prices. Shared ace and break-point rows did not improve. No deploy.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
 - **API:** deployment `996a7cdc` unchanged
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-15 | Issue #57 Report F. Data-health alerts wired locally into mint, results, Home, and Results. Top 6 still 117–36. Elo blocked. No accuracy gain. No deploy. |
 | 2026-10-15 | Issue #57 Report E. Profile court is unverified. Stat match did not improve. Local missing-data alert tested. No accuracy gain. |
 | 2026-10-15 | Issue #57 Report B. Held-out challengers failed or were inconclusive. Local VOID latch fix is not deployed. No frozen rewrite. |
 | 2026-10-15 | Issue #57 Report A. Checkpoint `PRE_ISSUE57_RESEARCH_V1` restore-checked. Six-category baseline measured. Sets format challenger failed. No deploy. |
