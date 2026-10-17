@@ -88,6 +88,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #81 assignment received. Implementation and verification for King72315/tennisedge is starting. Issue comments returned HTTP 403, so the acknowledgment is a pull request. |
 | 2026-10-17 | Review on pull request #76 requested `correction-ok` and removal of the workflow edit. Continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` completed that correction. Follow-ups used: 1 of 2. Reserved estimate: 100 cents. Acceptance is not posted yet. |
 | 2026-10-17 | Issue #75 completion pull request #76 is labeled handoff-review. Continuation secret CURSOR_API_KEY is set. Cloud agent bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93 finished its first run. |
 | 2026-10-17 | Completion pull requests labeled handoff-review are the ChatGPT trigger. The gateway no longer treats its packet as the review. A correction calls the continuation API, at most twice, and stops at an estimated 200 cents. Tests: 25 passed. |
