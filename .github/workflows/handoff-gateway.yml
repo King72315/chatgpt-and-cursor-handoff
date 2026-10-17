@@ -53,6 +53,8 @@ jobs:
       INPUT_SCOPE: ${{ github.event.inputs.scope }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: master
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -71,7 +73,7 @@ jobs:
               return 0
             fi
             git commit -m "Record handoff gateway state."
-            if git pull --rebase origin master && git push; then
+            if git pull --rebase origin master && git push origin HEAD:master; then
               return 0
             fi
             return 1
