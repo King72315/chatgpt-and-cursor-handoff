@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #70 underdog gate is live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: The RiRi–Mariah gateway now records assignments, reports, reviews, and at most two in-scope follow-ups on the handoff issue. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -34,6 +34,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 5. Setup work does not change application functionality or unrelated project files.
 6. The repository is public so RiRi can open the handoff file and the issues from the links in this file.
 7. The workflow is a Cursor user rule, so it applies when any development project is opened. It is not a background watcher. Mariah checks GitHub when a Cursor session starts.
+8. The saved Cursor automation `RiRi to Mariah Handoff` remains the only paid pickup. It runs only when King72315 posts a new issue comment containing the assignment keyword. The Handoff gateway GitHub Action records the cycle, publishes RiRi's review packet, and routes at most two in-scope follow-ups. It does not post that keyword and it does not start a cloud agent.
 
 ## How RiRi assigns a task
 
@@ -56,19 +57,34 @@ Comment on the same issue with:
 
 Then update **Current project status**, **Latest handoff**, and **Status log** in this file and push.
 
+## Communication gateway
+
+States: `AUTHORIZED`, `ASSIGNED`, `ACKNOWLEDGED`, `WORKING`, `REPORT_RECEIVED`, `REVIEWED`, `COMPLETED`, `BLOCKED`, `AWAITING_OWNER_APPROVAL`, `FAILED`.
+
+The record is `gateway/ledger.json` plus the gateway comments on the issue. Each GitHub delivery is applied once.
+
+RiRi sends an in-scope follow-up as a new comment on the same issue with the heading `## Follow-up`. Do not include the assignment keyword. The gateway routes at most two. A third follow-up, or a deployment, destructive action, spending or billing change, or expanded scope that the original issue did not allow, stops at `AWAITING_OWNER_APPROVAL`.
+
+Mariah's report uses these headings: Work completed, Tests and evidence, Blockers, Changes made, Deployment status, Owner decision required. Name the issue and the application repository. The gateway then posts `## RiRi review packet` on that issue.
+
+King closes a reviewed cycle with a comment that starts `Review complete`. A new paid run still requires a new comment with the assignment keyword. That is a fresh authorization, not an automatic follow-up.
+
+ChatGPT does not receive a push from GitHub. RiRi reviews the packet by opening the issue. The hourly gateway recovery reruns missed events without a second agent.
+
 ## Latest handoff
 
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Future Value freezes now require a same-book plus-money underdog. October 17's active Value board shows Ostapenko #1 only. Medvedev's frozen row, original seat, and readable archive remain. The Winners board was not changed.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/70
-- **API:** deployment `2c0c9b2c-1ac9-4b14-ac04-deab6ea28881`. Rollback `27f01c66-6e06-410d-9d39-a96884566c12`
+- **Summary:** The existing handoff now records a two-way cycle on the GitHub issue. A simulated assignment, a live report, the review packet, and two routed follow-ups are on issue #73. The hourly recovery path ran twice. The second run did not change the record or start an agent.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/73
+- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only paid pickup.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Handoff gateway is live. Issue #73 has the simulated assignment, review packet, and follow-ups 1 and 2. Recovery run `39031563215` made no second change. No new cloud agent. No application deploy. |
 | 2026-10-17 | Issue #70 deployed underdog gate as `2c0c9b2c`. October 17 active Value board is Ostapenko #1. Medvedev's frozen row kept. Winners board unchanged. No new APK. |
 | 2026-10-17 | Issue #70. Eighteen published Value Winners were sportsbook favorites. Local underdog gate tested. October 17 not reminted. Not deployed. |
 | 2026-10-17 | Issue #67 deployed ranking repair as `27f01c66`. October 17 unstarted winners renumbered to #1–#3. Freeze `7db7949a` kept. History cutoff unchanged. No new APK. |
