@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #70 assignment received. Value Winners underdog-only eligibility audit and local repair. Work starting. Existing frozen slates stay unchanged until the audit finishes. |
 | 2026-10-17 | History stays cleared through 2026-10-16. Local Top 6 repair ranks only admitted matches. October 17 freeze `7db7949a` was not regenerated. Not deployed. No new APK. |
 | 2026-10-17 | Issue #64 History archived, then hidden through 2026-10-16. Public History is 0-0-0. Lab remains. Freezes unchanged. No new APK. |
 | 2026-10-16 | Issue #64 local audit. Completed scores settle ahead of VOID. History Reset no longer fails silently. Not deployed. No new APK. |
