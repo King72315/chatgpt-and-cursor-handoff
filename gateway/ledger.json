@@ -181,6 +181,26 @@
       "issueNumber": 81,
       "reason": "review-parked",
       "at": "2026-10-17T14:38:36Z"
+    },
+    "issue_comment:6234940045": {
+      "issueNumber": 77,
+      "reason": "gateway-message",
+      "at": "2026-10-17T14:14:01Z"
+    },
+    "pull_request:83:opened": {
+      "issueNumber": 81,
+      "reason": "blocked",
+      "at": "2026-10-17T14:15:06Z"
+    },
+    "issue_comment:6234954053": {
+      "issueNumber": 81,
+      "reason": "gateway-message",
+      "at": "2026-10-17T14:15:14Z"
+    },
+    "issue_comment:6234957041": {
+      "issueNumber": 81,
+      "reason": "gateway-message",
+      "at": "2026-10-17T14:15:30Z"
     }
   },
   "issues": {
@@ -706,7 +726,7 @@
     "81": {
       "issueNumber": 81,
       "generation": 1,
-      "state": "ASSIGNED",
+      "state": "BLOCKED",
       "simulatedAssignment": false,
       "projectRepository": "King72315/tennisedge",
       "approvedScope": "riri-assign\n\nMariah — King authorizes the implementation and verification program in Issue #81. Begin now and continue in scope without asking again for the same repair authorization. Project repository: King72315/tennisedge. Verify authentic var/d0de-app source access first; RiRi's GitHub app-repository read returned 404, and prior local-only reports are not evidence of cloud access. Do not substitute stale code. If unavailable, report the exact local-access blocker on this issue and the labeled handoff-review PR; do all independent authorized analysis you can.\n\nRepair grading and durable actuals for Winners, Value Winners, Aces, Break Points Won, Total Games/Total Sets; correct ranking; then test Top 6 accuracy improvements with valid unseen-match evidence. Use PR #80 failures as regression cases. Keep original freezes, predictions and audit history. Follow the complete issue's tests and boundaries, including the existing release gate. This is the one active consolidated repair assignment, not a new parallel copy of the older research work. Return substantive staged evidence through the completion PR with your real cloud agent URL for RiRi review and continuation.",
@@ -716,14 +736,38 @@
       "followUpLimit": 2,
       "continuationSpendCents": 0,
       "continuationSpendLimitCents": 200,
-      "agentId": null,
-      "completionPullRequest": null,
+      "agentId": "bc-70eb1272-707f-49bf-aa19-03b30dfc06fc",
+      "completionPullRequest": 83,
       "pendingContinuation": null,
       "continuations": [],
       "ownerDecisionRequired": false,
       "duplicateTriggerIds": [],
-      "agentRuns": [],
-      "reports": [],
+      "agentRuns": [
+        {
+          "role": "report",
+          "actor": "cursor[bot]",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/83",
+          "agentId": "bc-70eb1272-707f-49bf-aa19-03b30dfc06fc",
+          "deliveryId": "pull_request:83:opened"
+        }
+      ],
+      "reports": [
+        {
+          "deliveryId": "pull_request:83:opened",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/83",
+          "actor": "cursor[bot]",
+          "pullRequestNumber": 83,
+          "sections": {
+            "workCompleted": "Issue #81, application repository King72315/tennisedge. Authentic source access was checked before any repair. `var/d0de-app` is not mounted in cloud environment `handoff-and-tennisedge` (`e7fa4ade-c629-11f1-ac31-5e2d0494121f`). A filesystem search found no `d0de-app` directory. GitHub `King72315/tennisedge` is readable at `d2a644bedea72709429c9db2fc2779191639a2cb` on `shadow-props-v1`. `d0de8bb1` is not a commit in that repository. That checkout was not used as a substitute.\n\nIndependent read-only baseline of the published October 17 slate is in `reports/issue-81-checkpoint-a.md`. Freeze `7db7949a` remains the health freeze and is absent from the archive body. The three original Winner seats are still Ostapenko, Swiatek, and Medvedev.",
+            "tests": "Production calls were limited to `GET /api/tennisedge/mobile/v1/health` at `2026-10-17T14:11:49Z` and `GET /api/tennisedge/mobile/v1/winners-archive`. `/today`, `/results`, `/history`, and `/value-winners` were not called.\n\nHealth: slate `2026-10-17`, OFFICIAL, freeze `7db7949a`, store postgres, self-check PASS. Shadow last run `2026-10-17T14:04:29.472Z`, ace freezes 0, total-games freezes 3.\n\nArchive sha256 `2639a3770cf8d72de14cea0a2ac3a866c9fbb8da18d881887836320088c3b24b`, 7,071,516 bytes, 40 packets. October 17 JSON lifecycle is `FINAL_LOSS` for all three seats. Readable text still says `FINAL_WIN` for Ostapenko and Swiatek while the text grade is LOSS. Aces and break-point actuals are null. Text prints line `0` where the screen package says the line is unavailable. Total-games JSON grades are WIN, LOSS, LOSS for actuals 26, 19, and 19. Value `winnerRank` values are 2 and 4 against Winner ranks 1 and 3. Medvedev's stored price 1.51 is shorter than Jodar's 2.59 and remains inside the value summary of 0-2.\n\nPR #80 regressions that are still present in the archive: missing ace and break-point actuals, value rank mismatch, favorite value row, and winner-point tiebreak text `7/6(11) - 7/6(7)`. `OVER CLINCHED` and `NOT_STARTED` are not in the archive and were not re-read from the live screens.\n\nLane checklist: Winners, Value Winners, Aces, Break Points Won, Total Games, Total Sets, and ranking are not verified as repaired. Top 6 accuracy work was not started. No known misgrade is marked fixed.",
+            "blockers": "The authentic local hybrid `var/d0de-app` is unavailable. Missing paths include `/var/d0de-app`, `/agent/var/d0de-app`, `/agent/repos/tennisedge/var/d0de-app`, `/home/ubuntu/d0de-app`, `/opt/d0de-app`, and `/tmp/d0de-app`. `RAILWAY_TOKEN`, `DATABASE_URL`, and `EXPO_TOKEN` are unset. Railway and EAS CLIs are not installed. `scripts/winner-admission-before-rank-v1.mjs` is absent. Issue comments return HTTP 403, so this pull request is the report.\n\nA continuation run on this same cloud agent cannot implement the repair until that tree is mounted. Another paid cloud run against this environment would repeat the same missing-source stop.",
+            "changes": "Handoff repository only: `reports/issue-81-checkpoint-a.md` and `RIRI_MARIAH_HANDOFF.md`. No TennisEdge application, database, freeze, or deployment change. Pickup acknowledgment is pull request #82.",
+            "deployment": "Not deployed. Freeze `7db7949a` unchanged. No new APK. No production grade rewrite.",
+            "ownerDecision": "The repair authorization still stands. No deployment, spending, or scope change is requested. Implementation continues on the machine that has `var/d0de-app`. This cloud environment should not be sent back to implement against `d2a644b`.\n\n\n<div><a href=\"https://cursor.com/agents/bc-70eb1272-707f-49bf-aa19-03b30dfc06fc?cursor_ref=pr_footer&cursor_cta=open_in_web\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://cursor.com/assets/images/open-in-web-dark.png\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://cursor.com/assets/images/open-in-web-light.png\"><img alt=\"Open in Web\" width=\"114\" height=\"28\" src=\"https://cursor.com/assets/images/open-in-web-dark.png\"></picture></a>&nbsp;<a href=\"https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://cursor.com/assets/images/view-automation-dark.png\"><source media=\"(prefers-color-scheme: light)\" srcset=\"https://cursor.com/assets/images/view-automation-light.png\"><img alt=\"View Automation\" width=\"141\" height=\"28\" src=\"https://cursor.com/assets/images/view-automation-dark.png\"></picture></a>&nbsp;</div>"
+          },
+          "at": "2026-10-17T14:15:06Z"
+        }
+      ],
       "reviews": [],
       "previousCycles": [],
       "history": [
@@ -753,9 +797,27 @@
           "actor": "King72315",
           "kind": "pull_request_comment",
           "note": "review parked until a completion pull request exists"
+        },
+        {
+          "at": "2026-10-17T14:15:06Z",
+          "deliveryId": "pull_request:83:opened",
+          "from": "ASSIGNED",
+          "to": "REPORT_RECEIVED",
+          "actor": "cursor[bot]",
+          "kind": "pull_request",
+          "note": "completion pull request captured"
+        },
+        {
+          "at": "2026-10-17T14:15:06Z",
+          "deliveryId": "pull_request:83:opened",
+          "from": "REPORT_RECEIVED",
+          "to": "BLOCKED",
+          "actor": "cursor[bot]",
+          "kind": "pull_request",
+          "note": "report included a blocker"
         }
       ],
-      "updatedAt": "2026-10-17T14:09:43Z"
+      "updatedAt": "2026-10-17T14:15:06Z"
     }
   }
 }
