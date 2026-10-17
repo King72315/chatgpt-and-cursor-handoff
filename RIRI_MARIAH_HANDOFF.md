@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: The RiRi–Mariah gateway now records assignments, reports, reviews, and at most two in-scope follow-ups on the handoff issue. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: Completion reports for RiRi now have to be pull requests labeled `handoff-review`. The gateway records that pull request and does not write the review. A correction resumes the same cloud agent as a billed continuation run, at most twice, and stops at an estimated 200 cents. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -34,7 +34,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 5. Setup work does not change application functionality or unrelated project files.
 6. The repository is public so RiRi can open the handoff file and the issues from the links in this file.
 7. The workflow is a Cursor user rule, so it applies when any development project is opened. It is not a background watcher. Mariah checks GitHub when a Cursor session starts.
-8. The saved Cursor automation `RiRi to Mariah Handoff` remains the only paid pickup. It runs only when King72315 posts a new issue comment containing the assignment keyword. The Handoff gateway GitHub Action records the cycle, publishes RiRi's review packet, and routes at most two in-scope follow-ups. It does not post that keyword and it does not start a cloud agent.
+8. The saved Cursor automation `RiRi to Mariah Handoff` remains the only paid pickup. It runs only when King72315 posts a new issue comment containing the assignment keyword. Mariah publishes the result as a pull request titled `Issue #<n>: completion report` with the label `handoff-review` and the line `Review trigger: handoff-review`. That pull request is what a ChatGPT task can watch. The gateway does not write the review. When the review asks for one in-scope correction, the gateway calls `POST /v1/agents/{id}/runs` on the agent named in the pull request. That call is a new billed run on the same agent. It allows at most two, and it stops when the estimated cost reaches 200 cents. The estimate uses the saved automation's Grok 4.7 Fast rates: $4 per million input tokens, $1 per million cache tokens, and $12 per million output tokens. Each run reserves 100 cents until usage is recorded. The gateway does not post the assignment keyword.
 
 ## How RiRi assigns a task
 
@@ -63,20 +63,22 @@ States: `AUTHORIZED`, `ASSIGNED`, `ACKNOWLEDGED`, `WORKING`, `REPORT_RECEIVED`, 
 
 The record is `gateway/ledger.json` plus the gateway comments on the issue. Each GitHub delivery is applied once.
 
-RiRi sends an in-scope follow-up as a new comment on the same issue with the heading `## Follow-up`. Do not include the assignment keyword. The gateway routes at most two. A third follow-up, or a deployment, destructive action, spending or billing change, or expanded scope that the original issue did not allow, stops at `AWAITING_OWNER_APPROVAL`.
+Mariah's report uses these headings: Work completed, Tests and evidence, Blockers, Changes made, Deployment status, Owner decision required. It also names the assigned issue, the application repository, and the cloud agent URL `https://cursor.com/agents/bc-...`. An issue comment with those headings does not start a review. The report has to be the completion pull request described above.
 
-Mariah's report uses these headings: Work completed, Tests and evidence, Blockers, Changes made, Deployment status, Owner decision required. Name the issue and the application repository. The gateway then posts `## RiRi review packet` on that issue.
+The ChatGPT task has to be created in ChatGPT, on the web or mobile, with GitHub connected to this repository. This repository cannot create that task. Use a pull-request trigger filtered to the label `handoff-review`. Include opened pull requests and later commits. The saved prompt is:
 
-King closes a reviewed cycle with a comment that starts `Review complete`. A new paid run still requires a new comment with the assignment keyword. That is a fresh authorization, not an automatic follow-up.
+> When a pull request labeled handoff-review is opened or updated in King72315/chatgpt-and-cursor-handoff, review it against the approved GitHub issue linked from its title, the pull request diff, the tests and evidence in the report, and the earlier review comments. Post one comment on that pull request. Start the comment with `## RiRi review`. If one in-scope correction is still required, and fewer than two corrections have been sent, add `## Follow-up` and the correction. If the work meets the approved scope, end with a line that says `Review complete` and do not add a follow-up. Do not use the assignment keyword. Do not deploy, and do not widen the scope.
 
-ChatGPT does not receive a push from GitHub. RiRi reviews the packet by opening the issue. The hourly gateway recovery reruns missed events without a second agent.
+A review comment that includes `## Follow-up` authorizes one continuation run. A third correction, a correction past the 200 cent estimate, or a deployment, destructive action, or expanded scope that the original issue did not allow, stops at `AWAITING_OWNER_APPROVAL`. Acceptance is a review comment that says `Review complete`.
+
+The continuation call needs the GitHub Actions secret `CURSOR_API_KEY`. That secret is not stored in the repository. Without it, the gateway records the correction and does not send it, and it does not count a follow-up.
 
 ## Latest handoff
 
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The existing handoff now records a two-way cycle on the GitHub issue. A simulated assignment, a live report, the review packet, and two routed follow-ups are on issue #73. The hourly recovery path ran twice. The second run did not change the record or start an agent.
+- **Summary:** Completion reports are now matching pull requests, and a review correction is wired to a billed continuation run with a 200 cent estimated limit. The ChatGPT task itself still has to be created in ChatGPT. The continuation secret is not set, so a live correction cannot be sent yet. Issue #73 remains the earlier packet test and is not this proof.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/73
 - **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only paid pickup.
 
@@ -84,6 +86,7 @@ ChatGPT does not receive a push from GitHub. RiRi reviews the packet by opening 
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Completion pull requests labeled handoff-review are the ChatGPT trigger. The gateway no longer treats its packet as the review. A correction calls the continuation API, at most twice, and stops at an estimated 200 cents. Tests: 25 passed. The ChatGPT task was not created from this session, and CURSOR_API_KEY is not set, so the live review cycle is not proved. |
 | 2026-10-17 | Handoff gateway is live. Issue #73 has the simulated assignment, review packet, and follow-ups 1 and 2. Recovery run `39031563215` made no second change. No new cloud agent. No application deploy. |
 | 2026-10-17 | Issue #70 deployed underdog gate as `2c0c9b2c`. October 17 active Value board is Ostapenko #1. Medvedev's frozen row kept. Winners board unchanged. No new APK. |
 | 2026-10-17 | Issue #70. Eighteen published Value Winners were sportsbook favorites. Local underdog gate tested. October 17 not reminted. Not deployed. |

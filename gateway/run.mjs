@@ -5,14 +5,19 @@
  */
 import fs from "node:fs"
 import path from "node:path"
+import { createContinuationRun, fetchRunUsage } from "./continuation.mjs"
 import {
+  COMPLETION_LABEL,
   applyEvent,
   applySimulatedAssignment,
+  commitContinuation,
   containsAssignmentKeyword,
+  continuationResultNotice,
   emptyLedger,
   normalizeGithubIssueComment,
   normalizeGithubPullRequest,
   recoverEvents,
+  settleContinuationUsage,
 } from "./protocol.mjs"
 
 const ledgerPath = path.resolve(process.env.GATEWAY_LEDGER || "gateway/ledger.json")
@@ -63,6 +68,8 @@ async function oneEvent(ledger) {
     : normalizeGithubIssueComment(payload)
   if (!event) return finish("event", ledger, [], false)
   const applied = applyEvent(ledger, event)
+  await labelCompletion(event, applied.result)
+  await dispatchContinuation(applied.ledger, applied.result)
   const posted = await publish(applied.result.outbound)
   return finish("event", applied.ledger, [applied.result], changed(ledger, applied.ledger), posted)
 }
@@ -78,9 +85,11 @@ async function recover(ledger) {
     ? await fetchEvents(working.activatedAt)
     : []
   const recovered = recoverEvents(working, events)
+  for (const item of recovered.results) await dispatchContinuation(recovered.ledger, item)
+  const spendChanged = await settleSpend(recovered.ledger)
   const outbound = recovered.results.flatMap((item) => item.outbound)
   const posted = await publish(outbound)
-  return finish("recover", recovered.ledger, recovered.results, changedActivation || changed(working, recovered.ledger) || changed(ledger, working), posted)
+  return finish("recover", recovered.ledger, recovered.results, changedActivation || spendChanged || changed(working, recovered.ledger) || changed(ledger, working), posted)
 }
 
 async function seed(ledger) {
@@ -95,6 +104,63 @@ async function seed(ledger) {
   })
   const posted = await publish(applied.result.outbound)
   return finish("seed", applied.ledger, [applied.result], changed(ledger, applied.ledger), posted)
+}
+
+async function dispatchContinuation(ledger, result) {
+  if (!result?.continuation) return
+  const key = process.env.CURSOR_API_KEY || ""
+  let outcome
+  if (!key) {
+    outcome = { ok: false, error: "CURSOR_API_KEY is not set" }
+  } else {
+    try {
+      const run = await createContinuationRun({
+        apiKey: key,
+        agentId: result.continuation.agentId,
+        text: result.continuation.prompt,
+      })
+      outcome = { ok: true, runId: run.id }
+    } catch (error) {
+      outcome = { ok: false, error: error.message }
+    }
+  }
+  commitContinuation(ledger, result.issueNumber, outcome)
+  const record = ledger.issues[String(result.issueNumber)]
+  result.outbound.push(continuationResultNotice(record, result.continuation, outcome))
+  result.reason = outcome.ok ? "continuation-sent" : "continuation-not-sent"
+  result.to = record.state
+}
+
+async function settleSpend(ledger) {
+  const key = process.env.CURSOR_API_KEY || ""
+  if (!key) return false
+  let didChange = false
+  for (const record of Object.values(ledger.issues || {})) {
+    for (const item of record.continuations || []) {
+      if (item.settledCents != null || !item.runId || !item.agentId) continue
+      const usage = await fetchRunUsage({ apiKey: key, agentId: item.agentId, runId: item.runId })
+      if (settleContinuationUsage(ledger, record.issueNumber, item.runId, usage)) didChange = true
+    }
+  }
+  return didChange
+}
+
+async function labelCompletion(event, result) {
+  if (!postEnabled || result?.reason !== "completion-pr" || !event?.pullRequestNumber) return
+  await github(`/repos/${repository}/labels`, {
+    method: "POST",
+    body: JSON.stringify({
+      name: COMPLETION_LABEL,
+      color: "1D76DB",
+      description: "Completion report for the ChatGPT review task",
+    }),
+  }).catch((error) => {
+    if (!/422/.test(String(error.message))) throw error
+  })
+  await github(`/repos/${repository}/issues/${event.pullRequestNumber}/labels`, {
+    method: "POST",
+    body: JSON.stringify({ labels: [COMPLETION_LABEL] }),
+  })
 }
 
 async function publish(outbound) {
@@ -123,18 +189,26 @@ async function fetchEvents(since) {
   const events = []
   for (const issue of issues) {
     if (issue.pull_request) {
-      if (!/Issue\s+#?\d+:\s*(acknowledgment|completion report)/i.test(issue.title || "")) continue
+      if (!/^Issue #?\d+:\s*completion report\s*$/i.test(String(issue.title || "").trim())) continue
       const event = normalizeGithubPullRequest({
         pull_request: {
           number: issue.number,
           title: issue.title,
           body: issue.body,
+          labels: issue.labels,
           created_at: issue.created_at,
+          updated_at: issue.updated_at,
           html_url: issue.html_url,
           user: issue.user,
+          head: issue.head,
         },
       })
       if (event) events.push(event)
+      const comments = await githubList(`/repos/${repository}/issues/${issue.number}/comments?since=${encodeURIComponent(since)}&per_page=100`)
+      for (const comment of comments) {
+        const review = normalizeGithubIssueComment({ issue, comment })
+        if (review) events.push(review)
+      }
       continue
     }
     const comments = await githubList(`/repos/${repository}/issues/${issue.number}/comments?since=${encodeURIComponent(since)}&per_page=100`)

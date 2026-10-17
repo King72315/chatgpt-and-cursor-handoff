@@ -2,14 +2,22 @@
  * RiRi–Mariah handoff gateway.
  *
  * The saved Cursor automation remains the only paid pickup: a new comment
- * from King72315 that contains the assignment keyword. This module records
- * the cycle, publishes RiRi's review packet, and routes at most two in-scope
- * follow-ups. It never emits that keyword, so it cannot start another agent.
+ * from King72315 that contains the assignment keyword. A completion report
+ * reaches ChatGPT only as a pull request titled "Issue N: completion report"
+ * that carries the review trigger. This module does not author the review.
+ * An in-scope correction resumes the same cloud agent through one billed
+ * continuation run, at most twice, and only inside the estimated cost limit.
+ * Outbound text never contains the assignment keyword.
  */
 
 export const FOLLOW_UP_LIMIT = 2
+export const CONTINUATION_SPEND_LIMIT_CENTS = 200
+export const CONTINUATION_RUN_RESERVE_CENTS = 100
 export const ASSIGNMENT_KEYWORD = "riri-assign"
 export const HANDOFF_REPOSITORY = "King72315/chatgpt-and-cursor-handoff"
+export const COMPLETION_LABEL = "handoff-review"
+export const COMPLETION_TRIGGER = "Review trigger: handoff-review"
+const FAST_CENTS_PER_MILLION = { input: 400, cache: 100, output: 1200 }
 
 export const STATES = [
   "AUTHORIZED",
@@ -102,14 +110,25 @@ export function parseReport(body) {
 }
 
 export function normalizeGithubIssueComment(payload) {
-  if (!payload?.comment || !payload?.issue || payload.issue.pull_request) return null
+  if (!payload?.comment || !payload?.issue) return null
+  const onPullRequest = Boolean(payload.issue.pull_request)
+  if (onPullRequest && !isCompletionTitle(payload.issue.title)) return null
+  if (onPullRequest && !hasCompletionTrigger({
+    body: payload.issue.body,
+    labels: (payload.issue.labels || []).map((label) => label.name || label),
+  })) return null
+  const issueNumber = onPullRequest
+    ? issueNumberFromText(payload.issue.title, payload.issue.body)
+    : payload.issue.number
+  if (issueNumber == null) return null
   return {
     deliveryId: `issue_comment:${payload.comment.id}`,
-    kind: "issue_comment",
+    kind: onPullRequest ? "pull_request_comment" : "issue_comment",
     actor: payload.comment.user?.login || "unknown",
     actorIsBot: isBot(payload.comment.user),
-    issueNumber: payload.issue.number,
+    issueNumber,
     commentId: String(payload.comment.id),
+    pullRequestNumber: onPullRequest ? payload.issue.number : null,
     title: payload.issue.title || "",
     body: payload.comment.body || "",
     createdAt: payload.comment.created_at,
@@ -122,9 +141,14 @@ export function normalizeGithubIssueComment(payload) {
 export function normalizeGithubPullRequest(payload) {
   const pull = payload?.pull_request
   if (!pull) return null
+  const action = payload.action || "opened"
+  if (action !== "opened" && action !== "synchronize") return null
   const issueNumber = issueNumberFromText(pull.title, pull.body)
+  const sha = pull.head?.sha || "unknown"
   return {
-    deliveryId: `pull_request:${pull.number}:opened`,
+    deliveryId: action === "synchronize"
+      ? `pull_request:${pull.number}:synchronize:${sha}`
+      : `pull_request:${pull.number}:opened`,
     kind: "pull_request",
     actor: pull.user?.login || "unknown",
     actorIsBot: isBot(pull.user),
@@ -133,11 +157,20 @@ export function normalizeGithubPullRequest(payload) {
     pullRequestNumber: pull.number,
     title: pull.title || "",
     body: pull.body || "",
-    createdAt: pull.created_at,
+    labels: (pull.labels || []).map((label) => label.name || label),
+    createdAt: action === "synchronize" ? (pull.updated_at || pull.created_at) : pull.created_at,
     htmlUrl: pull.html_url || "",
     simulated: false,
     forceAssignment: false,
   }
+}
+
+export function estimateContinuationCents(usage) {
+  const input = Number(usage?.inputTokens || 0)
+  const cache = Number(usage?.cacheReadTokens || 0) + Number(usage?.cacheWriteTokens || 0)
+  const output = Number(usage?.outputTokens || 0)
+  if (input + cache + output <= 0) return 0
+  return Math.ceil((input * FAST_CENTS_PER_MILLION.input + cache * FAST_CENTS_PER_MILLION.cache + output * FAST_CENTS_PER_MILLION.output) / 1_000_000)
 }
 
 export function applySimulatedAssignment(ledger, input) {
@@ -200,7 +233,7 @@ export function applyEvent(ledger, event) {
     result.reason = "gateway-message"
     return { ledger: next, result }
   }
-  if (event.kind === "issue_comment" && event.actorIsBot) {
+  if ((event.kind === "issue_comment" || event.kind === "pull_request_comment") && event.actorIsBot && !isReview(event.body)) {
     remember(next, event, "bot-comment")
     result.reason = "bot-comment"
     return { ledger: next, result }
@@ -221,7 +254,7 @@ export function applyEvent(ledger, event) {
   }
 
   if (!record) {
-    if (event.kind === "pull_request" && isCompletion(event)) {
+    if (event.kind === "pull_request" && isCompletionRequest(event)) {
       const created = ensureRecord(next, event)
       receiveReport(next, result, created, event)
       return { ledger: next, result }
@@ -280,6 +313,11 @@ export function applyEvent(ledger, event) {
 
   if (isReport(event)) {
     receiveReport(next, result, record, event)
+    return { ledger: next, result }
+  }
+
+  if (isReview(event.body)) {
+    receiveReview(next, result, record, event)
     return { ledger: next, result }
   }
 
@@ -374,18 +412,31 @@ function receiveReport(ledger, result, record, event) {
   if (!record.projectRepository) {
     record.projectRepository = findProjectRepository(`${event.title}\n${event.body}\n${sections.projectRepository || ""}`, event.projectRepository)
   }
+  if (!isCompletionRequest(event)) {
+    move(record, "REPORT_RECEIVED", event, "issue comment is waiting for a completion pull request")
+    result.ignored = false
+    result.reason = "report-needs-completion-pr"
+    result.to = record.state
+    result.outbound.push(comment(record, event, completionRequiredNotice(record, event)))
+    remember(ledger, event, result.reason)
+    return
+  }
   const decision = ownerDecisionRequested(sections.ownerDecision, event.body)
   record.ownerDecisionRequired = decision
+  const agentId = agentIdFromText(event.body)
+  if (agentId) record.agentId = agentId
+  if (event.pullRequestNumber) record.completionPullRequest = event.pullRequestNumber
   record.reports.push({
     deliveryId: event.deliveryId,
     url: event.htmlUrl || "",
     actor: event.actor,
+    pullRequestNumber: event.pullRequestNumber || null,
     sections,
     at: event.createdAt || null,
   })
   record.agentRuns.push(runOf(event, "report"))
-  move(record, "REPORT_RECEIVED", event, "report captured")
-  let reason = "reviewed"
+  move(record, "REPORT_RECEIVED", event, "completion pull request captured")
+  let reason = "completion-pr"
   if (isFailed(event.body)) {
     move(record, "FAILED", event, "report marked the task failed")
     reason = "failed"
@@ -395,33 +446,68 @@ function receiveReport(ledger, result, record, event) {
   } else if (hasBlocker(sections, event.body)) {
     move(record, "BLOCKED", event, "report included a blocker")
     reason = "blocked"
-  } else {
-    move(record, "REVIEWED", event, "review packet published")
   }
-  record.reviews.push({ deliveryId: event.deliveryId, at: event.createdAt || null, state: record.state })
   result.ignored = false
   result.reason = reason
   result.to = record.state
-  result.outbound.push(comment(record, event, reviewPacket(record, sections, event)))
+  result.outbound.push(comment(record, event, completionPullRequestNotice(record, sections, event)))
   remember(ledger, event, reason)
 }
 
-function routeFollowUp(ledger, result, record, event) {
+function receiveReview(ledger, result, record, event) {
   result.from = record.state
-  if (record.state === "AWAITING_OWNER_APPROVAL" || record.state === "COMPLETED" || record.state === "FAILED") {
+  if (record.reports.length === 0) {
+    record.history.push(entry(record, record.state, event, "review parked until a completion pull request exists"))
+    result.ignored = false
+    result.reason = "review-parked"
+    result.to = record.state
+    remember(ledger, event, result.reason)
+    return
+  }
+  record.reviews.push({
+    deliveryId: event.deliveryId,
+    url: event.htmlUrl || "",
+    actor: event.actor,
+    at: event.createdAt || null,
+    state: "REVIEWED",
+  })
+  move(record, "REVIEWED", event, "review captured from the completion pull request")
+  if (isClose(event.body) && !isFollowUp(event.body)) {
+    move(record, "COMPLETED", event, "review accepted the work")
+    result.ignored = false
+    result.reason = "completed"
+    result.to = record.state
+    result.outbound.push(comment(record, event, completionNotice(record, event)))
+    remember(ledger, event, result.reason)
+    return
+  }
+  if (isFollowUp(event.body)) {
+    routeFollowUp(ledger, result, record, event)
+    return
+  }
+  result.ignored = false
+  result.reason = "reviewed"
+  result.to = record.state
+  result.outbound.push(comment(record, event, reviewCapturedNotice(record, event)))
+  remember(ledger, event, result.reason)
+}
+
+function routeFollowUp(ledger, result, record, event) {
+  result.from = result.from || record.state
+  if (record.state === "BLOCKED" || record.state === "AWAITING_OWNER_APPROVAL" || record.state === "COMPLETED" || record.state === "FAILED") {
     record.history.push(entry(record, record.state, event, "follow-up not routed"))
     result.ignored = false
-    result.reason = record.state === "AWAITING_OWNER_APPROVAL" ? "awaiting-owner" : "closed"
+    result.reason = record.state === "COMPLETED" || record.state === "FAILED" ? "closed" : record.state === "BLOCKED" ? "blocked" : "awaiting-owner"
     result.to = record.state
     remember(ledger, event, result.reason)
     return
   }
   if (record.reports.length === 0) {
-    record.history.push(entry(record, record.state, event, "follow-up parked until a report is reviewed"))
+    record.history.push(entry(record, record.state, event, "follow-up parked until a completion pull request exists"))
     result.ignored = false
     result.reason = "follow-up-parked"
     result.to = record.state
-    result.outbound.push(comment(record, event, stateNotice(record, event, "Follow-up parked", "This follow-up was not counted. The gateway routes it after a report is available for review.")))
+    result.outbound.push(comment(record, event, stateNotice(record, event, "Follow-up parked", "This follow-up was not counted. A completion pull request has to be open before a correction can resume Mariah.")))
     remember(ledger, event, result.reason)
     return
   }
@@ -431,17 +517,127 @@ function routeFollowUp(ledger, result, record, event) {
     result.ignored = false
     result.reason = "follow-up-limit"
     result.to = record.state
-    result.outbound.push(comment(record, event, stopNotice(record, event, `This authorization already used ${FOLLOW_UP_LIMIT} follow-ups. Another follow-up needs a fresh owner authorization.`)))
+    result.outbound.push(comment(record, event, stopNotice(record, event, `This authorization already used ${FOLLOW_UP_LIMIT} continuation runs. Another correction needs a fresh owner authorization.`)))
     remember(ledger, event, result.reason)
     return
   }
-  record.followUpCount += 1
-  move(record, "ASSIGNED", event, `in-scope follow-up ${record.followUpCount} routed`)
+  const spent = record.continuationSpendCents || 0
+  if (spent + CONTINUATION_RUN_RESERVE_CENTS > CONTINUATION_SPEND_LIMIT_CENTS) {
+    record.ownerDecisionRequired = true
+    move(record, "AWAITING_OWNER_APPROVAL", event, "continuation cost limit reached")
+    result.ignored = false
+    result.reason = "continuation-spend"
+    result.to = record.state
+    result.outbound.push(comment(record, event, stopNotice(record, event, `The estimated continuation cost is ${spent} cents and the next run reserves ${CONTINUATION_RUN_RESERVE_CENTS} cents. The limit is ${CONTINUATION_SPEND_LIMIT_CENTS} cents, so this correction was not sent.`)))
+    remember(ledger, event, result.reason)
+    return
+  }
+  const agentId = latestAgentId(record)
+  if (!agentId) {
+    result.ignored = false
+    result.reason = "continuation-missing-agent"
+    result.to = record.state
+    result.outbound.push(comment(record, event, stateNotice(record, event, "Continuation not sent", "The completion pull request did not name the cloud agent, so the gateway did not call the continuation API and did not count a follow-up.")))
+    remember(ledger, event, result.reason)
+    return
+  }
+  const prompt = continuationPrompt(record, event)
+  record.pendingContinuation = {
+    deliveryId: event.deliveryId,
+    agentId,
+    reserveCents: CONTINUATION_RUN_RESERVE_CENTS,
+    prompt,
+    runId: null,
+  }
+  result.continuation = record.pendingContinuation
   result.ignored = false
-  result.reason = "follow-up"
+  result.reason = "continuation-authorized"
   result.to = record.state
-  result.outbound.push(comment(record, event, followUpNotice(record, event)))
   remember(ledger, event, result.reason)
+}
+
+export function commitContinuation(ledger, issueNumber, outcome) {
+  const record = ledger.issues[String(issueNumber)]
+  if (!record?.pendingContinuation) return record
+  const pending = record.pendingContinuation
+  const event = {
+    deliveryId: pending.deliveryId,
+    actor: "gateway",
+    kind: "continuation",
+    createdAt: new Date().toISOString(),
+  }
+  if (!outcome?.ok) {
+    record.continuationError = String(outcome?.error || "continuation failed").slice(0, 300)
+    record.history.push(entry(record, record.state, event, `continuation was not sent: ${record.continuationError}`))
+    record.pendingContinuation = null
+    return record
+  }
+  record.followUpCount += 1
+  record.continuationSpendCents = (record.continuationSpendCents || 0) + pending.reserveCents
+  record.continuations = record.continuations || []
+  record.continuations.push({
+    deliveryId: pending.deliveryId,
+    agentId: pending.agentId,
+    runId: outcome.runId,
+    reserveCents: pending.reserveCents,
+    settledCents: null,
+    at: event.createdAt,
+  })
+  record.agentRuns.push({
+    role: "continuation",
+    actor: "gateway",
+    url: `https://cursor.com/agents/${pending.agentId}`,
+    agentId: pending.agentId,
+    runId: outcome.runId,
+    deliveryId: pending.deliveryId,
+  })
+  record.pendingContinuation = null
+  move(record, "ASSIGNED", event, `billed continuation ${record.followUpCount} sent`)
+  return record
+}
+
+export function settleContinuationUsage(ledger, issueNumber, runId, usage) {
+  const record = ledger.issues[String(issueNumber)]
+  const item = record?.continuations?.find((entry) => entry.runId === runId)
+  const cents = estimateContinuationCents(usage)
+  if (!item || cents <= 0) return false
+  item.usage = {
+    inputTokens: Number(usage.inputTokens || 0),
+    outputTokens: Number(usage.outputTokens || 0),
+    cacheReadTokens: Number(usage.cacheReadTokens || 0),
+    cacheWriteTokens: Number(usage.cacheWriteTokens || 0),
+  }
+  item.settledCents = cents
+  record.continuationSpendCents = record.continuations.reduce((sum, entry) => sum + (entry.settledCents ?? entry.reserveCents), 0)
+  return true
+}
+
+export function continuationResultNotice(record, pending, outcome) {
+  const sent = Boolean(outcome?.ok)
+  const body = sent
+    ? `## Continuation sent
+
+Assigned issue: #${record.issueNumber}
+Gateway state: ${record.state}
+Follow-ups used: ${record.followUpCount} of ${record.followUpLimit}
+Cloud agent: ${pending.agentId}
+Run: ${outcome.runId}
+Reserved estimate: ${pending.reserveCents} cents
+Estimated cost limit: ${CONTINUATION_SPEND_LIMIT_CENTS} cents
+
+This is a new billed run on the same cloud agent. The conversation is kept. The assignment keyword was not posted.
+
+${marker({ v: 1, issue: record.issueNumber, state: record.state, delivery: `${pending.deliveryId}:continuation`, kind: "continuation", run: outcome.runId })}`
+    : `## Continuation not sent
+
+Assigned issue: #${record.issueNumber}
+Gateway state: ${record.state}
+Follow-ups used: ${record.followUpCount} of ${record.followUpLimit}
+
+The correction was not delivered. ${clip(outcome?.error || "The continuation API did not accept the run.")} No follow-up was counted.
+
+${marker({ v: 1, issue: record.issueNumber, state: record.state, delivery: `${pending.deliveryId}:continuation`, kind: "continuation" })}`
+  return comment(record, { deliveryId: pending.deliveryId }, body)
 }
 
 function ensureRecord(ledger, event) {
@@ -458,6 +654,12 @@ function ensureRecord(ledger, event) {
       executionTrigger: null,
       followUpCount: 0,
       followUpLimit: FOLLOW_UP_LIMIT,
+      continuationSpendCents: 0,
+      continuationSpendLimitCents: CONTINUATION_SPEND_LIMIT_CENTS,
+      agentId: null,
+      completionPullRequest: null,
+      pendingContinuation: null,
+      continuations: [],
       ownerDecisionRequired: false,
       duplicateTriggerIds: [],
       agentRuns: [],
@@ -526,40 +728,49 @@ The approved scope covers investigation, implementation, tests, and in-scope ans
 ${marker({ v: 1, issue: record.issueNumber, state: "ASSIGNED", delivery: event.deliveryId, kind: "assignment", simulated: Boolean(record.simulatedAssignment) })}`
 }
 
-function reviewPacket(record, sections, event) {
-  const simulated = record.simulatedAssignment
-    ? "SIMULATED assignment. The gateway did not start a cloud agent for that assignment.\n\n"
-    : ""
-  return `${simulated}## RiRi review packet
+function completionRequiredNotice(record, event) {
+  return `## Completion pull request required
 
 Assigned issue: #${record.issueNumber}
 Project repository: ${record.projectRepository || "not stated"}
 Gateway state: ${record.state}
-Follow-ups used: ${record.followUpCount} of ${record.followUpLimit}
-Execution trigger: ${record.executionTrigger || "not recorded"}
-Generation: ${record.generation || 1}
 
-### Work completed
-${clip(sections.workCompleted) || "not stated"}
+An issue comment cannot start the ChatGPT review. Open a pull request titled \`Issue #${record.issueNumber}: completion report\`, add the label \`${COMPLETION_LABEL}\`, and include this line:
+
+${COMPLETION_TRIGGER}
+
+Name the cloud agent URL in that pull request. The body uses the report headings and states that a correction is a new billed continuation run, limited to ${FOLLOW_UP_LIMIT} runs and ${CONTINUATION_SPEND_LIMIT_CENTS} cents.
+
+${marker({ v: 1, issue: record.issueNumber, state: record.state, delivery: event.deliveryId, kind: "state" })}`
+}
+
+function completionPullRequestNotice(record, sections, event) {
+  return `## Completion pull request captured
+
+Assigned issue: #${record.issueNumber}
+Project repository: ${record.projectRepository || "not stated"}
+Gateway state: ${record.state}
+Pull request: #${record.completionPullRequest || "not stated"}
+Cloud agent: ${record.agentId || "not stated"}
+
+This pull request is the ChatGPT review trigger. The gateway did not review it.
 
 ### Tests and evidence
 ${clip(sections.tests) || "not stated"}
 
-### Blockers
-${clip(sections.blockers) || "not stated"}
+${marker({ v: 1, issue: record.issueNumber, state: record.state, delivery: event.deliveryId, kind: "state" })}`
+}
 
-### Changes made
-${clip(sections.changes) || "not stated"}
+function reviewCapturedNotice(record, event) {
+  return `## Review captured
 
-### Deployment status
-${clip(sections.deployment) || "not stated"}
-
-### Owner decision required
-${record.ownerDecisionRequired ? "yes" : "no"}
-
+Assigned issue: #${record.issueNumber}
+Gateway state: ${record.state}
 Source: ${event.htmlUrl || "not stated"}
 
-${marker({ v: 1, issue: record.issueNumber, state: record.state, delivery: event.deliveryId, kind: "review", simulated: Boolean(record.simulatedAssignment) })}`
+The review was written on the completion pull request. The gateway did not write it.
+
+${marker({ v: 1, issue: record.issueNumber, state: record.state, delivery: event.deliveryId, kind: "review" })}`
 }
 
 function followUpNotice(record, event) {
@@ -660,11 +871,24 @@ function hasBlocker(sections, body) {
 }
 
 function isReport(event) {
-  return isCompletion(event) || /^## Work completed\b/im.test(event.body || "")
+  return isCompletionRequest(event) || /^## Work completed\b/im.test(event.body || "")
 }
 
-function isCompletion(event) {
-  return /completion report/i.test(event.title || "") || /^## Work completed\b/im.test(event.body || "")
+function isCompletionRequest(event) {
+  return event?.kind === "pull_request" && isCompletionTitle(event.title) && hasCompletionTrigger(event)
+}
+
+function isCompletionTitle(title) {
+  return /^Issue #?\d+:\s*completion report\s*$/i.test(String(title || "").trim())
+}
+
+function hasCompletionTrigger(event) {
+  if (String(event.body || "").includes(COMPLETION_TRIGGER)) return true
+  return Array.isArray(event.labels) && event.labels.includes(COMPLETION_LABEL)
+}
+
+function isReview(body) {
+  return /^## RiRi review\b/im.test(body || "")
 }
 
 function isAcknowledgement(event) {
@@ -704,14 +928,39 @@ function issueNumberFromText(title, body) {
 }
 
 function runOf(event, role) {
-  const agent = /cursor\.com\/agents\/(bc-[a-z0-9-]+)/i.exec(`${event.body || ""}\n${event.htmlUrl || ""}`)
   return {
     role,
     actor: event.actor,
     url: event.htmlUrl || "",
-    agentId: agent ? agent[1] : null,
+    agentId: agentIdFromText(event.body),
     deliveryId: event.deliveryId,
   }
+}
+
+function agentIdFromText(text) {
+  const match = /cursor\.com\/agents\/(bc-[A-Za-z0-9-]+)/i.exec(String(text || ""))
+  return match ? match[1] : null
+}
+
+function latestAgentId(record) {
+  if (record.agentId) return record.agentId
+  for (const run of [...(record.agentRuns || [])].reverse()) {
+    if (run.agentId) return run.agentId
+  }
+  return null
+}
+
+function continuationPrompt(record, event) {
+  return [
+    "Continue the same cloud agent. This is a new billed run. The conversation and workspace stay with this agent.",
+    `This is continuation ${record.followUpCount + 1} of ${record.followUpLimit} for issue #${record.issueNumber}.`,
+    `The estimated cost limit for continuation runs on this authorization is ${CONTINUATION_SPEND_LIMIT_CENTS} cents, using the saved automation token rates. This run reserves ${CONTINUATION_RUN_RESERVE_CENTS} cents until usage is recorded.`,
+    "Apply only the correction below. Stay inside the approved scope.",
+    "Publish the corrected report by pushing a commit to the open completion pull request. Keep its title and the review trigger line.",
+    "Do not deploy. Do not start another agent.",
+    "",
+    clip(event.body),
+  ].join("\n")
 }
 
 function clip(text) {
