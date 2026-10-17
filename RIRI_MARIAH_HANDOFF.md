@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 is deployed. October 16 was reminted on that API. New freeze `eaf4c25f`. October 15 freeze `6b37e771` is unchanged. Deployment remains `281d5f80`. No new APK.
+- Active task: Issue #67 is blocked in this cloud environment. The authentic local hybrid `var/d0de-app` is not mounted. Remote HEAD `d2a644b` was not deployed and October 17 was not reminted. Public health still shows freeze `7db7949a` for 2026-10-17. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-16
+- Last update: 2026-10-17
 
 ## Important decisions
 
@@ -58,17 +58,18 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-16
+- **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** October 16 was unfrozen and rebuilt on the live API. Freeze `8913c9ef` is now `eaf4c25f`. October 15 stays `6b37e771`. Top Props seats are the same three. Svitolina left the winner and value boards because that match had started. No new APK.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
-- **API:** deployment `281d5f80-25dc-46b6-aa6e-59bfe08ee317`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
+- **Summary:** Issue #67 is blocked. This environment does not have `var/d0de-app`, a Railway token, or a database URL. The admission-before-ranking repair is not in remote HEAD `d2a644b`. No snapshot, deploy, or October 17 correction was made. Public health still shows official freeze `7db7949a`.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/67
+- **API:** deployment id was not in the health payload, so the prior deployment id was not reconfirmed. Freeze `7db7949a` is still the public October 17 freeze.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #67 blocked. Local hybrid `var/d0de-app` is absent. Remote HEAD `d2a644b` was not deployed. October 17 freeze `7db7949a` was not rewritten. No snapshot, remint, or APK. |
 | 2026-10-16 | October 16 reminted on API `281d5f80`. Freeze `eaf4c25f`. October 15 freeze `6b37e771` unchanged. No new APK. |
 | 2026-10-16 | Issue #57 deployed. API `281d5f80`. October 15 freeze `6b37e771` still public. Save point ISSUE57_PRE_DEPLOY_2026-10-15_CT. No new APK. |
 | 2026-10-15 | Issue #57 surface audit. `get_draw` `tournament_surface` is Hard for all 10 frozen October 15 matches. Not saved on the freeze. No deploy. |
