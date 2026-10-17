@@ -111,6 +111,11 @@
       "issueNumber": 75,
       "reason": "completed",
       "at": "2026-10-17T13:40:52Z"
+    },
+    "issue_comment:6234600433": {
+      "issueNumber": 77,
+      "reason": "assigned",
+      "at": "2026-10-17T13:43:48Z"
     }
   },
   "issues": {
@@ -499,6 +504,51 @@
         }
       ],
       "updatedAt": "2026-10-17T13:40:52Z"
+    },
+    "77": {
+      "issueNumber": 77,
+      "generation": 1,
+      "state": "ASSIGNED",
+      "simulatedAssignment": false,
+      "projectRepository": null,
+      "approvedScope": "riri-assign\n\nMariah, King authorizes the read-only October 17, 2026 CT TennisEdge results check defined in this issue. Check actual stored/published Winners and Value Winners, verify scores/status, and report W/L/VOID/pending with evidence and CT timestamp. Confirm authentic application access first; report any blocker honestly. No application changes or deployment. Return your completion report through a handoff-review labeled completion PR for this issue so RiRi can review it automatically.",
+      "authorizationCommentId": "6234600433",
+      "executionTrigger": "issue_comment:6234600433",
+      "followUpCount": 0,
+      "followUpLimit": 2,
+      "continuationSpendCents": 0,
+      "continuationSpendLimitCents": 200,
+      "agentId": null,
+      "completionPullRequest": null,
+      "pendingContinuation": null,
+      "continuations": [],
+      "ownerDecisionRequired": false,
+      "duplicateTriggerIds": [],
+      "agentRuns": [],
+      "reports": [],
+      "reviews": [],
+      "previousCycles": [],
+      "history": [
+        {
+          "at": "2026-10-17T13:43:48Z",
+          "deliveryId": "issue_comment:6234600433",
+          "from": null,
+          "to": "AUTHORIZED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "authorization comment"
+        },
+        {
+          "at": "2026-10-17T13:43:48Z",
+          "deliveryId": "issue_comment:6234600433",
+          "from": "AUTHORIZED",
+          "to": "ASSIGNED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "assignment recorded"
+        }
+      ],
+      "updatedAt": "2026-10-17T13:43:48Z"
     }
   }
 }
