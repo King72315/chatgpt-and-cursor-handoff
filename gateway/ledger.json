@@ -21,6 +21,11 @@
       "issueNumber": 73,
       "reason": "follow-up",
       "at": "2026-10-17T12:09:12Z"
+    },
+    "issue_comment:6233714356": {
+      "issueNumber": 73,
+      "reason": "follow-up",
+      "at": "2026-10-17T12:09:28Z"
     }
   },
   "issues": {
@@ -33,7 +38,7 @@
       "approvedScope": "Harmless communication test. Do not modify an application. Do not deploy. Do not spend money.",
       "authorizationCommentId": "simulated-assignment:73",
       "executionTrigger": "simulated-assignment:73",
-      "followUpCount": 1,
+      "followUpCount": 2,
       "followUpLimit": 2,
       "ownerDecisionRequired": false,
       "duplicateTriggerIds": [],
@@ -116,9 +121,18 @@
           "actor": "King72315",
           "kind": "issue_comment",
           "note": "in-scope follow-up 1 routed"
+        },
+        {
+          "at": "2026-10-17T12:09:28Z",
+          "deliveryId": "issue_comment:6233714356",
+          "from": "ASSIGNED",
+          "to": "ASSIGNED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "in-scope follow-up 2 routed"
         }
       ],
-      "updatedAt": "2026-10-17T12:09:12Z"
+      "updatedAt": "2026-10-17T12:09:28Z"
     },
     "74": {
       "issueNumber": 74,
