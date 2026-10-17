@@ -176,6 +176,11 @@
       "issueNumber": 81,
       "reason": "gateway-message",
       "at": "2026-10-17T14:10:52Z"
+    },
+    "issue_comment:6235187291": {
+      "issueNumber": 81,
+      "reason": "review-parked",
+      "at": "2026-10-17T14:38:36Z"
     }
   },
   "issues": {
@@ -739,6 +744,15 @@
           "actor": "King72315",
           "kind": "issue_comment",
           "note": "assignment recorded"
+        },
+        {
+          "at": "2026-10-17T14:38:36Z",
+          "deliveryId": "issue_comment:6235187291",
+          "from": "ASSIGNED",
+          "to": "ASSIGNED",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "review parked until a completion pull request exists"
         }
       ],
       "updatedAt": "2026-10-17T14:09:43Z"
