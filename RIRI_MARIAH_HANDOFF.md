@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: The RiRi–Mariah gateway now records assignments, reports, reviews, and at most two in-scope follow-ups on the handoff issue. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: Issue #77 read-only October 17, 2026 CT results check is reported. Winners stored 0-2 with Swiatek still pending. Value Winners stored 0-2, both losses. No application change and no deploy.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -76,14 +76,15 @@ ChatGPT does not receive a push from GitHub. RiRi reviews the packet by opening 
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The existing handoff now records a two-way cycle on the GitHub issue. A simulated assignment, a live report, the review packet, and two routed follow-ups are on issue #73. The hourly recovery path ran twice. The second run did not change the record or start an agent.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/73
+- **Summary:** Read-only October 17 CT results check. Published health freeze `7db7949a` is OFFICIAL. Winners are Ostapenko LOSS, Swiatek PENDING and live, Medvedev LOSS. Value Winners are Ostapenko LOSS and Medvedev LOSS. Ostapenko's stored winner status `FINAL_WIN` disagrees with the stored LOSS grade. No repair and no deploy.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/77
 - **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only paid pickup.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #77 read-only results check at 08:48 CDT. Winners 0-2, one pending (Swiatek live). Value Winners 0-2. Ostapenko status `FINAL_WIN` disagrees with grade LOSS. Not repaired. Not deployed. |
 | 2026-10-17 | Issue #77 assignment received. Read-only October 17, 2026 CT Winners and Value Winners results check. Work starting. No application changes. |
 | 2026-10-17 | Handoff gateway is live. Issue #73 has the simulated assignment, review packet, and follow-ups 1 and 2. Recovery run `39031563215` made no second change. No new cloud agent. No application deploy. |
 | 2026-10-17 | Issue #70 deployed underdog gate as `2c0c9b2c`. October 17 active Value board is Ostapenko #1. Medvedev's frozen row kept. Winners board unchanged. No new APK. |
