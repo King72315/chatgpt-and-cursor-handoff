@@ -16,19 +16,24 @@
       "issueNumber": 73,
       "reason": "reviewed",
       "at": "2026-10-17T12:07:48Z"
+    },
+    "issue_comment:6233711947": {
+      "issueNumber": 73,
+      "reason": "follow-up",
+      "at": "2026-10-17T12:09:12Z"
     }
   },
   "issues": {
     "73": {
       "issueNumber": 73,
       "generation": 1,
-      "state": "REVIEWED",
+      "state": "ASSIGNED",
       "simulatedAssignment": true,
       "projectRepository": "King72315/chatgpt-and-cursor-handoff",
       "approvedScope": "Harmless communication test. Do not modify an application. Do not deploy. Do not spend money.",
       "authorizationCommentId": "simulated-assignment:73",
       "executionTrigger": "simulated-assignment:73",
-      "followUpCount": 0,
+      "followUpCount": 1,
       "followUpLimit": 2,
       "ownerDecisionRequired": false,
       "duplicateTriggerIds": [],
@@ -102,9 +107,18 @@
           "actor": "King72315",
           "kind": "issue_comment",
           "note": "review packet published"
+        },
+        {
+          "at": "2026-10-17T12:09:12Z",
+          "deliveryId": "issue_comment:6233711947",
+          "from": "REVIEWED",
+          "to": "ASSIGNED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "in-scope follow-up 1 routed"
         }
       ],
-      "updatedAt": "2026-10-17T12:07:48Z"
+      "updatedAt": "2026-10-17T12:09:12Z"
     },
     "74": {
       "issueNumber": 74,
