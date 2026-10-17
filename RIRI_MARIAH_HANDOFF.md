@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #64 audited in `var/d0de-app`. Completed scores now settle ahead of a VOID label, and History Reset reports a rejection instead of doing nothing. Not deployed. October 16 freeze `eaf4c25f` and October 15 freeze `6b37e771` are unchanged. No new APK.
+- Active task: Issue #64 History is archived and the phone History screen is cleared through 2026-10-16. Winners, Value Winners, scores, grades, and count markets are in the TennisEdge Winners Archive. Missing ace and break-point actuals stay "Not saved". October 15 freeze `6b37e771` and October 16 freeze `eaf4c25f` are unchanged. Public History is 0-0-0. Lab still has 2240 records. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-16
+- Last update: 2026-10-17
 
 ## Important decisions
 
@@ -58,17 +58,18 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 ## Latest handoff
 
-- **Date:** 2026-10-16
+- **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Issue #64 local audit. A verified completed score now grades ahead of a VOID label. History Reset stays non-destructive and a rejected tap is no longer silent. Ace and break-point actuals are still missing. Not deployed. No new APK.
+- **Summary:** Existing History is in the Winners Archive and the History screen is hidden through 2026-10-16. Counters are 0-0-0. New slate dates still appear. Ace and break-point actuals stay missing. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/64
-- **API:** deployment `281d5f80-25dc-46b6-aa6e-59bfe08ee317`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
+- **API:** deployment `8bad2074-8016-4fe2-9e9f-4eb1a2654400`. Prior `df336a98-b682-41a4-9f9e-2c2a458e0838`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #64 History archived, then hidden through 2026-10-16. Public History is 0-0-0. Lab remains. Freezes unchanged. No new APK. |
 | 2026-10-16 | Issue #64 local audit. Completed scores settle ahead of VOID. History Reset no longer fails silently. Not deployed. No new APK. |
 | 2026-10-16 | October 16 reminted on API `281d5f80`. Freeze `eaf4c25f`. October 15 freeze `6b37e771` unchanged. No new APK. |
 | 2026-10-16 | Issue #57 deployed. API `281d5f80`. October 15 freeze `6b37e771` still public. Save point ISSUE57_PRE_DEPLOY_2026-10-15_CT. No new APK. |
