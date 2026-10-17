@@ -101,6 +101,11 @@
       "issueNumber": 75,
       "reason": "gateway-message",
       "at": "2026-10-17T13:12:47Z"
+    },
+    "issue_comment:6234390789": {
+      "issueNumber": 75,
+      "reason": "continuation-authorized",
+      "at": "2026-10-17T13:22:33Z"
     }
   },
   "issues": {
@@ -350,20 +355,29 @@
     "75": {
       "issueNumber": 75,
       "generation": 1,
-      "state": "REPORT_RECEIVED",
+      "state": "ASSIGNED",
       "simulatedAssignment": false,
       "projectRepository": "King72315/chatgpt-and-cursor-handoff",
       "approvedScope": "",
       "authorizationCommentId": null,
       "executionTrigger": null,
-      "followUpCount": 0,
+      "followUpCount": 1,
       "followUpLimit": 2,
-      "continuationSpendCents": 0,
+      "continuationSpendCents": 100,
       "continuationSpendLimitCents": 200,
       "agentId": "bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
       "completionPullRequest": 76,
       "pendingContinuation": null,
-      "continuations": [],
+      "continuations": [
+        {
+          "deliveryId": "issue_comment:6234390789",
+          "agentId": "bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
+          "runId": "run-8ba0b771-d274-4a5f-9184-bd0749a0621a",
+          "reserveCents": 100,
+          "settledCents": null,
+          "at": "2026-10-17T13:22:53.700Z"
+        }
+      ],
       "ownerDecisionRequired": false,
       "duplicateTriggerIds": [],
       "agentRuns": [
@@ -380,6 +394,14 @@
           "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76",
           "agentId": "bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
           "deliveryId": "pull_request:76:opened"
+        },
+        {
+          "role": "continuation",
+          "actor": "gateway",
+          "url": "https://cursor.com/agents/bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
+          "agentId": "bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
+          "runId": "run-8ba0b771-d274-4a5f-9184-bd0749a0621a",
+          "deliveryId": "issue_comment:6234390789"
         }
       ],
       "reports": [
@@ -414,7 +436,15 @@
           "at": "2026-10-17T13:09:33Z"
         }
       ],
-      "reviews": [],
+      "reviews": [
+        {
+          "deliveryId": "issue_comment:6234390789",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76#issuecomment-6234390789",
+          "actor": "King72315",
+          "at": "2026-10-17T13:22:33Z",
+          "state": "REVIEWED"
+        }
+      ],
       "previousCycles": [],
       "history": [
         {
@@ -434,9 +464,27 @@
           "actor": "King72315",
           "kind": "pull_request",
           "note": "completion pull request captured"
+        },
+        {
+          "at": "2026-10-17T13:22:33Z",
+          "deliveryId": "issue_comment:6234390789",
+          "from": "REPORT_RECEIVED",
+          "to": "REVIEWED",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "review captured from the completion pull request"
+        },
+        {
+          "at": "2026-10-17T13:22:53.700Z",
+          "deliveryId": "issue_comment:6234390789",
+          "from": "REVIEWED",
+          "to": "ASSIGNED",
+          "actor": "gateway",
+          "kind": "continuation",
+          "note": "billed continuation 1 sent"
         }
       ],
-      "updatedAt": "2026-10-17T13:09:33Z"
+      "updatedAt": "2026-10-17T13:22:53.700Z"
     }
   }
 }
