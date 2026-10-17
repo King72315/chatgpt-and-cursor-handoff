@@ -84,7 +84,7 @@ ChatGPT does not receive a push from GitHub. RiRi reviews the packet by opening 
 
 | Date | Update |
 | --- | --- |
-| 2026-10-17 | Issue #77 read-only results check at 08:48 CDT. Winners 0-2, one pending (Swiatek live). Value Winners 0-2. Ostapenko status `FINAL_WIN` disagrees with grade LOSS. Not repaired. Not deployed. |
+| 2026-10-17 | Issue #77 read-only results check at 08:48 CDT. Winners 0-2, one pending (Swiatek live). Value Winners 0-2. Ostapenko status `FINAL_WIN` disagrees with grade LOSS. Not repaired. Not deployed. Report: https://github.com/King72315/chatgpt-and-cursor-handoff/pull/79 |
 | 2026-10-17 | Issue #77 assignment received. Read-only October 17, 2026 CT Winners and Value Winners results check. Work starting. No application changes. |
 | 2026-10-17 | Handoff gateway is live. Issue #73 has the simulated assignment, review packet, and follow-ups 1 and 2. Recovery run `39031563215` made no second change. No new cloud agent. No application deploy. |
 | 2026-10-17 | Issue #70 deployed underdog gate as `2c0c9b2c`. October 17 active Value board is Ostapenko #1. Medvedev's frozen row kept. Winners board unchanged. No new APK. |
