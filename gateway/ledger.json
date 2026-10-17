@@ -121,6 +121,11 @@
       "issueNumber": 77,
       "reason": "completed",
       "at": "2026-10-17T14:04:45Z"
+    },
+    "issue_comment:6234892366": {
+      "issueNumber": 81,
+      "reason": "assigned",
+      "at": "2026-10-17T14:09:43Z"
     }
   },
   "issues": {
@@ -563,6 +568,51 @@
         }
       ],
       "updatedAt": "2026-10-17T14:04:45Z"
+    },
+    "81": {
+      "issueNumber": 81,
+      "generation": 1,
+      "state": "ASSIGNED",
+      "simulatedAssignment": false,
+      "projectRepository": "King72315/tennisedge",
+      "approvedScope": "riri-assign\n\nMariah — King authorizes the implementation and verification program in Issue #81. Begin now and continue in scope without asking again for the same repair authorization. Project repository: King72315/tennisedge. Verify authentic var/d0de-app source access first; RiRi's GitHub app-repository read returned 404, and prior local-only reports are not evidence of cloud access. Do not substitute stale code. If unavailable, report the exact local-access blocker on this issue and the labeled handoff-review PR; do all independent authorized analysis you can.\n\nRepair grading and durable actuals for Winners, Value Winners, Aces, Break Points Won, Total Games/Total Sets; correct ranking; then test Top 6 accuracy improvements with valid unseen-match evidence. Use PR #80 failures as regression cases. Keep original freezes, predictions and audit history. Follow the complete issue's tests and boundaries, including the existing release gate. This is the one active consolidated repair assignment, not a new parallel copy of the older research work. Return substantive staged evidence through the completion PR with your real cloud agent URL for RiRi review and continuation.",
+      "authorizationCommentId": "6234892366",
+      "executionTrigger": "issue_comment:6234892366",
+      "followUpCount": 0,
+      "followUpLimit": 2,
+      "continuationSpendCents": 0,
+      "continuationSpendLimitCents": 200,
+      "agentId": null,
+      "completionPullRequest": null,
+      "pendingContinuation": null,
+      "continuations": [],
+      "ownerDecisionRequired": false,
+      "duplicateTriggerIds": [],
+      "agentRuns": [],
+      "reports": [],
+      "reviews": [],
+      "previousCycles": [],
+      "history": [
+        {
+          "at": "2026-10-17T14:09:43Z",
+          "deliveryId": "issue_comment:6234892366",
+          "from": null,
+          "to": "AUTHORIZED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "authorization comment"
+        },
+        {
+          "at": "2026-10-17T14:09:43Z",
+          "deliveryId": "issue_comment:6234892366",
+          "from": "AUTHORIZED",
+          "to": "ASSIGNED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "assignment recorded"
+        }
+      ],
+      "updatedAt": "2026-10-17T14:09:43Z"
     }
   }
 }
