@@ -106,6 +106,11 @@
       "issueNumber": 75,
       "reason": "continuation-authorized",
       "at": "2026-10-17T13:22:33Z"
+    },
+    "issue_comment:6234569955": {
+      "issueNumber": 75,
+      "reason": "completed",
+      "at": "2026-10-17T13:40:52Z"
     }
   },
   "issues": {
@@ -355,7 +360,7 @@
     "75": {
       "issueNumber": 75,
       "generation": 1,
-      "state": "ASSIGNED",
+      "state": "COMPLETED",
       "simulatedAssignment": false,
       "projectRepository": "King72315/chatgpt-and-cursor-handoff",
       "approvedScope": "",
@@ -482,9 +487,18 @@
           "actor": "gateway",
           "kind": "continuation",
           "note": "billed continuation 1 sent"
+        },
+        {
+          "at": "2026-10-17T13:40:52Z",
+          "deliveryId": "issue_comment:6234569955",
+          "from": "ASSIGNED",
+          "to": "COMPLETED",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "owner accepted the review"
         }
       ],
-      "updatedAt": "2026-10-17T13:22:53.700Z"
+      "updatedAt": "2026-10-17T13:40:52Z"
     }
   }
 }
