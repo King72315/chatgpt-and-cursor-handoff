@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Pull request #76 is the completion report for issue #75. It is labeled `handoff-review` and is waiting for the ChatGPT review. The continuation secret is set. A correction can resume cloud agent `bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93`, at most twice, and stops at an estimated 200 cents. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: Pull request #76 received the ChatGPT review and one automatic correction. The note file now contains `report-ok` and `correction-ok`. Follow-ups used: 1 of 2. Acceptance has not been posted yet. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -78,7 +78,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The completion pull request is open and the continuation secret is set. The gateway is waiting for the review comment. No correction has been sent and the cycle is not accepted yet.
+- **Summary:** The review on pull request #76 requested the missing line. The gateway sent continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` on the same cloud agent. The pull request diff now contains only `gateway/proof/cycle-note.txt`, with `report-ok` and `correction-ok`. Acceptance has not been posted yet.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/75
 - **Pull request:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76
 - **Cloud agent:** https://cursor.com/agents/bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93
@@ -88,7 +88,8 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
-| 2026-10-17 | Issue #75 completion pull request #76 is labeled handoff-review. Gateway state is REPORT_RECEIVED. Continuation secret CURSOR_API_KEY is set. Cloud agent bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93 finished its first run. No review comment has arrived, so no continuation was sent. |
+| 2026-10-17 | Review on pull request #76 requested `correction-ok` and removal of the workflow edit. Continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` completed that correction. Follow-ups used: 1 of 2. Reserved estimate: 100 cents. Acceptance is not posted yet. |
+| 2026-10-17 | Issue #75 completion pull request #76 is labeled handoff-review. Continuation secret CURSOR_API_KEY is set. Cloud agent bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93 finished its first run. |
 | 2026-10-17 | Completion pull requests labeled handoff-review are the ChatGPT trigger. The gateway no longer treats its packet as the review. A correction calls the continuation API, at most twice, and stops at an estimated 200 cents. Tests: 25 passed. |
 | 2026-10-17 | Handoff gateway is live. Issue #73 has the simulated assignment, review packet, and follow-ups 1 and 2. Recovery run `39031563215` made no second change. No new cloud agent. No application deploy. |
 | 2026-10-17 | Issue #70 deployed underdog gate as `2c0c9b2c`. October 17 active Value board is Ostapenko #1. Medvedev's frozen row kept. Winners board unchanged. No new APK. |
