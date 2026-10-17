@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #57 is deployed. October 16 was reminted on that API. New freeze `eaf4c25f`. October 15 freeze `6b37e771` is unchanged. Deployment remains `281d5f80`. No new APK.
+- Active task: Issue #64 audited in `var/d0de-app`. Completed scores now settle ahead of a VOID label, and History Reset reports a rejection instead of doing nothing. Not deployed. October 16 freeze `eaf4c25f` and October 15 freeze `6b37e771` are unchanged. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-16
@@ -61,14 +61,15 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-16
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** October 16 was unfrozen and rebuilt on the live API. Freeze `8913c9ef` is now `eaf4c25f`. October 15 stays `6b37e771`. Top Props seats are the same three. Svitolina left the winner and value boards because that match had started. No new APK.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/57
+- **Summary:** Issue #64 local audit. A verified completed score now grades ahead of a VOID label. History Reset stays non-destructive and a rejected tap is no longer silent. Ace and break-point actuals are still missing. Not deployed. No new APK.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/64
 - **API:** deployment `281d5f80-25dc-46b6-aa6e-59bfe08ee317`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-16 | Issue #64 local audit. Completed scores settle ahead of VOID. History Reset no longer fails silently. Not deployed. No new APK. |
 | 2026-10-16 | October 16 reminted on API `281d5f80`. Freeze `eaf4c25f`. October 15 freeze `6b37e771` unchanged. No new APK. |
 | 2026-10-16 | Issue #57 deployed. API `281d5f80`. October 15 freeze `6b37e771` still public. Save point ISSUE57_PRE_DEPLOY_2026-10-15_CT. No new APK. |
 | 2026-10-15 | Issue #57 surface audit. `get_draw` `tournament_surface` is Hard for all 10 frozen October 15 matches. Not saved on the freeze. No deploy. |
