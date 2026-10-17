@@ -11,13 +11,18 @@
       "issueNumber": 74,
       "reason": "assigned",
       "at": "2026-10-17T12:06:07.155Z"
+    },
+    "issue_comment:6233699895": {
+      "issueNumber": 73,
+      "reason": "reviewed",
+      "at": "2026-10-17T12:07:48Z"
     }
   },
   "issues": {
     "73": {
       "issueNumber": 73,
       "generation": 1,
-      "state": "ASSIGNED",
+      "state": "REVIEWED",
       "simulatedAssignment": true,
       "projectRepository": "King72315/chatgpt-and-cursor-handoff",
       "approvedScope": "Harmless communication test. Do not modify an application. Do not deploy. Do not spend money.",
@@ -27,9 +32,39 @@
       "followUpLimit": 2,
       "ownerDecisionRequired": false,
       "duplicateTriggerIds": [],
-      "agentRuns": [],
-      "reports": [],
-      "reviews": [],
+      "agentRuns": [
+        {
+          "role": "report",
+          "actor": "King72315",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/issues/73#issuecomment-6233699895",
+          "agentId": null,
+          "deliveryId": "issue_comment:6233699895"
+        }
+      ],
+      "reports": [
+        {
+          "deliveryId": "issue_comment:6233699895",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/issues/73#issuecomment-6233699895",
+          "actor": "King72315",
+          "sections": {
+            "workCompleted": "Recorded the harmless gateway cycle on issue #73. No application code was changed.",
+            "tests": "The Handoff gateway action reads this comment from GitHub. Local protocol tests passed 17 of 17.",
+            "blockers": "None",
+            "changes": "No application files. The gateway record is in the handoff repository.",
+            "deployment": "Not deployed",
+            "ownerDecision": "No",
+            "projectRepository": "King72315/chatgpt-and-cursor-handoff"
+          },
+          "at": "2026-10-17T12:07:48Z"
+        }
+      ],
+      "reviews": [
+        {
+          "deliveryId": "issue_comment:6233699895",
+          "at": "2026-10-17T12:07:48Z",
+          "state": "REVIEWED"
+        }
+      ],
       "previousCycles": [],
       "history": [
         {
@@ -49,9 +84,27 @@
           "actor": "King72315",
           "kind": "issue_comment",
           "note": "assignment recorded"
+        },
+        {
+          "at": "2026-10-17T12:07:48Z",
+          "deliveryId": "issue_comment:6233699895",
+          "from": "ASSIGNED",
+          "to": "REPORT_RECEIVED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "report captured"
+        },
+        {
+          "at": "2026-10-17T12:07:48Z",
+          "deliveryId": "issue_comment:6233699895",
+          "from": "REPORT_RECEIVED",
+          "to": "REVIEWED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "review packet published"
         }
       ],
-      "updatedAt": "2026-10-17T12:01:06.618Z"
+      "updatedAt": "2026-10-17T12:07:48Z"
     },
     "74": {
       "issueNumber": 74,
