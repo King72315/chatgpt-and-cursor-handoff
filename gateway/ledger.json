@@ -66,6 +66,11 @@
       "issueNumber": 73,
       "reason": "awaiting-owner",
       "at": "2026-10-17T12:58:20Z"
+    },
+    "pull_request:76:synchronize:9608cc76aa41ee15efa9d5da8f076c620228ca8d": {
+      "issueNumber": 75,
+      "reason": "completion-pr",
+      "at": "2026-10-17T13:12:37Z"
     }
   },
   "issues": {
@@ -311,6 +316,66 @@
         }
       ],
       "updatedAt": "2026-10-17T12:06:07.155Z"
+    },
+    "75": {
+      "issueNumber": 75,
+      "generation": 1,
+      "state": "REPORT_RECEIVED",
+      "simulatedAssignment": false,
+      "projectRepository": "King72315/chatgpt-and-cursor-handoff",
+      "approvedScope": "",
+      "authorizationCommentId": null,
+      "executionTrigger": null,
+      "followUpCount": 0,
+      "followUpLimit": 2,
+      "continuationSpendCents": 0,
+      "continuationSpendLimitCents": 200,
+      "agentId": "bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
+      "completionPullRequest": 76,
+      "pendingContinuation": null,
+      "continuations": [],
+      "ownerDecisionRequired": false,
+      "duplicateTriggerIds": [],
+      "agentRuns": [
+        {
+          "role": "report",
+          "actor": "King72315",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76",
+          "agentId": "bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93",
+          "deliveryId": "pull_request:76:synchronize:9608cc76aa41ee15efa9d5da8f076c620228ca8d"
+        }
+      ],
+      "reports": [
+        {
+          "deliveryId": "pull_request:76:synchronize:9608cc76aa41ee15efa9d5da8f076c620228ca8d",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76",
+          "actor": "King72315",
+          "pullRequestNumber": 76,
+          "sections": {
+            "workCompleted": "Opened the completion report for issue #75. The note file contains the first required line only.",
+            "tests": "The pull request diff shows gateway/proof/cycle-note.txt with the line report-ok. The second required line, correction-ok, is not in the file yet.",
+            "blockers": "None",
+            "changes": "gateway/proof/cycle-note.txt",
+            "deployment": "Not deployed",
+            "ownerDecision": "No\n\nA correction resumes the same cloud agent with a new billed run. The gateway allows two runs and an estimated cost limit of 200 cents."
+          },
+          "at": "2026-10-17T13:12:37Z"
+        }
+      ],
+      "reviews": [],
+      "previousCycles": [],
+      "history": [
+        {
+          "at": "2026-10-17T13:12:37Z",
+          "deliveryId": "pull_request:76:synchronize:9608cc76aa41ee15efa9d5da8f076c620228ca8d",
+          "from": null,
+          "to": "REPORT_RECEIVED",
+          "actor": "King72315",
+          "kind": "pull_request",
+          "note": "completion pull request captured"
+        }
+      ],
+      "updatedAt": "2026-10-17T13:12:37Z"
     }
   }
 }
