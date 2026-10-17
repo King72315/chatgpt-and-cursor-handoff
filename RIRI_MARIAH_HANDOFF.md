@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #67 ranking repair is deployed. October 17 unstarted winners are now #1 Ostapenko, #2 Swiatek, and #3 Medvedev. Freeze `7db7949a` and the saved probabilities are unchanged. History stays hidden through 2026-10-16. No new APK.
+- Active task: Issue #70 Value Winner audit. A positive model edge was treated as underdog status, so 18 published Value Winners were sportsbook favorites, including October 17 Medvedev at -196. The local gate now requires a same-book plus-money underdog. Frozen slates were not rewritten. Not deployed. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -61,14 +61,15 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The admission-before-rank repair is live. October 17's three unstarted winners were renumbered to #1, #2, and #3 without changing probabilities or freeze `7db7949a`.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/67
+- **Summary:** Value Winners published a favorite whenever the model edge was positive. Medvedev on October 17 was -196. The repair is local and frozen boards were not reminted.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/70
 - **API:** deployment `27f01c66-6e06-410d-9d39-a96884566c12`. Rollback `8bad2074-8016-4fe2-9e9f-4eb1a2654400`
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #70. Eighteen published Value Winners were sportsbook favorites. Local underdog gate tested. October 17 not reminted. Not deployed. |
 | 2026-10-17 | Issue #67 deployed ranking repair as `27f01c66`. October 17 unstarted winners renumbered to #1–#3. Freeze `7db7949a` kept. History cutoff unchanged. No new APK. |
 | 2026-10-17 | History stays cleared through 2026-10-16. Local Top 6 repair ranks only admitted matches. October 17 freeze `7db7949a` was not regenerated. Not deployed. No new APK. |
 | 2026-10-17 | Issue #64 History archived, then hidden through 2026-10-16. Public History is 0-0-0. Lab remains. Freezes unchanged. No new APK. |
