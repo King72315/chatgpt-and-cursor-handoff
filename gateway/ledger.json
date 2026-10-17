@@ -26,6 +26,31 @@
       "issueNumber": 73,
       "reason": "follow-up",
       "at": "2026-10-17T12:09:28Z"
+    },
+    "issue_comment:6233640358": {
+      "issueNumber": 73,
+      "reason": "gateway-message",
+      "at": "2026-10-17T12:01:07Z"
+    },
+    "issue_comment:6233642291": {
+      "issueNumber": 74,
+      "reason": "gateway-message",
+      "at": "2026-10-17T12:01:17Z"
+    },
+    "issue_comment:6233701306": {
+      "issueNumber": 73,
+      "reason": "gateway-message",
+      "at": "2026-10-17T12:07:58Z"
+    },
+    "issue_comment:6233713220": {
+      "issueNumber": 73,
+      "reason": "gateway-message",
+      "at": "2026-10-17T12:09:21Z"
+    },
+    "issue_comment:6233715372": {
+      "issueNumber": 73,
+      "reason": "gateway-message",
+      "at": "2026-10-17T12:09:36Z"
     }
   },
   "issues": {
