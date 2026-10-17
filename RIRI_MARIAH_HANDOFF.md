@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #64 History is archived and the phone History screen is cleared through 2026-10-16. Winners, Value Winners, scores, grades, and count markets are in the TennisEdge Winners Archive. Missing ace and break-point actuals stay "Not saved". October 15 freeze `6b37e771` and October 16 freeze `eaf4c25f` are unchanged. Public History is 0-0-0. Lab still has 2240 records. No new APK.
+- Active task: History is archived and hidden through 2026-10-16. Public History is 0-0-0 and October 17 is the first date that can appear. The Top 6 rank gap is fixed locally for the next mint: already-published and removed matches are dropped before the final rank numbers. The frozen October 17 board still shows #2, #3, and #4 because that slate was not regenerated. Not deployed. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -61,7 +61,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Existing History is in the Winners Archive and the History screen is hidden through 2026-10-16. Counters are 0-0-0. New slate dates still appear. Ace and break-point actuals stay missing. No new APK.
+- **Summary:** History through October 16 is archived and the screen starts at October 17. The next Winner mint drops ineligible matches before it assigns ranks. Frozen October 17 ranks were not changed, and the rank repair is not deployed.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/64
 - **API:** deployment `8bad2074-8016-4fe2-9e9f-4eb1a2654400`. Prior `df336a98-b682-41a4-9f9e-2c2a458e0838`. Rollback `996a7cdc-b6e2-42f3-ac8d-13c060ab2205`
 
@@ -69,6 +69,7 @@ Then update **Current project status**, **Latest handoff**, and **Status log** i
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | History stays cleared through 2026-10-16. Local Top 6 repair ranks only admitted matches. October 17 freeze `7db7949a` was not regenerated. Not deployed. No new APK. |
 | 2026-10-17 | Issue #64 History archived, then hidden through 2026-10-16. Public History is 0-0-0. Lab remains. Freezes unchanged. No new APK. |
 | 2026-10-16 | Issue #64 local audit. Completed scores settle ahead of VOID. History Reset no longer fails silently. Not deployed. No new APK. |
 | 2026-10-16 | October 16 reminted on API `281d5f80`. Freeze `eaf4c25f`. October 15 freeze `6b37e771` unchanged. No new APK. |
