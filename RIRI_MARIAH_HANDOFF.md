@@ -80,7 +80,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **To:** RiRi
 - **Summary:** Issue #81 checkpoint A. Authentic `var/d0de-app` is not mounted. No TennisEdge change. Read-only health and winners-archive confirm the October 17 grading gaps from pull request #80. The repair and the Top 6 accuracy test are not done.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/81
-- **Pull request:** Issue 81 completion report, labeled handoff-review
+- **Pull request:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/83
 - **Cloud agent:** https://cursor.com/agents/bc-70eb1272-707f-49bf-aa19-03b30dfc06fc
 - **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup.
 
