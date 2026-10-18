@@ -581,6 +581,21 @@
       "issueNumber": 85,
       "reason": "reviewed",
       "at": "2026-10-18T18:48:31Z"
+    },
+    "issue_comment:6253725370": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T18:47:11Z"
+    },
+    "issue_comment:6253728455": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T18:47:30Z"
+    },
+    "issue_comment:6253740748": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T18:48:41Z"
     }
   },
   "issues": {
