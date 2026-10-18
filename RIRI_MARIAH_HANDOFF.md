@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Pull request #76 received the ChatGPT review and one automatic correction. The note file now contains `report-ok` and `correction-ok`. Follow-ups used: 1 of 2. Acceptance has not been posted yet. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: Issue #85 ChurchEdge Supabase recovery is blocked in this cloud workspace. The original host `nojdqklncbntgnbeojea.supabase.co` is still NXDOMAIN. `King72315/churchedge` is not mounted in environment `handoff-and-tennisedge`. No new Supabase project was created. No migrations were read or applied. No original data was deleted, reset, or overwritten. Acknowledgment is pull request #87. TennisEdge was not changed. Issue #70 remains the last recorded TennisEdge deployment `2c0c9b2c`. October 17 boards were not rechecked on this run.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-17
+- Last update: 2026-10-18
 
 ## Important decisions
 
@@ -75,19 +75,20 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 ## Latest handoff
 
-- **Date:** 2026-10-17
+- **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The review on pull request #76 requested the missing line. The gateway sent continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` on the same cloud agent. The pull request diff now contains only `gateway/proof/cycle-note.txt`, with `report-ok` and `correction-ok`. Acceptance has not been posted yet.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/75
-- **Pull request:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76
-- **Cloud agent:** https://cursor.com/agents/bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93
-- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup. This cycle's continuation uses the cloud agent above.
+- **Summary:** Issue #85 recovery check stopped. The original Supabase hostname does not resolve. This environment cannot open `King72315/churchedge` or `C:\Users\nicho\Projects\ChurchEdge`, has no Supabase login, and did not create a project or apply SQL. The four migration files were not reviewed because they are not here.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
+- **Pull request:** acknowledgment https://github.com/King72315/chatgpt-and-cursor-handoff/pull/87 ; completion report is the pull request for this update
+- **Cloud agent:** https://cursor.com/agents/bc-9c57be3d-725b-46be-80f3-12f75e775e6d
+- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #85 Supabase recovery blocked. Host `nojdqklncbntgnbeojea.supabase.co` NXDOMAIN. ChurchEdge repo and local workspace unavailable. No new project. No migrations applied. No data deleted. Acknowledgment pull request #87. |
 | 2026-10-17 | Review on pull request #76 requested `correction-ok` and removal of the workflow edit. Continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` completed that correction. Follow-ups used: 1 of 2. Reserved estimate: 100 cents. Acceptance is not posted yet. |
 | 2026-10-17 | Issue #75 completion pull request #76 is labeled handoff-review. Continuation secret CURSOR_API_KEY is set. Cloud agent bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93 finished its first run. |
 | 2026-10-17 | Completion pull requests labeled handoff-review are the ChatGPT trigger. The gateway no longer treats its packet as the review. A correction calls the continuation API, at most twice, and stops at an estimated 200 cents. Tests: 25 passed. |
