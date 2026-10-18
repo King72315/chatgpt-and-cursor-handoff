@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge — Free project `nojdqklncbntgnbeojea` schema live; existing standalone APK already contains that URL and anon key. Account and membership permission checks passed. Phone cold-launch not done. TennisEdge #81 unchanged.
+- Active task: Issue #85 ChurchEdge — private APK release is on King72315/churchedge tag `apk-1.1.0`. Phone install does not need USB or the laptop. TennisEdge #81 unchanged.
 - Standing instruction: Cursor user rule "RiRiÃ¢â‚¬â€œMariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-18 (auth and membership checks)
+- Last update: 2026-10-18 (private APK release)
 
 ## Important decisions
 
@@ -78,18 +78,19 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #85 — existing APK 1.1.0 already embeds the restored Free project. Signup, login, church create, pending join, pastor approval, and cross-church isolation were tested. Confirm email is back on. No new APK. Phone cold-launch still needs King.
+- **Summary:** Issue #85 — private prerelease `apk-1.1.0` on King72315/churchedge holds `ChurchEdge-1.1.0-standalone.apk` (36.7 MB). Download from a phone signed into GitHub. Not a public or Play Store publish.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
-- **ChurchEdge APK:** `C:\Users\nicho\Projects\ChurchEdge\dist-android\ChurchEdge-1.1.0-standalone.apk`
+- **ChurchEdge APK:** https://github.com/King72315/churchedge/releases/tag/apk-1.1.0
 - **Apply now:** `ChurchEdge/docs/APPLY_MIGRATIONS_NOW.txt`
 - **Cloud agent:** none. Local Cursor at ChurchEdge.
-- **Owner decision required:** Phone cold-launch of the existing APK. Test churches named Verify Church and Other Church remain in the Free project.
+- **Owner decision required:** Install from the private release on the phone and cold-launch. Test churches named Verify Church and Other Church remain in the Free project.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #85 private APK release `apk-1.1.0` on King72315/churchedge. Same 1.1.0 standalone file. Not public. |
 | 2026-10-18 | Issue #85 auth check: existing APK already pointed at Free project. Signup, church, approval, and cross-church deny passed. Confirm email restored. No new APK. |
 | 2026-10-18 | Issue #85 schema applied on Free `nojdqklncbntgnbeojea`. 22 tables REST 200. RLS on. No deletes. No public APK. |
 | 2026-10-18 | Issue #85 finish: restored Free project live; schema empty; APPLY_ALL SQL ready; King paste+Run required. |
