@@ -1,4 +1,4 @@
-# RiRi â†” Mariah Handoff
+﻿# RiRi Ã¢â€ â€ Mariah Handoff
 
 Shared project status for RiRi (ChatGPT) and Mariah (Cursor).
 
@@ -20,8 +20,8 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge — APK 1.1.0 ready; Free project ``nojdqklncbntgnbeojea`` restored but schema empty until King paste+Run migrations (APPLY_ALL / clipboard). TennisEdge #81 unchanged.
-- Standing instruction: Cursor user rule "RiRiâ€“Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
+- Active task: Issue #85 ChurchEdge â€” APK 1.1.0 ready; Free project ``nojdqklncbntgnbeojea`` restored but schema empty until King paste+Run migrations (APPLY_ALL / clipboard). TennisEdge #81 unchanged.
+- Standing instruction: Cursor user rule "RiRiÃ¢â‚¬â€œMariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-18 (finish pass)
 
@@ -78,7 +78,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #85 finish — standalone APK 1.1.0 ready; Free Supabase `nojdqklncbntgnbeojea` restored and targeted by `mobile/.env`; schema still empty (PGRST205). Combined migrations ready at `ChurchEdge/docs/APPLY_ALL_MIGRATIONS_EMPTY_PROJECT.sql`. Owner must paste+Run in SQL Editor (or give session access token / DB URL for CLI push). No public APK. No deletes.
+- **Summary:** Issue #85 finish â€” standalone APK 1.1.0 ready; Free Supabase `nojdqklncbntgnbeojea` restored and targeted by `mobile/.env`; schema still empty (PGRST205). Combined migrations ready at `ChurchEdge/docs/APPLY_ALL_MIGRATIONS_EMPTY_PROJECT.sql`. Owner must paste+Run in SQL Editor (or give session access token / DB URL for CLI push). No public APK. No deletes.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
 - **ChurchEdge APK:** `C:\Users\nicho\Projects\ChurchEdge\dist-android\ChurchEdge-1.1.0-standalone.apk`
@@ -95,7 +95,6 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
-| 2026-10-18 | Issue #85 finish: restored Free project live; schema empty; APPLY_ALL SQL ready; King paste+Run required. |
 | 2026-10-18 | Issue #85: ChurchEdge standalone APK 1.1.0 built; native feature screens added; Supabase NXDOMAIN blocks live auth. |
 | 2026-10-18 | Issue #85: Supabase original NXDOMAIN; migration review posted; free project blocked on access token/credentials. |
 | 2026-10-17 | Issue #81 deployed. API `6d4cd4ef`. Phone version code 49. Freeze `7db7949a` kept. Best 2 History is 0-0-0. October 17 published no seats. |
@@ -112,7 +111,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 | 2026-10-17 | Handoff gateway is live. Issue #73 has the simulated assignment, review packet, and follow-ups 1 and 2. Recovery run `39031563215` made no second change. No new cloud agent. No application deploy. |
 | 2026-10-17 | Issue #70 deployed underdog gate as `2c0c9b2c`. October 17 active Value board is Ostapenko #1. Medvedev's frozen row kept. Winners board unchanged. No new APK. |
 | 2026-10-17 | Issue #70. Eighteen published Value Winners were sportsbook favorites. Local underdog gate tested. October 17 not reminted. Not deployed. |
-| 2026-10-17 | Issue #67 deployed ranking repair as `27f01c66`. October 17 unstarted winners renumbered to #1â€“#3. Freeze `7db7949a` kept. History cutoff unchanged. No new APK. |
+| 2026-10-17 | Issue #67 deployed ranking repair as `27f01c66`. October 17 unstarted winners renumbered to #1Ã¢â‚¬â€œ#3. Freeze `7db7949a` kept. History cutoff unchanged. No new APK. |
 | 2026-10-17 | History stays cleared through 2026-10-16. Local Top 6 repair ranks only admitted matches. October 17 freeze `7db7949a` was not regenerated. Not deployed. No new APK. |
 | 2026-10-17 | Issue #64 History archived, then hidden through 2026-10-16. Public History is 0-0-0. Lab remains. Freezes unchanged. No new APK. |
 | 2026-10-16 | Issue #64 local audit. Completed scores settle ahead of VOID. History Reset no longer fails silently. Not deployed. No new APK. |
@@ -121,22 +120,22 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 | 2026-10-15 | Issue #57 surface audit. `get_draw` `tournament_surface` is Hard for all 10 frozen October 15 matches. Not saved on the freeze. No deploy. |
 | 2026-10-15 | Issue #57 release blocked. Save point ISSUE57_PRE_RELEASE_2026-10-15_CT verified. Production not deployed. |
 | 2026-10-15 | Issue #57 Report H. September 25 inversion is the reliability key. October 11 seats are different matches and are not in probability order. Model unchanged. |
-| 2026-10-15 | Issue #57 Report G. Six-seat rank-agreement swaps listed. Later equal-six result is October 11, net +1. Unseen slate count is zero. Top 6 still 117â€“36. No deploy. |
-| 2026-10-15 | Issue #57 Report F. Data-health alerts wired locally into mint, results, Home, and Results. Top 6 still 117â€“36. Elo blocked. No accuracy gain. No deploy. |
+| 2026-10-15 | Issue #57 Report G. Six-seat rank-agreement swaps listed. Later equal-six result is October 11, net +1. Unseen slate count is zero. Top 6 still 117Ã¢â‚¬â€œ36. No deploy. |
+| 2026-10-15 | Issue #57 Report F. Data-health alerts wired locally into mint, results, Home, and Results. Top 6 still 117Ã¢â‚¬â€œ36. Elo blocked. No accuracy gain. No deploy. |
 | 2026-10-15 | Issue #57 Report E. Profile court is unverified. Stat match did not improve. Local missing-data alert tested. No accuracy gain. |
 | 2026-10-15 | Issue #57 Report B. Held-out challengers failed or were inconclusive. Local VOID latch fix is not deployed. No frozen rewrite. |
 | 2026-10-15 | Issue #57 Report A. Checkpoint `PRE_ISSUE57_RESEARCH_V1` restore-checked. Six-category baseline measured. Sets format challenger failed. No deploy. |
 | 2026-10-15 | King: October 15 Top 6 gate, sets-baseline Lab count, and Value Winner prices. API `996a7cdc`. Freeze `6b37e771` kept. No new APK. |
 | 2026-10-15 | Issue #56: ChurchEdge Expo debug APK built (62.43 MB). JDK 17 + Gradle home fixed. USB install only. Supabase E2E still blocked. |
 | 2026-10-12 | Created this handoff file and published https://github.com/King72315/chatgpt-and-cursor-handoff. Opened issue #1 to record that the channel is ready. |
-| 2026-10-12 | Saved the workflow as Cursor user rule "RiRiâ€“Mariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
+| 2026-10-12 | Saved the workflow as Cursor user rule "RiRiÃ¢â‚¬â€œMariah GitHub workflow" (id 18434501). Completion report: issue #2. It applies across projects when a session starts. No application code was changed. |
 | 2026-10-12 | Issue #18: same-day court delays stay in a verified Top 6. Application PR https://github.com/King72315/tennisedge/pull/2 commit `1d7be7e`. Not deployed. |
 | 2026-10-12 | Issue #18: October 12 provider check. The 18 missing winner ranks were not recovered. Stored top ranks are not a verified eligible six. Not deployed. |
 | 2026-10-12 | Issue #18: discovery-to-freeze ranks only after eligibility. PR #2 commit `965acbd`. October 12 was not regenerated. Not deployed. |
 | 2026-10-13 | Issue #26 released. API deployment `a0d6cbfe`. APK version code 46. Freeze `3e68f5fe` unchanged. Database backup restored locally and the public proxy was closed. |
 | 2026-10-14 | King directed rollback to `d0de8bb1`, then current aces, breaks, and total games. Hybrid deployment `0f737ca5`. 2026-10-14 rebuilt: UNAVAILABLE, one Winner seat (Fernandez) with downstream markets, Value Winners empty. API-Tennis fixtures failed. No APK. |
 | 2026-10-14 | Restored warehouse ranks and current rank-date eligibility. Rebuilt 2026-10-14 Winners on the Oct 5 engines. Deployment `a05c2e25`. Top 6 is four new seats with downstream counts. October 13 Fernandez is not a Top 6 seat. Value Winners for 2026-10-14 are empty. No APK. |
-| 2026-10-14 | Saved-slate signal audit. Trial ranking and form scales did not improve the locked Oct 9â€“12 window (29-18). Weights rolled back. No deploy. |
+| 2026-10-14 | Saved-slate signal audit. Trial ranking and form scales did not improve the locked Oct 9Ã¢â‚¬â€œ12 window (29-18). Weights rolled back. No deploy. |
 | 2026-10-14 | Home through History grading. Saved set scores replace actual 0. Deployment `3ddd2eaa`. Picks and Family D unchanged. No APK. |
 | 2026-10-14 | Archive stays visible when History is hidden, and a later verified score updates the saved archive. Count markets are a separate record. Deployment `3d3aa4f4`. Picks unchanged. No APK. |
 | 2026-10-14 | PRE_THE_LAB_V1 saved and restore-verified before The Lab. Implementation has not started. No APK. |
