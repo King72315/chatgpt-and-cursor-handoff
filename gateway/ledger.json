@@ -486,6 +486,11 @@
       "issueNumber": 85,
       "reason": "gateway-message",
       "at": "2026-10-18T08:13:37Z"
+    },
+    "issue_comment:6247821509": {
+      "issueNumber": 85,
+      "reason": "reviewed",
+      "at": "2026-10-18T08:46:34Z"
     }
   },
   "issues": {
@@ -1262,7 +1267,7 @@
     "85": {
       "issueNumber": 85,
       "generation": 1,
-      "state": "REPORT_RECEIVED",
+      "state": "REVIEWED",
       "simulatedAssignment": false,
       "projectRepository": "King72315/churchedge",
       "approvedScope": "## King approval — ChurchEdge Supabase recovery / free replacement (Issue #85)\n\nKing authorizes Mariah to **first check whether the original ChurchEdge Supabase project can be recovered**. If unavailable, she may **create a new Supabase FREE-tier project** for ChurchEdge, with no paid services and no deletion of existing data.\n\n**Before applying any migrations:** review all four existing migration files, their ordering, dependencies, security implications, tenant isolation and RLS, plus the mobile admin RLS fix; report the findings and proposed migration application plan to King/RiRi for review. This comment does **not** authorize blindly applying unreviewed SQL or any destructive data changes. Once reviewed and confirmed safe and within this approved setup scope, execute only non-destructive required migrations in the new empty project, then verify schema/RLS; report anything uncertain before executing it.\n\n- Original data/project must not be deleted, reset, or overwritten. Preserve the old project identity and any available backups.\n- Do not purchase or upgrade anything; stop if free-tier creation is impossible without approval.\n- Keep URLs/anon public keys in appropriate app configuration and privileged service-role credentials strictly server-side. Do not paste secrets into GitHub or chat or embed them in the APK.\n- Validate real church signup/login, session, approval, and cross-church RLS on the newly configured backend where possible; distinguish actual tests from blocked tests.\n- No public website deployment or APK publishing, no other project edits.\n- Work from verified ChurchEdge local workspace `C:\\Users\\nicho\\Projects\\ChurchEdge`; the prior cloud automation workspace cannot access the private app repo. No new `riri-assign` trigger on this issue.\n- Post progress/completion back to Issue #85 or linked PR fallback upon 403, including project recovery outcome, reviewed migrations, changes actually applied, test results and outstanding blockers.\n\nThis is a scoped authorization to proceed with recovery assessment and free project setup, **not** approval for paid resources, data deletion, or unsafe/unreviewed migrations.",
@@ -1332,6 +1337,13 @@
           "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/88#issuecomment-6246067558",
           "actor": "King72315",
           "at": "2026-10-18T05:23:42Z",
+          "state": "REVIEWED"
+        },
+        {
+          "deliveryId": "issue_comment:6247821509",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86#issuecomment-6247821509",
+          "actor": "King72315",
+          "at": "2026-10-18T08:46:34Z",
           "state": "REVIEWED"
         }
       ],
@@ -1462,9 +1474,18 @@
           "actor": "King72315",
           "kind": "issue_comment",
           "note": "issue comment is waiting for a completion pull request"
+        },
+        {
+          "at": "2026-10-18T08:46:34Z",
+          "deliveryId": "issue_comment:6247821509",
+          "from": "REPORT_RECEIVED",
+          "to": "REVIEWED",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "review captured from the completion pull request"
         }
       ],
-      "updatedAt": "2026-10-18T08:13:20Z"
+      "updatedAt": "2026-10-18T08:46:34Z"
     }
   }
 }
