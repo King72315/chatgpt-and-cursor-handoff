@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge — signup email is blocked by the built-in mailer (2 emails per hour, custom SMTP off). Confirm email stays on. Owner must approve a free SMTP provider before it can be connected. TennisEdge #81 unchanged.
+- Active task: Issue #85 ChurchEdge — free Brevo SMTP is connected. Confirm email stays on. A confirmation email to the Yahoo sender was delivered and that account can sign in. TennisEdge #81 unchanged.
 - Standing instruction: Cursor user rule "RiRiÃ¢â‚¬â€œMariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-18 (signup email rate limit)
+- Last update: 2026-10-18 (Brevo SMTP connected)
 
 ## Important decisions
 
@@ -78,18 +78,19 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #85 — signup confirmation is blocked by the default Supabase mailer (2 emails per hour, custom SMTP off). Confirm email stays on. A free SMTP account is required before a real confirmation email can be delivered.
+- **Summary:** Issue #85 — free Brevo SMTP is on for ChurchEdge. Confirm email stays on. Brevo delivered a confirmation message to the verified Yahoo sender, and password login then succeeded. A message to a nonexistent Gmail address hard-bounced. The auth site URL is still `http://localhost:3000`.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
 - **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.0-7f3c1a9e4b284d6a.apk
 - **Apply now:** `ChurchEdge/docs/APPLY_MIGRATIONS_NOW.txt`
 - **Cloud agent:** none. Local Cursor at ChurchEdge.
-- **Owner decision required:** Approve a free SMTP provider (Brevo recommended) and supply its SMTP host, port, username, and password so custom SMTP can be turned on. Do not turn off email confirmation.
+- **Owner decision required:** None for SMTP. Confirm email stays on. A phone confirmation link still opens `http://localhost:3000` until the auth site URL is changed. Do not put SMTP or API keys in GitHub.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #85 Brevo SMTP connected on the free plan. Confirm email left on. Yahoo confirmation delivered and login succeeded. Site URL remains localhost. |
 | 2026-10-18 | Issue #85 signup mail: default Supabase provider, 2 emails/hour, custom SMTP off. Confirm email left on. Waiting on a free SMTP account. |
 | 2026-10-18 | Issue #85 direct APK link on the free project. EAS build canceled (pay-as-you-go). Download verified, 38,453,950 bytes, no login. |
 | 2026-10-18 | Issue #85 private APK release `apk-1.1.0` on King72315/churchedge. Same 1.1.0 standalone file. Not public. |
