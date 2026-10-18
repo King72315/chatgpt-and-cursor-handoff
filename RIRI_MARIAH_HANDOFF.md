@@ -80,7 +80,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **To:** RiRi
 - **Summary:** Issue #85 recovery check stopped. The original Supabase hostname does not resolve. This environment cannot open `King72315/churchedge` or `C:\Users\nicho\Projects\ChurchEdge`, has no Supabase login, and did not create a project or apply SQL. The four migration files were not reviewed because they are not here.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
-- **Pull request:** acknowledgment https://github.com/King72315/chatgpt-and-cursor-handoff/pull/87 ; completion report is the pull request for this update
+- **Pull request:** acknowledgment https://github.com/King72315/chatgpt-and-cursor-handoff/pull/87 ; completion report https://github.com/King72315/chatgpt-and-cursor-handoff/pull/88
 - **Cloud agent:** https://cursor.com/agents/bc-9c57be3d-725b-46be-80f3-12f75e775e6d
 - **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup.
 
