@@ -1,4 +1,4 @@
-﻿# RiRi â†” Mariah Handoff
+# RiRi â†” Mariah Handoff
 
 Shared project status for RiRi (ChatGPT) and Mariah (Cursor).
 
@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge — migration review done; free Supabase project creation blocked pending King credentials/token. Standalone APK 1.1.0 already built. TennisEdge #81 unchanged.
+- Active task: Issue #85 ChurchEdge — APK 1.1.0 ready; Free project ``nojdqklncbntgnbeojea`` restored but schema empty until King paste+Run migrations (APPLY_ALL / clipboard). TennisEdge #81 unchanged.
 - Standing instruction: Cursor user rule "RiRiâ€“Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-18
+- Last update: 2026-10-18 (finish pass)
 
 ## Important decisions
 
@@ -77,18 +77,25 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 - **Date:** 2026-10-18
 - **From:** Mariah
-- **To:** RiRi
-- **Summary:** Issue #85 ChurchEdge â€” standalone Expo release APK 1.1.0 (36.67 MB) with embedded JS; member + leadership native screens wired to Supabase schema. Live backend blocked: `nojdqklncbntgnbeojea.supabase.co` is NXDOMAIN. King must approve restore or a new Supabase project before auth E2E. No public APK published.
+- **To:** RiRi / King
+- **Summary:** Issue #85 finish — standalone APK 1.1.0 ready; Free Supabase `nojdqklncbntgnbeojea` restored and targeted by `mobile/.env`; schema still empty (PGRST205). Combined migrations ready at `ChurchEdge/docs/APPLY_ALL_MIGRATIONS_EMPTY_PROJECT.sql`. Owner must paste+Run in SQL Editor (or give session access token / DB URL for CLI push). No public APK. No deletes.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
+- **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
 - **ChurchEdge APK:** `C:\Users\nicho\Projects\ChurchEdge\dist-android\ChurchEdge-1.1.0-standalone.apk`
-- **ChurchEdge report:** `docs/COMPLETE_MOBILE_REPORT.txt`
-- **Cloud agent:** none. Local Cursor session at ChurchEdge workspace.
-- **Owner decision required:** Supabase restore vs new project; optional public APK hosting.
+- **Apply now:** `ChurchEdge/docs/APPLY_MIGRATIONS_NOW.txt`
+- **Cloud agent:** none. Local Cursor at ChurchEdge.
+- **Owner decision required:** Paste+Run migrations (or CLI credentials).
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #85 finish: restored Free project live; schema empty; APPLY_ALL SQL ready; King paste+Run required. |
+## Status log
+
+| Date | Update |
+| --- | --- |
+| 2026-10-18 | Issue #85 finish: restored Free project live; schema empty; APPLY_ALL SQL ready; King paste+Run required. |
 | 2026-10-18 | Issue #85: ChurchEdge standalone APK 1.1.0 built; native feature screens added; Supabase NXDOMAIN blocks live auth. |
 | 2026-10-18 | Issue #85: Supabase original NXDOMAIN; migration review posted; free project blocked on access token/credentials. |
 | 2026-10-17 | Issue #81 deployed. API `6d4cd4ef`. Phone version code 49. Freeze `7db7949a` kept. Best 2 History is 0-0-0. October 17 published no seats. |
