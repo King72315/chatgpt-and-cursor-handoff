@@ -296,6 +296,11 @@
       "issueNumber": 81,
       "reason": "reviewed",
       "at": "2026-10-18T03:45:56Z"
+    },
+    "issue_comment:6245346787": {
+      "issueNumber": 81,
+      "reason": "awaiting-owner",
+      "at": "2026-10-18T03:48:49Z"
     }
   },
   "issues": {
@@ -821,7 +826,7 @@
     "81": {
       "issueNumber": 81,
       "generation": 1,
-      "state": "REVIEWED",
+      "state": "AWAITING_OWNER_APPROVAL",
       "simulatedAssignment": false,
       "projectRepository": "King72315/tennisedge",
       "approvedScope": "riri-assign\n\nMariah — King authorizes the implementation and verification program in Issue #81. Begin now and continue in scope without asking again for the same repair authorization. Project repository: King72315/tennisedge. Verify authentic var/d0de-app source access first; RiRi's GitHub app-repository read returned 404, and prior local-only reports are not evidence of cloud access. Do not substitute stale code. If unavailable, report the exact local-access blocker on this issue and the labeled handoff-review PR; do all independent authorized analysis you can.\n\nRepair grading and durable actuals for Winners, Value Winners, Aces, Break Points Won, Total Games/Total Sets; correct ranking; then test Top 6 accuracy improvements with valid unseen-match evidence. Use PR #80 failures as regression cases. Keep original freezes, predictions and audit history. Follow the complete issue's tests and boundaries, including the existing release gate. This is the one active consolidated repair assignment, not a new parallel copy of the older research work. Return substantive staged evidence through the completion PR with your real cloud agent URL for RiRi review and continuation.",
@@ -835,7 +840,7 @@
       "completionPullRequest": 84,
       "pendingContinuation": null,
       "continuations": [],
-      "ownerDecisionRequired": false,
+      "ownerDecisionRequired": true,
       "duplicateTriggerIds": [],
       "agentRuns": [
         {
@@ -1047,9 +1052,18 @@
           "actor": "King72315",
           "kind": "pull_request_comment",
           "note": "review captured from the completion pull request"
+        },
+        {
+          "at": "2026-10-18T03:48:49Z",
+          "deliveryId": "issue_comment:6245346787",
+          "from": "REVIEWED",
+          "to": "AWAITING_OWNER_APPROVAL",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "higher-risk request: deploy"
         }
       ],
-      "updatedAt": "2026-10-18T03:45:56Z"
+      "updatedAt": "2026-10-18T03:48:49Z"
     }
   }
 }
