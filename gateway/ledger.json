@@ -316,6 +316,11 @@
       "issueNumber": 81,
       "reason": "gateway-message",
       "at": "2026-10-18T03:49:22Z"
+    },
+    "issue_comment:6245592430": {
+      "issueNumber": 81,
+      "reason": "awaiting-owner",
+      "at": "2026-10-18T04:20:29Z"
     }
   },
   "issues": {
@@ -1076,6 +1081,15 @@
           "actor": "King72315",
           "kind": "issue_comment",
           "note": "higher-risk request: deploy"
+        },
+        {
+          "at": "2026-10-18T04:20:29Z",
+          "deliveryId": "issue_comment:6245592430",
+          "from": "AWAITING_OWNER_APPROVAL",
+          "to": "AWAITING_OWNER_APPROVAL",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "higher-risk request while waiting: deploy"
         }
       ],
       "updatedAt": "2026-10-18T03:48:49Z"
