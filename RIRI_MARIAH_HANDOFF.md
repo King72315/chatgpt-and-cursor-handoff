@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #81 checkpoint B3 is in progress. Isolated filesystem storage kept the October 17 counts through a second process. Production Postgres was not opened. Freeze `7db7949a` is unchanged. RiRi's GitHub connection still gets 404 on private `King72315/tennisedge`. Accuracy is INCONCLUSIVE. No new APK.
+- Active task: Issue #81 is in progress. Local phone-lane repairs cover surface, ace and break-point actuals, published rank order, and Total Games on Home, Results, and History. Production was not deployed. Freeze `7db7949a` is unchanged. Accuracy is INCONCLUSIVE. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -78,7 +78,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Isolated storage kept October 17 counts through a process restart. The live card was not updated. RiRi still cannot read the private app repository. Accuracy remains INCONCLUSIVE. Freeze `7db7949a` is unchanged.
+- **Summary:** Local repairs attach API-Tennis court surface, save ace and break-point actuals from match statistics, number published seats after selection, and keep Total Games on History. Not deployed. Accuracy remains INCONCLUSIVE. Freeze `7db7949a` is unchanged.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/81
 - **Report:** `reports/issue-81-checkpoint-b3.md`
 - **Private source:** https://github.com/King72315/tennisedge/tree/issue-81-verified-counts/issue-81-review at `377b42f`
@@ -89,6 +89,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #81 phone-lane checkpoint. Surface, actuals, published rank, and Total Games history are repaired locally. Tests passed. Not deployed. Accuracy INCONCLUSIVE. No new APK. |
 | 2026-10-17 | Issue #81 checkpoint B3. Isolated filesystem adapter stored the October 17 counts and a second process read them. Production not opened. Accuracy untouched sample is 0. Private repo still 404 to RiRi. |
 | 2026-10-17 | Issue #81 checkpoint B2. API-Tennis match counts traced for the three October 17 winners. Local persistence tests passed. Not deployed. Accuracy INCONCLUSIVE. Private branch `issue-81-verified-counts` at `377b42f`. |
 | 2026-10-17 | Issue #81 checkpoint B. Local grading repairs tested in `var/d0de-app`. Not deployed. Freeze `7db7949a` unchanged. Accuracy work not started. |
