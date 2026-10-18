@@ -301,6 +301,21 @@
       "issueNumber": 81,
       "reason": "awaiting-owner",
       "at": "2026-10-18T03:48:49Z"
+    },
+    "issue_comment:6245326104": {
+      "issueNumber": 81,
+      "reason": "gateway-message",
+      "at": "2026-10-18T03:46:06Z"
+    },
+    "issue_comment:6245347774": {
+      "issueNumber": 81,
+      "reason": "gateway-message",
+      "at": "2026-10-18T03:48:57Z"
+    },
+    "issue_comment:6245350872": {
+      "issueNumber": 81,
+      "reason": "gateway-message",
+      "at": "2026-10-18T03:49:22Z"
     }
   },
   "issues": {
