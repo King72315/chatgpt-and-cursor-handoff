@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #81 Best 2 x 5 is deployed. API `6d4cd4ef`. Phone version code 49. October 17 freeze `7db7949a` kept. History is 0-0-0.
+- Active task: Issue #85 ChurchEdge complete mobile — Phase 1 standalone APK delivered (`ChurchEdge-1.1.0-standalone.apk`). Phase 3 native screens implemented. Phase 2 Supabase restore blocked (NXDOMAIN). TennisEdge Issue #81 remains deployed (`6d4cd4ef`, phone 49).
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-17
+- Last update: 2026-10-18
 
 ## Important decisions
 
@@ -75,20 +75,21 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 ## Latest handoff
 
-- **Date:** 2026-10-17
+- **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Best 2 x 5 is live. API deployment `6d4cd4ef`. Phone upgrade is version code 49. October 17 freeze `7db7949a` was not rewritten. The new record is 0-0-0 in every lane. No hindsight seats were published.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/81
-- **Report:** `reports/issue-81-checkpoint-b3.md`
-- **Private source:** https://github.com/King72315/tennisedge/tree/issue-81-verified-counts/issue-81-review at `377b42f`
-- **Cloud agent:** none. This continuation ran in the local Cursor session.
-- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup.
+- **Summary:** Issue #85 ChurchEdge — standalone Expo release APK 1.1.0 (36.67 MB) with embedded JS; member + leadership native screens wired to Supabase schema. Live backend blocked: `nojdqklncbntgnbeojea.supabase.co` is NXDOMAIN. King must approve restore or a new Supabase project before auth E2E. No public APK published.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
+- **ChurchEdge APK:** `C:\Users\nicho\Projects\ChurchEdge\dist-android\ChurchEdge-1.1.0-standalone.apk`
+- **ChurchEdge report:** `docs/COMPLETE_MOBILE_REPORT.txt`
+- **Cloud agent:** none. Local Cursor session at ChurchEdge workspace.
+- **Owner decision required:** Supabase restore vs new project; optional public APK hosting.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #85: ChurchEdge standalone APK 1.1.0 built; native feature screens added; Supabase NXDOMAIN blocks live auth. |
 | 2026-10-17 | Issue #81 deployed. API `6d4cd4ef`. Phone version code 49. Freeze `7db7949a` kept. Best 2 History is 0-0-0. October 17 published no seats. |
 | 2026-10-17 | Issue #81 authorization is Best 2 x 5. Background finalization of all five lanes passed, including late data and a restart. October 17 totals were qualified from the prematch freeze only. History boundary is 0-0-0. Not deployed. No new APK. |
 | 2026-10-17 | Issue #81 Best 2 blockers. Archive conflicts reconciled. Total Games uses every seated market. Home is Best 2 only. Postgres lifecycle test passed. Lab screen added. Not deployed. No new APK. |
