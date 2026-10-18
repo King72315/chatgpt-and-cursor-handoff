@@ -496,6 +496,21 @@
       "issueNumber": 85,
       "reason": "report-needs-completion-pr",
       "at": "2026-10-18T08:56:24Z"
+    },
+    "issue_comment:6247824277": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:46:44Z"
+    },
+    "issue_comment:6247944903": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:56:33Z"
+    },
+    "issue_comment:6247947279": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:56:50Z"
     }
   },
   "issues": {
