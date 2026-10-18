@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge registration no longer requires a confirmation email. New accounts can sign in immediately. Church approval and password reset stay in place. No replacement APK was published. TennisEdge #81 unchanged.
+- Active task: Issue #85 ChurchEdge 1.1.2 test APK is published for the phone. Sign-up, sign-in, and password recovery were repaired in automated checks. Authentication is not accepted as fixed until King completes the phone checklist. TennisEdge #81 unchanged.
 - Standing instruction: Cursor user rule "RiRiÃ¢â‚¬â€œMariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-18 (registration without email confirmation)
+- Last update: 2026-10-18 (authentication repair, phone test still pending)
 
 ## Important decisions
 
@@ -78,19 +78,20 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #85 — Confirm email is off. A new account receives a session and can sign in immediately. Duplicate signup is rejected. Pending members still cannot read church content. Password reset still requires the email inbox. No new APK.
+- **Summary:** Issue #85 — ChurchEdge 1.1.2 repairs the phone auth lifecycle in automated checks. The existing account is confirmed and the failed sign-in is a password mismatch. The old reset email cannot finish on Android. A new test APK is published. Phone testing is still pending, so authentication is not accepted as fixed.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
-- **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.1-7f3c1a9e4b284d6a.apk
-- **Previous APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.0-7f3c1a9e4b284d6a.apk
-- **Apply now:** `ChurchEdge/docs/APPLY_MIGRATIONS_NOW.txt`
+- **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.2-7f3c1a9e4b284d6a.apk
+- **Previous APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.1-7f3c1a9e4b284d6a.apk
+- **Apply now:** `ChurchEdge/docs/ANDROID_PHONE_TEST_CHECKLIST.txt`
 - **Cloud agent:** none. Local Cursor at ChurchEdge.
-- **Owner decision required:** Try registration on the installed 1.1.1 app. No new APK and no paid service. Do not put SMTP or API keys in GitHub.
+- **Owner decision required:** Install 1.1.2 and run the phone checklist. Ignore the reset email already received and request a new one after installing. No paid service. Do not put SMTP or API keys in GitHub.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #85 authentication repair. 1.1.2 APK published. Automated signup, login, recovery, and church isolation passed. Phone test still pending. Auth is not accepted as fixed. |
 | 2026-10-18 | Issue #85 Confirm email turned off. Signup, login, duplicate rejection, approval isolation, and password reset passed. No new APK. |
 | 2026-10-18 | Issue #85 ChurchEdge 1.1.1 APK published. 38,483,478 bytes. Same debug certificate as 1.1.0. Phone test still pending. |
 | 2026-10-18 | Issue #85 mobile auth redirect is `churchedge://auth/callback`. Signup confirm and reset links verified. Repeat use returns otp_expired. Replacement APK not distributed. |
