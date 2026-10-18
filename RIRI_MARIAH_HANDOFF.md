@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #81 is in progress. Best 2 x 5 selection is built in `var/d0de-app` and is not deployed. The pre-reset archive restore passed: 8444 rows. History was not cleared. Freeze `7db7949a` is unchanged. No new APK.
+- Active task: Issue #81 is in progress. The four release blockers are fixed locally: archive conflicts reconciled, Total Games uses the full seated slate, Home shows only Best 2, and the Postgres lifecycle test passed. Not deployed. No new APK.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -78,7 +78,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** Best 2 x 5 is implemented in the local `var/d0de-app` source. Archive checkpoint BEST2X5_PRE_RESET_2026-10-17_CT restored 8444 rows. Production was not changed, History was not cleared, and no phone build was made. October 17 matches that already started are not backfilled.
+- **Summary:** The four Best 2 release blockers are fixed in `var/d0de-app`. Archive differences are classified and the desktop archive matches production. Total Games ranks the full seated slate. Home no longer shows Top 6. A throwaway Postgres lifecycle test passed. Not deployed. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/81
 - **Report:** `reports/issue-81-checkpoint-b3.md`
 - **Private source:** https://github.com/King72315/tennisedge/tree/issue-81-verified-counts/issue-81-review at `377b42f`
@@ -89,6 +89,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #81 Best 2 blockers. Archive conflicts reconciled. Total Games uses every seated market. Home is Best 2 only. Postgres lifecycle test passed. Lab screen added. Not deployed. No new APK. |
 | 2026-10-17 | Issue #81 Best 2 x 5 checkpoint. Selector, five-lane screens, and separate history are in `var/d0de-app`. Archive restore passed, 8444 rows. Not deployed. History not cleared. No new APK. |
 | 2026-10-17 | Issue #81 phone-lane checkpoint. Surface, actuals, published rank, and Total Games history are repaired locally. Tests passed. Not deployed. Accuracy INCONCLUSIVE. No new APK. |
 | 2026-10-17 | Issue #81 checkpoint B3. Isolated filesystem adapter stored the October 17 counts and a second process read them. Production not opened. Accuracy untouched sample is 0. Private repo still 404 to RiRi. |
