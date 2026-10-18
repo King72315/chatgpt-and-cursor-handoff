@@ -446,6 +446,46 @@
       "issueNumber": 85,
       "reason": "report-needs-completion-pr",
       "at": "2026-10-18T08:13:20Z"
+    },
+    "issue_comment:6247295794": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T07:47:28Z"
+    },
+    "issue_comment:6247297811": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T07:47:43Z"
+    },
+    "issue_comment:6247372269": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T07:57:04Z"
+    },
+    "issue_comment:6247373858": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T07:57:16Z"
+    },
+    "issue_comment:6247402212": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:00:46Z"
+    },
+    "issue_comment:6247403628": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:00:56Z"
+    },
+    "issue_comment:6247510179": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:13:27Z"
+    },
+    "issue_comment:6247511565": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T08:13:37Z"
     }
   },
   "issues": {
