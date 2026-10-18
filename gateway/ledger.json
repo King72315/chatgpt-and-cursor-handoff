@@ -411,6 +411,21 @@
       "issueNumber": 85,
       "reason": "reviewed",
       "at": "2026-10-18T05:23:42Z"
+    },
+    "issue_comment:6246005856": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T05:15:25Z"
+    },
+    "issue_comment:6246068634": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T05:23:51Z"
+    },
+    "issue_comment:6246069915": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-18T05:24:02Z"
     }
   },
   "issues": {
