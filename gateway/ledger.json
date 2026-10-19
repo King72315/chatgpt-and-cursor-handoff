@@ -696,6 +696,11 @@
       "issueNumber": 85,
       "reason": "reviewed",
       "at": "2026-10-19T03:23:47Z"
+    },
+    "issue_comment:6258959844": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-19T03:23:55Z"
     }
   },
   "issues": {
