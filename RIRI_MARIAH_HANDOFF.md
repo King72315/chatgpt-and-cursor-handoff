@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge 1.1.2 test APK is published for the phone. Sign-up, sign-in, and password recovery were repaired in automated checks. Authentication is not accepted as fixed until King completes the phone checklist. TennisEdge #81 unchanged.
-- Standing instruction: Cursor user rule "RiRiÃ¢â‚¬â€œMariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
+- Active task: Issue #89 read-only TennisEdge formula and free-data audit is posted. No code or deployment change. ChurchEdge #85 phone test is still pending.
+- Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-18 (authentication repair, phone test still pending)
+- Last update: 2026-10-18 (Issue #89 audit)
 
 ## Important decisions
 
@@ -78,8 +78,10 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-18
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #85 — ChurchEdge 1.1.2 repairs the phone auth lifecycle in automated checks. The existing account is confirmed and the failed sign-in is a password mismatch. The old reset email cannot finish on Android. A new test APK is published. Phone testing is still pending, so authentication is not accepted as fixed.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
+- **Summary:** Issue #89 read-only audit. Winner, ace, break-point, and game counts can be calculated before a sportsbook line. Family D pOver and Value need a price. Local public files stop around June 2026. Nothing was changed.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/89
+- **Report:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/89#issuecomment-6257939632
+- **Earlier issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
 - **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.2-7f3c1a9e4b284d6a.apk
 - **Previous APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.1-7f3c1a9e4b284d6a.apk
@@ -91,6 +93,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
+| 2026-10-18 | Issue #89 read-only formula audit posted. No code, database, or deployment change. Counts can precede a line. Family D pOver and Value cannot. |
 | 2026-10-18 | Issue #85 authentication repair. 1.1.2 APK published. Automated signup, login, recovery, and church isolation passed. Phone test still pending. Auth is not accepted as fixed. |
 | 2026-10-18 | Issue #85 Confirm email turned off. Signup, login, duplicate rejection, approval isolation, and password reset passed. No new APK. |
 | 2026-10-18 | Issue #85 ChurchEdge 1.1.1 APK published. 38,483,478 bytes. Same debug certificate as 1.1.0. Phone test still pending. |
