@@ -666,6 +666,31 @@
       "issueNumber": 85,
       "reason": "report-needs-completion-pr",
       "at": "2026-10-19T02:48:11Z"
+    },
+    "issue_comment:6258367586": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-19T02:28:50Z"
+    },
+    "issue_comment:6258473723": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-19T02:38:44Z"
+    },
+    "issue_comment:6258475513": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-19T02:38:54Z"
+    },
+    "issue_comment:6258576047": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-19T02:48:21Z"
+    },
+    "issue_comment:6258578359": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-19T02:48:34Z"
     }
   },
   "issues": {
