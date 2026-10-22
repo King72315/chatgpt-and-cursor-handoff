@@ -701,6 +701,36 @@
       "issueNumber": 85,
       "reason": "gateway-message",
       "at": "2026-10-19T03:23:55Z"
+    },
+    "issue_comment:6333253543": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-22T05:10:50Z"
+    },
+    "pull_request:91:opened": {
+      "issueNumber": 90,
+      "reason": "blocked",
+      "at": "2026-10-22T05:11:21Z"
+    },
+    "issue_comment:6333262879": {
+      "issueNumber": 90,
+      "reason": "gateway-message",
+      "at": "2026-10-22T05:11:33Z"
+    },
+    "issue_comment:6333279362": {
+      "issueNumber": 85,
+      "reason": "gateway-message",
+      "at": "2026-10-22T05:12:52Z"
+    },
+    "issue_comment:6333301101": {
+      "issueNumber": 90,
+      "reason": "gateway-message",
+      "at": "2026-10-22T05:14:32Z"
+    },
+    "issue_comment:6333336358": {
+      "issueNumber": 90,
+      "reason": "awaiting-owner",
+      "at": "2026-10-22T05:17:13Z"
     }
   },
   "issues": {
@@ -1896,6 +1926,84 @@
         }
       ],
       "updatedAt": "2026-10-19T03:23:47Z"
+    },
+    "90": {
+      "issueNumber": 90,
+      "generation": 1,
+      "state": "AWAITING_OWNER_APPROVAL",
+      "simulatedAssignment": false,
+      "projectRepository": "King72315/chatgpt-and-cursor-handoff",
+      "approvedScope": "",
+      "authorizationCommentId": null,
+      "executionTrigger": null,
+      "followUpCount": 0,
+      "followUpLimit": 2,
+      "continuationSpendCents": 0,
+      "continuationSpendLimitCents": 200,
+      "agentId": null,
+      "completionPullRequest": 91,
+      "pendingContinuation": null,
+      "continuations": [],
+      "ownerDecisionRequired": true,
+      "duplicateTriggerIds": [],
+      "agentRuns": [
+        {
+          "role": "report",
+          "actor": "King72315",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/91",
+          "agentId": null,
+          "deliveryId": "pull_request:91:opened"
+        }
+      ],
+      "reports": [
+        {
+          "deliveryId": "pull_request:91:opened",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/91",
+          "actor": "King72315",
+          "pullRequestNumber": 91,
+          "sections": {
+            "workCompleted": "This is a status check, not an implementation. Issue #90 was opened on October 20, 2026 and has no earlier comments. None of its phases were underway, so no phase was restarted and the scope was not expanded.\n\nCompleted before this issue, and still the baseline:\n\n- ChurchEdge 1.1.3, versionCode 5, is the newest Android APK. It was built on October 18 for the Members relationship fix only.\n- Download: https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.3-7f3c1a9e4b284d6a.apk\n- SHA-256: 349c67651da4c190df816a9b39b1b78d7d45648e31706d92f7c97251e1d0cd77\n- 1.1.0, 1.1.1, and 1.1.2 remain at their original links.\n- The Members list uses church_memberships_user_id_fkey. That does not cover the rest of items A1-A15.\n\nPhase status for Issue #90:\n\n- Phase 0, inspect and backup plan: not done. No inventory was posted on this issue before today.\n- Phase 1, mobile QA defects and navigation: not done. Profile names, announcement input, event date and time pickers, card details, Family Care notes, Groups, Community Hub, Support requests, Scripture rotation, push alerts, Church Information editing, Prayer moderation, Member Home links, and the unified Settings navigation are still the 1.1.3 behavior.\n- Phase 2, role and ministry-group permissions: not done.\n- Phase 3, founder support connection: not done.\n- Phase 4, founder subscriptions and update administration: not done. No live charges.\n- Phase 5, regression and a new test APK: not done.\n\nNo Android APK has been built for Issue #90.",
+            "tests": "No new TypeScript, membership, or Android build was run. Starting those would begin Phase 1, which was not already underway.\n\nEvidence for this report: Issue #90 body and empty comment list; local app version 1.1.3 / versionCode 5; no founder, Church Information, or roles-and-permissions screens in the mobile source; handoff file on master last committed 2026-10-17; pull request #86 is open, labeled handoff-review, and has no review; the gateway workflow listens for issue comments, pull requests, and an hourly schedule, not for a newly opened issue.",
+            "blockers": "- Samsung checks for 1.1.3 Members, and for every Issue #90 phone flow, are still pending. Automated tests would not close those items.\n- The handoff did not pick up Issue #90. See the diagnosis below.\n- Push delivery still needs a second enrolled device before it can be called verified.\n- Live subscription prices and a payment provider are not authorized.",
+            "changes": "No ChurchEdge application files were changed. This comment and the handoff status note are the only updates.",
+            "deployment": "No new APK. The installed test build remains 1.1.3.",
+            "ownerDecision": "Say if Phase 0 should start. Until then, Issue #90 stays not implemented."
+          },
+          "at": "2026-10-22T05:11:21Z"
+        }
+      ],
+      "reviews": [],
+      "previousCycles": [],
+      "history": [
+        {
+          "at": "2026-10-22T05:11:21Z",
+          "deliveryId": "pull_request:91:opened",
+          "from": null,
+          "to": "REPORT_RECEIVED",
+          "actor": "King72315",
+          "kind": "pull_request",
+          "note": "completion pull request captured"
+        },
+        {
+          "at": "2026-10-22T05:11:21Z",
+          "deliveryId": "pull_request:91:opened",
+          "from": "REPORT_RECEIVED",
+          "to": "BLOCKED",
+          "actor": "King72315",
+          "kind": "pull_request",
+          "note": "report included a blocker"
+        },
+        {
+          "at": "2026-10-22T05:17:13Z",
+          "deliveryId": "issue_comment:6333336358",
+          "from": "BLOCKED",
+          "to": "AWAITING_OWNER_APPROVAL",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "higher-risk request: billing"
+        }
+      ],
+      "updatedAt": "2026-10-22T05:17:13Z"
     }
   }
 }
