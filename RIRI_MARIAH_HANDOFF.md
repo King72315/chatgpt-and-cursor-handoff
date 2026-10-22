@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #85 ChurchEdge 1.1.3 test APK is published with the Members relationship fix. Phone verification of Members is still pending. Issue #89 remains read-only.
+- Active task: Issue #90 is open and unstarted. Phases 0 through 5 have no implementation. ChurchEdge 1.1.3 remains the latest APK and only includes the earlier Members relationship fix. Phone checks are still pending.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-18 (ChurchEdge 1.1.3 Members APK; phone test pending)
+- Last update: 2026-10-22 (Issue #90 status only; no new APK)
 
 ## Important decisions
 
@@ -75,22 +75,23 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 ## Latest handoff
 
-- **Date:** 2026-10-18
+- **Date:** 2026-10-22
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #85 — ChurchEdge 1.1.3 is published. Members uses the member foreign key, and church admins can read those profiles. Phone verification is still pending.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/85
+- **Summary:** Issue #90 has not started. No phase is complete. No APK newer than 1.1.3 exists. The handoff missed #90 because opening an issue does not start work, the assignment keyword was not posted, and status updates sit on an unmerged branch while master still shows October 17.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
 - **Earlier issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/89
 - **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.3-7f3c1a9e4b284d6a.apk
 - **Previous APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.2-7f3c1a9e4b284d6a.apk
 - **Cloud agent:** none. Local Cursor at ChurchEdge.
-- **Owner decision required:** Install 1.1.3 and confirm Members opens, shows names, and can approve or reject. Do not treat Members as fixed until that phone test passes.
+- **Owner decision required:** Issue #90 phases were not underway, so they were not started in this check. Say if Phase 0 should begin. Install 1.1.3 only if the earlier Members phone check is still wanted. Do not treat #90 as implemented.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-22 | Issue #90 status posted. Phases 0-5 not started. No new APK. Handoff file on master is still the October 17 copy. |
 | 2026-10-18 | Issue #85 ChurchEdge 1.1.3 APK published. 38,488,050 bytes. Same debug certificate. Members phone test still pending. |
 | 2026-10-18 | Issue #85 Members embed uses church_memberships_user_id_fkey. Profile admin read no longer depends on JWT church id. Tests passed. No new APK. |
 | 2026-10-18 | Issue #89 read-only formula audit posted. No code, database, or deployment change. Counts can precede a line. Family D pOver and Value cannot. |
