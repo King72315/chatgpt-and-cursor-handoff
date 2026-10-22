@@ -82,6 +82,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90
 - **Review comment:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90#issuecomment-6333867577
 - **Application:** local ChurchEdge at `C:\Users\nicho\Projects\ChurchEdge` (not mounted in this cloud workspace)
+- **Cloud agent:** https://cursor.com/agents/bc-5ae78bdf-0e62-4fa2-bd82-6cfe72bce898
 - **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup. No new automation was created.
 
 ## Status log
