@@ -731,6 +731,11 @@
       "issueNumber": 90,
       "reason": "awaiting-owner",
       "at": "2026-10-22T05:17:13Z"
+    },
+    "issue_comment:6333650866": {
+      "issueNumber": 90,
+      "reason": "report-needs-completion-pr",
+      "at": "2026-10-22T05:40:44Z"
     }
   },
   "issues": {
@@ -1930,7 +1935,7 @@
     "90": {
       "issueNumber": 90,
       "generation": 1,
-      "state": "AWAITING_OWNER_APPROVAL",
+      "state": "REPORT_RECEIVED",
       "simulatedAssignment": false,
       "projectRepository": "King72315/chatgpt-and-cursor-handoff",
       "approvedScope": "",
@@ -2001,9 +2006,18 @@
           "actor": "King72315",
           "kind": "pull_request_comment",
           "note": "higher-risk request: billing"
+        },
+        {
+          "at": "2026-10-22T05:40:44Z",
+          "deliveryId": "issue_comment:6333650866",
+          "from": "AWAITING_OWNER_APPROVAL",
+          "to": "REPORT_RECEIVED",
+          "actor": "King72315",
+          "kind": "issue_comment",
+          "note": "issue comment is waiting for a completion pull request"
         }
       ],
-      "updatedAt": "2026-10-22T05:17:13Z"
+      "updatedAt": "2026-10-22T05:40:44Z"
     }
   }
 }
