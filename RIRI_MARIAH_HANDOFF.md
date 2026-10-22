@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #90 Phase 1 remains local. The 2026-10-22 checkpoint review is recorded. Progress is not phone-verified and is not complete. `20261022000000_mobile_admin_scope.sql` stays unapplied and is not cleared. This cloud workspace does not mount ChurchEdge, so it did not continue Phase 1, did not query the live catalog, and did not run production SQL. Samsung remains on 1.1.3. Phases 2–5 remain pending. Acknowledgment: pull request #92.
+- Active task: Issue #90 Phase 1 remains local. The 2026-10-22 checkpoint review is recorded. Progress is not phone-verified and is not complete. `20261022000000_mobile_admin_scope.sql` stays unapplied and is not cleared. This cloud workspace does not mount ChurchEdge, so it did not continue Phase 1, did not query the live catalog, and did not run production SQL. Samsung remains on 1.1.3. Phases 2–5 remain pending. Acknowledgment: pull request #92. Completion report: pull request #93.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-22
