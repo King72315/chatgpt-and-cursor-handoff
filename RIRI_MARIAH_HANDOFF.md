@@ -80,7 +80,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **To:** RiRi / King
 - **Summary:** Issue #90 has not started. No phase is complete. No APK newer than 1.1.3 exists. The handoff missed #90 because opening an issue does not start work, the assignment keyword was not posted, and status updates sit on an unmerged branch while master still shows October 17.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90
-- **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/86
+- **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/91
 - **Earlier issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/89
 - **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.3-7f3c1a9e4b284d6a.apk
 - **Previous APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.2-7f3c1a9e4b284d6a.apk
