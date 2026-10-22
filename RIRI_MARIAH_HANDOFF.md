@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Issue #90 Phase 0 is complete and Phase 1 is in progress locally. No new APK. The admin-scope migration is written and not applied. Phases 2 through 5 have not started.
+- Active task: Issue #90 Phase 1 continues locally. The native date and time picker is in the app code. The admin-scope migration is still not applied. No new APK. Phases 2 through 5 have not started.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-22 (Issue #90 Phase 0 complete; Phase 1 local code; no new APK)
+- Last update: 2026-10-22 (Issue #90 Phase 1 picker, care, groups, scripture rotation; migration not applied)
 
 ## Important decisions
 
@@ -78,19 +78,20 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-22
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Issue #90 Phase 0 is complete. Phase 1 code is in the local ChurchEdge app and is not on a new APK. The database migration is written and not applied.
+- **Summary:** Issue #90 Phase 1 now has a native Central Time date and time picker, Family Care limits, group assignment, and a King James rotation when the stored verse is still the placeholder. The migration was not applied. No new APK.
 - **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90
 - **PR:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/91
 - **Earlier issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/89
 - **ChurchEdge APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.3-7f3c1a9e4b284d6a.apk
 - **Previous APK:** https://nojdqklncbntgnbeojea.supabase.co/storage/v1/object/public/ce7f3c1a9e4b284d6a/ChurchEdge-1.1.2-7f3c1a9e4b284d6a.apk
 - **Cloud agent:** none. Local Cursor at ChurchEdge.
-- **Owner decision required:** No. Continue Phase 1 locally. Apply the admin-scope migration only when King asks for that database change. Do not treat the phone build as updated.
+- **Owner decision required:** No. Leave the migration unapplied until a later authorization. Do not treat the phone build as updated.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-22 | Issue #90 Phase 1 picker and care/group/scripture updates. Migration still not applied. No new APK. |
 | 2026-10-22 | Issue #90 Phase 0 complete. Phase 1 local code started. Migration file written, not applied. No new APK. |
 | 2026-10-22 | Issue #90 status posted. Phases 0-5 not started. No new APK. Handoff file on master is still the October 17 copy. |
 | 2026-10-18 | Issue #85 ChurchEdge 1.1.3 APK published. 38,488,050 bytes. Same debug certificate. Members phone test still pending. |
