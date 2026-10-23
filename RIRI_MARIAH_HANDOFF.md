@@ -20,7 +20,7 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Pull request #76 received the ChatGPT review and one automatic correction. The note file now contains `report-ok` and `correction-ok`. Follow-ups used: 1 of 2. Acceptance has not been posted yet. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: Issue #81 Best 2 x 5 is deployed. API `6d4cd4ef`. Phone version code 49. October 17 freeze `7db7949a` kept. History is 0-0-0.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
 - Last update: 2026-10-17
@@ -78,16 +78,25 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 - **Date:** 2026-10-17
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The review on pull request #76 requested the missing line. The gateway sent continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` on the same cloud agent. The pull request diff now contains only `gateway/proof/cycle-note.txt`, with `report-ok` and `correction-ok`. Acceptance has not been posted yet.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/75
-- **Pull request:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76
-- **Cloud agent:** https://cursor.com/agents/bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93
-- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup. This cycle's continuation uses the cloud agent above.
+- **Summary:** Best 2 x 5 is live. API deployment `6d4cd4ef`. Phone upgrade is version code 49. October 17 freeze `7db7949a` was not rewritten. The new record is 0-0-0 in every lane. No hindsight seats were published.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/81
+- **Report:** `reports/issue-81-checkpoint-b3.md`
+- **Private source:** https://github.com/King72315/tennisedge/tree/issue-81-verified-counts/issue-81-review at `377b42f`
+- **Cloud agent:** none. This continuation ran in the local Cursor session.
+- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-17 | Issue #81 deployed. API `6d4cd4ef`. Phone version code 49. Freeze `7db7949a` kept. Best 2 History is 0-0-0. October 17 published no seats. |
+| 2026-10-17 | Issue #81 authorization is Best 2 x 5. Background finalization of all five lanes passed, including late data and a restart. October 17 totals were qualified from the prematch freeze only. History boundary is 0-0-0. Not deployed. No new APK. |
+| 2026-10-17 | Issue #81 Best 2 blockers. Archive conflicts reconciled. Total Games uses every seated market. Home is Best 2 only. Postgres lifecycle test passed. Lab screen added. Not deployed. No new APK. |
+| 2026-10-17 | Issue #81 Best 2 x 5 checkpoint. Selector, five-lane screens, and separate history are in `var/d0de-app`. Archive restore passed, 8444 rows. Not deployed. History not cleared. No new APK. |
+| 2026-10-17 | Issue #81 phone-lane checkpoint. Surface, actuals, published rank, and Total Games history are repaired locally. Tests passed. Not deployed. Accuracy INCONCLUSIVE. No new APK. |
+| 2026-10-17 | Issue #81 checkpoint B3. Isolated filesystem adapter stored the October 17 counts and a second process read them. Production not opened. Accuracy untouched sample is 0. Private repo still 404 to RiRi. |
+| 2026-10-17 | Issue #81 checkpoint B2. API-Tennis match counts traced for the three October 17 winners. Local persistence tests passed. Not deployed. Accuracy INCONCLUSIVE. Private branch `issue-81-verified-counts` at `377b42f`. |
+| 2026-10-17 | Issue #81 checkpoint B. Local grading repairs tested in `var/d0de-app`. Not deployed. Freeze `7db7949a` unchanged. Accuracy work not started. |
 | 2026-10-17 | Review on pull request #76 requested `correction-ok` and removal of the workflow edit. Continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` completed that correction. Follow-ups used: 1 of 2. Reserved estimate: 100 cents. Acceptance is not posted yet. |
 | 2026-10-17 | Issue #75 completion pull request #76 is labeled handoff-review. Continuation secret CURSOR_API_KEY is set. Cloud agent bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93 finished its first run. |
 | 2026-10-17 | Completion pull requests labeled handoff-review are the ChatGPT trigger. The gateway no longer treats its packet as the review. A correction calls the continuation API, at most twice, and stops at an estimated 200 cents. Tests: 25 passed. |
