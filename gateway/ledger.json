@@ -851,6 +851,11 @@
       "issueNumber": 90,
       "reason": "gateway-message",
       "at": "2026-10-23T06:51:45Z"
+    },
+    "issue_comment:6359729909": {
+      "issueNumber": 90,
+      "reason": "reviewed",
+      "at": "2026-10-23T07:23:02Z"
     }
   },
   "issues": {
@@ -2099,6 +2104,13 @@
           "actor": "King72315",
           "at": "2026-10-22T07:27:32Z",
           "state": "REVIEWED"
+        },
+        {
+          "deliveryId": "issue_comment:6359729909",
+          "url": "https://github.com/King72315/chatgpt-and-cursor-handoff/pull/91#issuecomment-6359729909",
+          "actor": "King72315",
+          "at": "2026-10-23T07:23:02Z",
+          "state": "REVIEWED"
         }
       ],
       "previousCycles": [],
@@ -2201,9 +2213,18 @@
           "actor": "King72315",
           "kind": "pull_request_comment",
           "note": "review captured from the completion pull request"
+        },
+        {
+          "at": "2026-10-23T07:23:02Z",
+          "deliveryId": "issue_comment:6359729909",
+          "from": "REVIEWED",
+          "to": "REVIEWED",
+          "actor": "King72315",
+          "kind": "pull_request_comment",
+          "note": "review captured from the completion pull request"
         }
       ],
-      "updatedAt": "2026-10-22T07:27:32Z"
+      "updatedAt": "2026-10-23T07:23:02Z"
     }
   }
 }
