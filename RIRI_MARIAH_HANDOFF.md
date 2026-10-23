@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: Pull request #76 received the ChatGPT review and one automatic correction. The note file now contains `report-ok` and `correction-ok`. Follow-ups used: 1 of 2. Acceptance has not been posted yet. Issue #70 remains live as deployment `2c0c9b2c`. October 17's active Value board is Ostapenko #1 only. Medvedev's frozen Value row remains stored. The Winners board is still #1 Ostapenko, #2 Swiatek, #3 Medvedev. History stays hidden through 2026-10-16. No new APK.
+- Active task: Issue #90 Phase 1 checkpoint review (2026-10-22) was received. Progress is acknowledged and is not accepted as phone-verified or complete. The proposed mobile admin RLS migration stays unapplied and is not cleared for production. This cloud run does not change ChurchEdge and does not run production SQL. Local Cursor at `C:\Users\nicho\Projects\ChurchEdge` still owns the remaining Phase 1 evidence. Samsung remains on 1.1.3. Phases 2–5 remain pending.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
 - Branch: `master`
-- Last update: 2026-10-17
+- Last update: 2026-10-22
 
 ## Important decisions
 
@@ -75,19 +75,21 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 ## Latest handoff
 
-- **Date:** 2026-10-17
+- **Date:** 2026-10-22
 - **From:** Mariah
 - **To:** RiRi
-- **Summary:** The review on pull request #76 requested the missing line. The gateway sent continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` on the same cloud agent. The pull request diff now contains only `gateway/proof/cycle-note.txt`, with `report-ok` and `correction-ok`. Acceptance has not been posted yet.
-- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/75
-- **Pull request:** https://github.com/King72315/chatgpt-and-cursor-handoff/pull/76
-- **Cloud agent:** https://cursor.com/agents/bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93
-- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup. This cycle's continuation uses the cloud agent above.
+- **Summary:** Issue #90 checkpoint review received. It is a progress review only. No ChurchEdge implementation is starting from this cloud run. The RLS migration is not cleared and will not be applied. Issue comments returned HTTP 403, so this pull request is the acknowledgment.
+- **Issue:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90
+- **Review comment:** https://github.com/King72315/chatgpt-and-cursor-handoff/issues/90#issuecomment-6333867577
+- **Application:** local ChurchEdge at `C:\Users\nicho\Projects\ChurchEdge` (not mounted in this cloud workspace)
+- **Cloud agent:** https://cursor.com/agents/bc-5ae78bdf-0e62-4fa2-bd82-6cfe72bce898
+- **Automation:** https://cursor.com/automations/45f1f15b-c61b-11f1-ac31-5e2d0494121f remains the only keyword pickup. No new automation was created.
 
 ## Status log
 
 | Date | Update |
 | --- | --- |
+| 2026-10-22 | Issue #90 Phase 1 checkpoint review received. Progress is not phone-verified. RLS migration `20261022000000_mobile_admin_scope.sql` stays unapplied and is not cleared. No ChurchEdge edit, no production SQL, no new APK, and no Phase 2–5 work from this cloud run. Issue comment HTTP 403. |
 | 2026-10-17 | Review on pull request #76 requested `correction-ok` and removal of the workflow edit. Continuation run `run-8ba0b771-d274-4a5f-9184-bd0749a0621a` completed that correction. Follow-ups used: 1 of 2. Reserved estimate: 100 cents. Acceptance is not posted yet. |
 | 2026-10-17 | Issue #75 completion pull request #76 is labeled handoff-review. Continuation secret CURSOR_API_KEY is set. Cloud agent bc-d5e5953a-3c5c-4c0c-8364-42c2c2e67c93 finished its first run. |
 | 2026-10-17 | Completion pull requests labeled handoff-review are the ChatGPT trigger. The gateway no longer treats its packet as the review. A correction calls the continuation API, at most twice, and stops at an estimated 200 cents. Tests: 25 passed. |
