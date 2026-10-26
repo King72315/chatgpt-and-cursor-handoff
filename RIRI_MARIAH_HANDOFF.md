@@ -20,10 +20,10 @@ RiRi plans the work and reviews results. Mariah implements the work in this repo
 
 - Project folder: `Chatgpt and Cursor Handoff`
 - Application code: none. This repository is the shared communication project only.
-- Active task: TennisEdge read-only knowledge package for Cardi is written. No TennisEdge code, database, provider, or deploy was touched. ChurchEdge issue #90 is unchanged: test APK 1.1.4, SQL files not applied, phone test pending, not production-ready.
+- Active task: Cardi Hugging Face conversation-memory HTTP 403 is **blocked**. No Hugging Face write token and no Supabase access token were available to apply grants or deploy `app.py`. ChurchEdge issue #90 is unchanged: test APK 1.1.4, SQL files not applied, phone test pending, not production-ready.
 - Standing instruction: Cursor user rule "RiRi–Mariah GitHub workflow" (id 18434501). It applies in every project on this Cursor account.
-- Branch: `master`
-- Last update: 2026-10-23 (TennisEdge Cardi knowledge package, read-only)
+- Branch: `issue-90-status`
+- Last update: 2026-10-26 (Cardi Supabase 403 blocked on credentials)
 
 ## Important decisions
 
@@ -75,14 +75,14 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 ## Latest handoff
 
-- **Date:** 2026-10-23
+- **Date:** 2026-10-26
 - **From:** Mariah
 - **To:** RiRi / King
-- **Summary:** Read-only TennisEdge knowledge package for Cardi. File `TennisEdge_CARDI_COMPLETE_KNOWLEDGE.md` in this repository and in the TennisEdge working tree. No issue number was open for the assignment. No TennisEdge formula, database, provider call, regrade, or deploy. Ready for review before any Cardi ingestion. ChurchEdge 1.1.4 and its unapplied SQL files are unchanged.
-- **Issue:** none. The assignment was given in Cursor. Open handoff issues were checked and none was this package.
-- **Package:** `TennisEdge_CARDI_COMPLETE_KNOWLEDGE.md`
-- **TennisEdge HEAD read:** `965acbd` on `cursor/riri-workflow-definition-aee0`. Core Family D, C3, Trust, reliability, and Winner V2 files matched that commit. Count projection, a Value display field, and `server/mobileV1/store.mjs` had pre-existing uncommitted edits that were documented and not changed.
-- **Blocker:** A dated shutdown record was not in the files searched. The package tells Cardi the product is discontinued because the assignment says so, and it marks the shutdown timestamp unavailable. Production image identity with this git HEAD remains unresolved.
+- **Summary:** Cardi conversation-memory HTTP 403 was not repaired. Local Cursor workspace `Cardi_Hugging_Face` has no application files. Hugging Face Space `King870/BetBrain-HQ-AI` is private (401/404 without login). Supabase CLI has no access token. `SUPABASE_SECRET_KEY` is not on this machine. No matching open handoff issue. Cardi AI/model/UI files were not changed.
+- **Issue:** none. The assignment was given in Cursor. Open handoff issues were checked; none is this 403 repair.
+- **Evidence:** Unauthenticated `GET https://yaspahedskhewkzhkxxl.supabase.co/rest/v1/cardi_conversations` returned HTTP 401 `No API key found in request`. Postgres 42501 from the assignment logs is a table GRANT failure for the REST role, not the earlier `/rest/v1/rest/v1/` 404.
+- **Blocker:** Need a Hugging Face token with read/write on Space `King870/BetBrain-HQ-AI`, plus either a Supabase access token for project `yaspahedskhewkzhkxxl` or SQL Editor access, so grants on `cardi_conversations`, `cardi_messages`, and `cardi_decisions` can be applied and the failing GET can be retested. Do not paste secret keys into chat.
+- **Owner decision required:** Provide those two access paths, then re-run this assignment.
 
 ## Previous handoff
 
@@ -102,6 +102,7 @@ The continuation call uses the GitHub Actions secret `CURSOR_API_KEY`. The secre
 
 | Date | Update |
 | --- | --- |
+| 2026-10-26 | Cardi Supabase HTTP 403 repair blocked. No Hugging Face Space credentials and no Supabase admin token. No app or database change. |
 | 2026-10-23 | TennisEdge Cardi knowledge package written. Read-only. No issue number. No TennisEdge code, database, provider, or deploy change. |
 | 2026-10-22 | Issue #90 completion report. ChurchEdge 1.1.4 test APK published. SQL files still not applied. Phone test pending. Not production-ready. |
 | 2026-10-22 | Issue #90 Phase 1 picker and care/group/scripture updates. Migration still not applied. No new APK. |
